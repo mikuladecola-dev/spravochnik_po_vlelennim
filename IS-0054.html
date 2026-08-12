@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>История про лесоруба</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">История про лесоруба<span>история · IS-0054</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">история</div>
+    <h1>История про лесоруба</h1>
+    
+    <div class="facts"><span>вселенная: Нимб</span><span>2 версии записи</span><span>2025-05-03 → 2025-05-04</span><span>17 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="VS-0006.html">Нимб</a></div><div class="crumb"><span>дословный исходник:</span><a href="kb/IS-0054-istoriya-pro-lesoruba.html">IS-0054-istoriya-pro-lesoruba.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="История про лесоруба";
+const LEAD="";
+const CH=[{"t": "Содержание", "a": ["S01", "IS-0054-S01", "IS-0054--soderzhanie"], "h": "<p>Рассказ Ивана Васильевича о бригаде лесорубов, пещере и твари.</p>\n<p>Сам текст истории находится за пределами окна w0090 — он был выложен раньше, в окне w0089 (id 323364–323370). В этом окне текста нет: здесь только чтение Миколая по частям и его пометки по ходу чтения.</p>\n<p>Из того, что названо при чтении: в истории есть бригадир, судьба которого читателя занимает, и Игорёк, которого Миколай сразу пометил как подозрительного; отдельным вопросом идёт «атмосфера леса» и то, как она влияет.</p>", "r": []}, {"t": "Персонажи", "a": ["S02", "IS-0054-S02", "IS-0054--personazhi"], "h": "<ul>\n<li><strong>Иван Васильевич</strong> — рассказчик истории.</li>\n<li><strong>Бригадир</strong> — про него у Миколая отдельный вопрос по ходу чтения: «че будет с бригадиром интересно».</li>\n<li><strong>Игорёк</strong> — «ещё Игорек подозрительный» (2025-05-03, id 323579).</li>\n<li><strong>Бригада лесорубов</strong>, <strong>тварь</strong> — названы в описании истории; в переписке этого окна не раскрываются.</li>\n</ul>", "r": []}, {"t": "Место во вселенной", "a": ["S03", "IS-0054-S03", "IS-0054--mesto-vo-vselennoy"], "h": "<p>Вселенная в переписке не объявлена; в базе история отнесена к Нимбу по дате объявления. Основной текст лежит за пределами окна.</p>\n<p>В базе связана с двумя другими вещами того же периода — <a href=\"IS-0052.html\">Пролог про Максима</a> и <a href=\"IS-0053.html\">Пролог про апокалипсис</a>; читается она параллельно с ними, в те же дни.</p>", "r": [["Пролог про Максима", "IS-0052.html"], ["Пролог про апокалипсис", "IS-0053.html"]]}, {"t": "Состояние", "a": ["S04", "IS-0054-S04", "IS-0054--sostoyanie"], "h": "<p><strong>2025-05-03, id 323575–323583</strong> — Миколай читает историю первый раз, по ходу отмечая:</p>\n<ul>\n<li>«блять слава» / «это очень красиво, мне уже нравится, аж бесит» (id 323575–323576);</li>\n<li>«интересно» (id 323577);</li>\n<li>«че за атмосфера леса и как она влияет и че будет с бригадиром интересно / для себя пока отметил / ещё Игорек подозрительный» (id 323579);</li>\n<li>«да, это прикольно» (id 323580);</li>\n<li>«тут остановлюсь» (id 323581);</li>\n<li>«вообще мне нравится как написана история, интересно, пусть и не совсем моё» (id 323582);</li>\n<li>«потом дочитаю» (id 323583).</li>\n</ul>\n<p>Чтение прервано, не дойдя до конца.</p>\n<p><strong>2025-05-04, id 323673–323674</strong> — Слава спрашивает: «А дочитывать про лесоруба будешь?» Миколай отвечает: «да».</p>\n<p><strong>2025-05-04, id 323682–323686</strong> — Слава напоминает о своей манере: «ты же надеюсь не забыл что я комментарий не особо пишу», и спрашивает: «Че у тебя с лесорубом?» Миколай: «пока не продолжил, хочу почитать песенки», «мияги», «попозже немного лесоруба».</p>\n<p>Продолжение чтения в этом окне не состоялось и уходит в следующее окно.</p>", "r": []}, {"t": "Пробелы", "a": ["S05", "IS-0054-S05", "IS-0054--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Текста самой истории в этом окне нет — он в w0089 (id 323364–323370); всё содержание известно только по пометкам читающего.</li>\n<li>Что за «атмосфера леса» и как она влияет — вопрос Миколая, ответа в переписке нет.</li>\n<li>Что стало с бригадиром и чем подозрителен Игорёк — не сказано.</li>\n<li>Тварь и пещера в переписке этого окна не описаны.</li>\n<li>Вселенная не объявлена.</li>\n<li>Дочитал ли Миколай историю — за пределами этого окна.</li>\n</ul></div>", "r": []}, {"t": "Связи — всё вместе", "a": ["IS-0054--svyazi"], "h": "<p><em>Сводный список. Под каждым разделом выше есть свой блок связей — только то, что упомянуто в нём. Связи сквозные и двусторонние.</em></p>\n<ul>\n<li><strong>Упоминает истории:</strong> <a href=\"IS-0052.html\">Пролог про Максима</a>, <a href=\"IS-0053.html\">Пролог про апокалипсис</a></li>\n<li><strong>Упомянут в группах:</strong> <a href=\"GR-0073.html\">Бригада лесорубов</a>, <a href=\"GR-0075.html\">Фармацевтическая компания (из истории про лесорубов)</a></li>\n</ul>", "r": []}, {"t": "Источники", "a": ["IS-0054--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2025-05-03</td>\n<td>323575–323583</td>\n<td>w0090</td>\n<td>Нимб (по дате объявления)</td>\n<td></td>\n</tr>\n<tr>\n<td>2025-05-04</td>\n<td>323673–323686</td>\n<td>w0090</td>\n<td>Нимб (по дате объявления)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/istorii/IS-0054-istoriya-pro-lesoruba.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["IS-0054--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/IS-0054.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

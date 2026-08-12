@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Напарники Демона</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Напарники Демона<span>персонаж · PS-0012</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">персонаж</div>
+    <h1>Напарники Демона</h1>
+    
+    <div class="facts"><span>вселенная: неясно</span><span>1 версия записи</span><span>2023-03-27 → 2023-03-27</span><span>3 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="kb/VS-0016-neyasno.html">неясно</a> <span class="m">(статьи ещё нет)</span></div><div class="crumb"><span>дословный исходник:</span><a href="kb/PS-0012-naparniki-demona.html">PS-0012-naparniki-demona.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Напарники Демона";
+const LEAD="";
+const CH=[{"t": "Происхождение", "a": ["S01", "PS-0012-S01", "PS-0012--proishozhdenie"], "h": "<p>Заготовка, а не проработанный персонаж: группа спутников Демона, заявленная одним разговором 2023-03-27 (id 37552–37566) и дальше не расписанная. Появляется по ходу обсуждения того, кому отдать способности лечения и приведения в сознание.</p>\n<p>Разговор идёт так. Миколай спрашивает: «А как же способность лечить других и способность других приводить в сознание» и добавляет «Представляешь как это жестоко» (id 37553–37554), разворачивая, зачем эти способности нужны Демону: «Он грешника избивает до потери сознания, приводит в сознание и дальше» (id 37556) и «Или крови грешник много потерял, он его лечит и снова» (id 37560). Слава отвечает отказом — «Ну нет» (id 37555) — и вместо этого вводит напарников: «Ему же все равно нужны напарники», «У него будет напарники», «Он же один не будет» (id 37557–37559). Итог: «Ну и вот у него будет напарник с такой способностю» (id 37562), на что Миколай отвечает «Мм, ок» (id 37563).</p>\n<p>То есть напарники введены не сами по себе, а как держатель целительских способностей: лечение и приведение в сознание отдаются напарнику, а не Демону.</p>\n<p>Вселенная не определена.</p>", "r": []}, {"t": "Способности", "a": ["S02", "PS-0012-S02", "PS-0012--sposobnosti"], "h": "<p>Названы только две линии, и обе привязаны не к именованному носителю, а к роли:</p>\n<ul>\n<li><strong>Лечение других и приведение других в сознание</strong> — отданы напарнику: «у него будет напарник с такой способностю» (id 37562).</li>\n<li><strong>Боевая способность</strong> — заявлена как отдельная потребность: «Ему нужна боевая способность» (id 37564), ответ Миколая — «Телепатия тогда» (id 37565). Кому именно относится «ему» в этой реплике — Демону или напарнику — из переписки однозначно не следует; принята ли телепатия, тоже не сказано, разговор на этом обрывается.</li>\n</ul>", "r": []}, {"t": "Связи с другими", "a": ["S03", "PS-0012-S03", "PS-0012--svyazi-s-drugimi"], "h": "<ul>\n<li><strong>Демон</strong> — тот, при ком состоят напарники. Записан как часть его окружения; довод за их существование — «Он же один не будет» (id 37559).</li>\n<li><strong>Лечение и приведение в сознание</strong> — способности, которые в этом разговоре сняты с Демона и переданы напарнику.</li>\n</ul>", "r": []}, {"t": "Как менялся — состояния по датам", "a": ["S04", "PS-0012-S04", "PS-0012--kak-menyalsya"], "h": "<p><strong>Версия 1 — 2023-03-27 (id 37552–37566).</strong> Единственное состояние. Заявлено, что Демон действует не один, что у него будут напарники и что целительская пара способностей уходит на напарника. Дальше персонажи не разрабатывались.</p>", "r": []}, {"t": "Пробелы", "a": ["S05", "PS-0012-S05", "PS-0012--probely"], "h": "<div class=\"gaps\"><ul>\n<li><strong>Ни одного напарника так и не описали.</strong> Состав не назван, имён нет, число не названо.</li>\n<li><strong>Внешность, характер, происхождение напарников</strong> — отсутствуют полностью.</li>\n<li><strong>Боевая способность не закреплена.</strong> Предложение «Телепатия тогда» осталось без ответа, принято оно или нет — в переписке не сказано.</li>\n<li><strong>К кому относится реплика «Ему нужна боевая способность»</strong> — к Демону или к напарнику — не уточнено.</li>\n<li><strong>Отношения напарников с Демоном</strong> (подчинение, найм, добровольность, знают ли они, чем он занимается) — не разобраны.</li>\n<li><strong>Вселенная не определена.</strong></li>\n</ul></div>", "r": []}, {"t": "Источники", "a": ["PS-0012--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2023-03-27</td>\n<td>37552–37566</td>\n<td>w0011</td>\n<td>неясно (не определено)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/personazhi/PS-0012-naparniki-demona.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["PS-0012--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/PS-0012.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

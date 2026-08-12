@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Огонь</title>
+<link rel="stylesheet" href="../site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Огонь<span>способность · SP-0069 · исходник</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">исходник базы</div>
+    <h1>Огонь</h1>
+    
+    <div class="facts"><span>1 версий</span><span>2024-06-21 → 2024-06-21</span></div>
+    
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="../";const DOCNAME="Огонь";
+const LEAD="";
+const CH=[{"t": "Дословный исходник базы", "a": [], "r": [], "h": "<div class=\"rawnote\">Это не статья справочника, а дословная выписка из переписки. Текст не редактировался: сохранены опечатки, пунктуация и повторы.</div><div class=\"raw\"># Огонь\n\n*способность* · вселенные: 7 островов\n\n## Навигация\n\n- (w0038) Способность Сталкера: создание огня вместо патронов, огненные цепи из ладони и огненные колья из земли.\n\n## Связано с\n\nСталкер\n\n## История по версиям\n\n_Ниже — дословные куски переписки. Старое не затирается, повторы сохранены._\n\n### Версия 1 — 2024-06-21\n\nвселенная: 7 островов (по дате объявления) · окно w0038 · сообщения 185086–185093\n\n*что здесь: три приёма: «Огненная пуля» — винтовка и пистолеты без патронов, он сам делает пули огнём, при попадании взрыв; «Огненные цепи» из ладони — управление на расстоянии, защита, атака и перемещение как человек-паук; «Подземный ад» — руки к земле, в радиусе 100 метров из земли вырываются огненные колья*\n\n\n\n```chat\n[185086] 2024-06-21 10:37 Слава: Огонь\n[185087] 2024-06-21 10:37 Миколай: У тебя?\n[185088] 2024-06-21 10:37 Слава: Да\n[185089] 2024-06-21 10:37 Миколай: У меня будет костяной\n[185090] 2024-06-21 10:37 Миколай: Эм\n[185091] 2024-06-21 10:38 Миколай: Да\n[185092] 2024-06-21 10:38 Слава: Добавим ещё один стать меткость\n[185093] 2024-06-21 10:52 Слава: Имя: сталкер ( ну кличка)\nЛюбит: сладкая и травяной чая \nНе любят:  поломку оружия \nСила: 6\nСкорость: 7\nЛовкость: 8\nМеткость: 10\nВыносливость: 6\nКонтроль: 8\nОружие: снайперская винтовка; 2 пистолета; нож армейский \nИнструмент: глаза ( тепловой видение ) \nВнешность: мужчин лет 40 в маске( виде кибер маски, ты поймёшь надеюсь) на все лицо; в плаще, а под ним черная, серая форма \nСпособности: огонь \nПриемы:\n1. Огненная пуля: его снайперская винтовка и пистолеты особой оружея под него у них нет патронов, он сам делает их с помощью огня и стреляет ими из оружия при попадания взрывается \n2. Огненненый цепи (из ладони) : может из огня сформулировать цепь и контролировать его на расстояний, защищаясь ими или атакуя, или делать как\n человек паук \n3. Подземный ад: прижимает руки к землёй, и из земли в радиусе 100 метров вырывается огненненый колы, протыкая противника \nЧерты характера; спокойный, хладнокровные; не питает не кому ненависти, но убивает по заказу\n```\n\n## Часть чего\n\nСталкер</div>"}];</script>
+<script src="../lib.js"></script>
+<script src="../site.js"></script>
+</body>
+</html>

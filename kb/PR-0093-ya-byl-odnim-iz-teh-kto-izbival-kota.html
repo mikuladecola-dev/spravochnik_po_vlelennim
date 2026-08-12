@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>я был одним из тех, кто избивал кота</title>
+<link rel="stylesheet" href="../site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">я был одним из тех, кто избивал кота<span>проза · PR-0093 · исходник</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">исходник базы</div>
+    <h1>я был одним из тех, кто избивал кота</h1>
+    
+    <div class="facts"><span>0 версий</span><span>2025-10-28 → 2025-10-28</span></div>
+    
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="../";const DOCNAME="я был одним из тех, кто избивал кота";
+const LEAD="";
+const CH=[{"t": "Дословный исходник базы", "a": [], "r": [], "h": "<div class=\"rawnote\">Это не статья справочника, а дословная выписка из переписки. Текст не редактировался: сохранены опечатки, пунктуация и повторы.</div><div class=\"raw\"># я был одним из тех, кто избивал кота\n\n*2025-10-28 · Оам · Ответный стих Миколая, обещанный 26.10 (378885-378903): тот же двор с другой стороны. Сам автор в 379385-379389 говорит, что видит работу законченной*\n\n---\n\n\n\n```chat\n[379351] 2025-10-28 12:16 Миколай: я был одним из тех, кто избивал кота\nв одном, стареньком доме. прошли года\nвсё давным-давно забыто, у меня уже семья\nно один писатель, гнида, напомнил про те дела\n\nмне было пять лет, он был полосатый милашка\nоттенки его шерсти походили на отцовскую рубашку\nя с радостью почесывал его усатую мордашку\nтогда отец на место матери привёл алкашку\n\nтридцатилетний мужик, с неугарным запахом перегара\nшлангом погонял кота с ограды, роняя потоки Ниагара\nтогда моей радости огонь потух, взлетает копоть от нагара\nкогда котик вернулся, подруга отца отрабатывала на нём удары\n\nкровь на шерсти засохла и он засмердел\nего любовь не сдохла, на мои колени сел\nи на меня батёк орёт: скинь эту заразную тварь!\nя перед ним беззащитен, выкинул. настал январь\n\nон плетётся, храмой, слепой, его куцый хвост отмёрз трубой\nон слишком добрый, чтобы жить счастливо слишком тупой\nлюбил только наших дворовых ребят\nтёрся о ноги, а в него камни летят\n\nи я его пинал, пусть и устраивал скандал\nмне говорили: не позорься. ничего не изменится, я это знал\nя хотел, чтобы он в хорошие руки попал\nчтобы духом упал и нашу гниль осознал\n\nдетей воспитанных уродами он изменить не смог\nродители влияли на их поведение\nникто не выносил из этого урок\nя с ними безразличен, как привидение\n\nон лишился глаза и отдал его поэту\nчтобы тот всем передал его судьбу\nпомню я бил кота в одну среду\nединственный раз, и убежал заслышав гул\n\nприбежали псы чужие, он пытался их прогнать\nзащищая этот двор стал неистово орать\nего наивного загрызли, прибежал к нему писатель\nкот издох в его руках, стал словом в тысячах устах\n\nи я уехал после далеко\nя полюбил, хотя было не легко\nтеперь детей любви учу, по тем старым чувствам\nпоказываю, что если кому-то больно, мне не плевать. мне грустно.\n```</div>"}];</script>
+<script src="../lib.js"></script>
+<script src="../site.js"></script>
+</body>
+</html>

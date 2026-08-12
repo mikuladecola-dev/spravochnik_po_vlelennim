@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Свод персонажей в отдельный документ</title>
+<link rel="stylesheet" href="../site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Свод персонажей в отдельный документ<span>служебное · SL-0021 · исходник</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">исходник базы</div>
+    <h1>Свод персонажей в отдельный документ</h1>
+    
+    <div class="facts"><span>1 версий</span><span>2024-07-09 → 2024-07-09</span></div>
+    
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="../";const DOCNAME="Свод персонажей в отдельный документ";
+const LEAD="";
+const CH=[{"t": "Дословный исходник базы", "a": [], "r": [], "h": "<div class=\"rawnote\">Это не статья справочника, а дословная выписка из переписки. Текст не редактировался: сохранены опечатки, пунктуация и повторы.</div><div class=\"raw\"># Свод персонажей в отдельный документ\n\n*служебное* · вселенные: 7 островов\n\n## Навигация\n\n- (w0046) Рабочее намерение Миколая: он путается в именах и способностях персонажей и обещает вывести всю информацию о персах в отдельный документ и прописать как надо.\n\n## Связано с\n\nЗакон, Кай, Сталкер\n\n## История по версиям\n\n_Ниже — дословные куски переписки. Старое не затирается, повторы сохранены._\n\n### Версия 1 — 2024-07-09\n\nвселенная: 7 островов (по дате объявления) · окно w0046 · сообщения 202059–202068\n\n*что здесь: обещание завести отдельный документ по персонажам*\n\n\n\n```chat\n[202059] 2024-07-09 22:23 Миколай: то шо говорит то и происходит\n[202061] 2024-07-09 22:23 Миколай: нет?\n[202062] 2024-07-09 22:23 Миколай: прости брат\n[202063] 2024-07-09 22:24 Миколай: я обязательно всё инфу о персах выведу в отдельный документ\n[202064] 2024-07-09 22:24 Слава: Ты не понял закон будет действовать в радиусе 70 метров и там без разницы услышал ты или нет пока не покинул радиус действия способности закон будет действовать\n[202065] 2024-07-09 22:24 Слава: Нет закон что то запрещает только\n[202066] 2024-07-09 22:24 Слава: Любой кто в радиусе 70 метров должен подчиняться закону\n[202067] 2024-07-09 22:24 Миколай: и пропишу как надо\n[202068] 2024-07-09 22:24 Слава: Закон действует и на носителя\n```</div>"}];</script>
+<script src="../lib.js"></script>
+<script src="../site.js"></script>
+</body>
+</html>

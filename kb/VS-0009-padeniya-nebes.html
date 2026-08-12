@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Падения небес</title>
+<link rel="stylesheet" href="../site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Падения небес<span>вселенная · VS-0009 · исходник</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">исходник базы</div>
+    <h1>Падения небес</h1>
+    
+    <div class="facts"><span>0 версий</span><span> → </span></div>
+    
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="../";const DOCNAME="Падения небес";
+const LEAD="";
+const CH=[{"t": "Дословный исходник базы", "a": [], "r": [], "h": "<div class=\"rawnote\">Это не статья справочника, а дословная выписка из переписки. Текст не редактировался: сохранены опечатки, пунктуация и повторы.</div><div class=\"raw\"># Вселенная: Падения небес\n\n## Отрезки жизни\n\n_Границы поставлены по объявлению в чате плюс дате, а не по содержанию. Отрезки могут быть несмежными — это нормально._\n\n| С | По | По какому объявлению |\n|---|---|---|\n| 2023-12-26 | 2024-02-05 | объявление 65981 — Слава даёт название «Падения небес» |\n\n### События-объявления\n\n_Границы — по объявлению в чате плюс дате, а не по содержанию. Отрезки могут быть несмежными._\n\n| Дата | Событие | Окно | Сообщения |\n|---|---|---|---|\n| 2023-12-26 | объявление — Слава просит вселенную со сверхлюдьми и «изюминкой» в современности (65959-65961), Миколай даёт завязку «небо падает/ломается» (65974-65978), Слава даёт название «Падения небес» и версию с метеоритами (65981), Миколай разворачивает свою версию до финала (65985-66007). | w0021 | 65959–66007 |\n\n### Дословно — объявления\n\n\n**2023-12-26 · объявление**\n\n```chat\n[65959] 2023-12-26 01:28 Слава: Хочу вселенную со сверхлюдьми  только там должна быть изюминка только какая ?\n[65960] 2023-12-26 01:40 Слава: То бишь сама вселенная\n[65961] 2023-12-26 01:41 Слава: Типо это должно быть в современности но туда на что то ставить\n[65962] 2023-12-26 01:48 Слава: Я уснуть не могу\n[65963] 2023-12-26 01:49 Слава: Я сегодня днём после консультации в 10 пришел и до 4 спал и сейчас уснуть не могу\n[65964] 2023-12-26 01:49 Слава: А мне завтра экзамен писать\n[65965] 2023-12-26 01:49 Слава: Я уже час закрытыми глазами лежу не двигаюсь а  уснуть не могу\n--- пауза 4.5 ч ---\n[65968] 2023-12-26 06:17 Миколай: Блин\n[65969] 2023-12-26 06:17 Миколай: Сочувствую\n[65970] 2023-12-26 06:17 Миколай: Я когда вторую серию смотрел\n[65971] 2023-12-26 06:18 Миколай: Уснул\n[65973] 2023-12-26 06:24 Миколай: Успехов на экзамене\n[65974] 2023-12-26 06:26 Миколай: Небо падает\n[65975] 2023-12-26 06:26 Миколай: Ломается\n[65976] 2023-12-26 06:26 Миколай: Когда полностью сломается всё исчезнет\n[65977] 2023-12-26 06:26 Миколай: А сверх люди не смогут помочь\n[65978] 2023-12-26 06:27 Миколай: И главная миссия найти атланта\n[65980] 2023-12-26 06:28 Миколай: Ну походу это другое\n[65981] 2023-12-26 07:00 Слава: Падения небес \nВ один день на землю начали падать метеориты , больше миллиарда метеоритов пала на землю \nИ этот день стал самым страшным в историй человечества больше 3 миллиардов смертей\n[65982] 2023-12-26 07:00 Слава: И что дальше?\n[65983] 2023-12-26 07:02 Слава: По типу с этих метеоритов начали вылазить монстр или эти метеориты начали выпускать споры и заражать людей\n[65984] 2023-12-26 07:02 Слава: Или он просто наделил способностями\n[65985] 2023-12-26 07:13 Миколай: Так\n[65986] 2023-12-26 07:13 Миколай: Ну я буквально думал небо трескается и падает\n[65987] 2023-12-26 07:13 Миколай: По кусочкам\n[65988] 2023-12-26 07:14 Миколай: Типо весь мир это замороженный мыльный пузырь\n[65989] 2023-12-26 07:14 Миколай: Способностей нет на самом деле, носители сами их придумали\n[65990] 2023-12-26 07:15 Миколай: На самом деле это спец эффекты на камеру\n[65991] 2023-12-26 07:15 Миколай: Фильм\n[65992] 2023-12-26 07:15 Миколай: Который смотрят люди\n[65993] 2023-12-26 07:15 Миколай: И думают что это правда\n[65994] 2023-12-26 07:15 Миколай: На самом деле в реальности никто не видел их подвигов\n[65995] 2023-12-26 07:16 Миколай: И вообще этих людей\n[65996] 2023-12-26 07:16 Миколай: А угроза разрушения реальная проблема\n[65997] 2023-12-26 07:16 Миколай: Люди со способностями говорят что все исправят\n[65998] 2023-12-26 07:16 Миколай: Зрители в них верят\n[65999] 2023-12-26 07:16 Миколай: Мир рушится, а вера людей остаётся\n[66000] 2023-12-26 07:17 Миколай: Ученые тоже верят в сверх людей\n[66001] 2023-12-26 07:17 Миколай: Поэтому ничего не делают для спасения мира\n[66002] 2023-12-26 07:18 Миколай: В итоге почти все люди умерли\n[66003] 2023-12-26 07:18 Миколай: Больше не верят героям\n[66004] 2023-12-26 07:18 Миколай: Когда мира нет\n[66005] 2023-12-26 07:19 Миколай: Мы узнаем что сверхлюди это обычные люди показывающие эти сцены на камеру возле этого шара\n[66006] 2023-12-26 07:19 Миколай: Шара нет, а они продолжают это делать\n[66007] 2023-12-26 07:25 Миколай: Атака титанов на идею толкнула\n```\n\n## Что внутри\n\n| Вид | Название | Версий | С даты | Файл |\n|---|---|---|---|---|\n| идея | [Атлант](../sushnosti/idei/ID-0025-atlant.md) | 1 | 2023-12-26 | `sushnosti/idei/ID-0025-atlant.md` |\n| идея | [Гермес](../sushnosti/idei/ID-0028-germes.md) | 1 | 2024-01-03 | `sushnosti/idei/ID-0028-germes.md` |\n| идея | [Меняются ли люди](../sushnosti/idei/ID-0034-menyayutsya-li-lyudi.md) | 1 | 2024-01-12 | `sushnosti/idei/ID-0034-menyayutsya-li-lyudi.md` |\n| идея | [Откуда растут концепции сил](../sushnosti/idei/ID-0033-otkuda-rastut-koncepcii-sil.md) | 1 | 2024-01-21 | `sushnosti/idei/ID-0033-otkuda-rastut-koncepcii-sil.md` |\n| идея | [Сатурн и Хронос](../sushnosti/idei/ID-0029-saturn-i-hronos.md) | 1 | 2024-01-03 | `sushnosti/idei/ID-0029-saturn-i-hronos.md` |\n| идея | [Энтропия как замысел вселенной](../sushnosti/idei/ID-0032-entropiya-kak-zamysel-vselennoy.md) | 1 | 2024-01-30 | `sushnosti/idei/ID-0032-entropiya-kak-zamysel-vselennoy.md` |\n| идея | [атомный телекинез](../sushnosti/idei/ID-0031-atomnyy-telekinez.md) | 1 | 2024-01-04 | `sushnosti/idei/ID-0031-atomnyy-telekinez.md` |\n| идея | [забывать прошлое](../sushnosti/idei/ID-0027-zabyvat-proshloe.md) | 1 | 2024-01-03 | `sushnosti/idei/ID-0027-zabyvat-proshloe.md` |\n| идея | [обмотка времени](../sushnosti/idei/ID-0026-obmotka-vremeni.md) | 1 | 2024-01-03 | `sushnosti/idei/ID-0026-obmotka-vremeni.md` |\n| идея | [спонтанное самовозгорание объектов](../sushnosti/idei/ID-0030-spontannoe-samovozgoranie-obektov.md) | 1 | 2024-01-04 | `sushnosti/idei/ID-0030-spontannoe-samovozgoranie-obektov.md` |\n| история | [Комикс Славы](../sushnosti/istorii/IS-0009-komiks-slavy.md) | 3 | 2024-01-18 | `sushnosti/istorii/IS-0009-komiks-slavy.md` |\n| мир | [Мир с поглощением энергии](../sushnosti/miry/MR-0004-mir-s-pogloscheniem-energii.md) | 4 | 2024-01-30 | `sushnosti/miry/MR-0004-mir-s-pogloscheniem-energii.md` |\n| мир | [Падения небес](../sushnosti/miry/MR-0002-padeniya-nebes.md) | 3 | 2023-12-26 | `sushnosti/miry/MR-0002-padeniya-nebes.md` |\n| мир | [мир богов и аватаров](../sushnosti/miry/MR-0003-mir-bogov-i-avatarov.md) | 6 | 2024-01-03 | `sushnosti/miry/MR-0003-mir-bogov-i-avatarov.md` |\n| персонаж | [Главный герой мира богов и аватаров](../sushnosti/personazhi/PS-0024-glavnyy-geroy-mira-bogov-i-avatarov.md) | 5 | 2024-01-03 | `sushnosti/personazhi/PS-0024-glavnyy-geroy-mira-bogov-i-avatarov.md` |\n| персонаж | [Дурак](../sushnosti/personazhi/PS-0028-durak.md) | 3 | 2024-01-30 | `sushnosti/personazhi/PS-0028-durak.md` |\n| персонаж | [Новый главный герой](../sushnosti/personazhi/PS-0027-novyy-glavnyy-geroy.md) | 2 | 2024-01-18 | `sushnosti/personazhi/PS-0027-novyy-glavnyy-geroy.md` |\n| персонаж | [Рэпер (накачанный чернокожий)](../sushnosti/personazhi/PS-0025-reper-nakachannyy-chernokozhiy.md) | 1 | 2024-01-04 | `sushnosti/personazhi/PS-0025-reper-nakachannyy-chernokozhiy.md` |\n| персонаж | [псих-кукловод](../sushnosti/personazhi/PS-0026-psih-kuklovod.md) | 2 | 2024-01-04 | `sushnosti/personazhi/PS-0026-psih-kuklovod.md` |\n| служебное | [Проект разборов аниме](../sushnosti/zametki/SL-0008-proekt-razborov-anime.md) | 6 | 2023-12-23 | `sushnosti/zametki/SL-0008-proekt-razborov-anime.md` |\n| способность | [Артефакты](../sushnosti/sposobnosti/SP-0047-artefakty.md) | 7 | 2024-01-30 | `sushnosti/sposobnosti/SP-0047-artefakty.md` |\n| способность | [Карма как вера](../sushnosti/sposobnosti/SP-0033-karma-kak-vera.md) | 1 | 2023-12-26 | `sushnosti/sposobnosti/SP-0033-karma-kak-vera.md` |\n| способность | [Поглощение энергии и связь](../sushnosti/sposobnosti/SP-0046-pogloschenie-energii-i-svyaz.md) | 2 | 2024-01-30 | `sushnosti/sposobnosti/SP-0046-pogloschenie-energii-i-svyaz.md` |\n| способность | [Сверхлюди-актёры](../sushnosti/sposobnosti/SP-0032-sverhlyudi-aktery.md) | 1 | 2023-12-26 | `sushnosti/sposobnosti/SP-0032-sverhlyudi-aktery.md` |\n| способность | [Способности, связанные со временем (список Славы)](../sushnosti/sposobnosti/SP-0035-sposobnosti-svyazannye-so-vremenem-spisok-slavy.md) | 3 | 2024-01-03 | `sushnosti/sposobnosti/SP-0035-sposobnosti-svyazannye-so-vremenem-spisok-slavy.md` |\n| способность | [аватар бога плодородия](../sushnosti/sposobnosti/SP-0040-avatar-boga-plodorodiya.md) | 2 | 2024-01-03 | `sushnosti/sposobnosti/SP-0040-avatar-boga-plodorodiya.md` |\n| способность | [жертвоприношение богу](../sushnosti/sposobnosti/SP-0041-zhertvoprinoshenie-bogu.md) | 1 | 2024-01-03 | `sushnosti/sposobnosti/SP-0041-zhertvoprinoshenie-bogu.md` |\n| способность | [ловушка времени](../sushnosti/sposobnosti/SP-0036-lovushka-vremeni.md) | 1 | 2024-01-03 | `sushnosti/sposobnosti/SP-0036-lovushka-vremeni.md` |\n| способность | [наследственная прокачка способности](../sushnosti/sposobnosti/SP-0042-nasledstvennaya-prokachka-sposobnosti.md) | 1 | 2024-01-03 | `sushnosti/sposobnosti/SP-0042-nasledstvennaya-prokachka-sposobnosti.md` |\n| способность | [неньютоновская техника](../sushnosti/sposobnosti/SP-0038-nenyutonovskaya-tehnika.md) | 1 | 2024-01-03 | `sushnosti/sposobnosti/SP-0038-nenyutonovskaya-tehnika.md` |\n| способность | [ноготь-снаряд от щелбана](../sushnosti/sposobnosti/SP-0039-nogot-snaryad-ot-schelbana.md) | 1 | 2024-01-03 | `sushnosti/sposobnosti/SP-0039-nogot-snaryad-ot-schelbana.md` |\n| способность | [реп как способность](../sushnosti/sposobnosti/SP-0045-rep-kak-sposobnost.md) | 2 | 2024-01-04 | `sushnosti/sposobnosti/SP-0045-rep-kak-sposobnost.md` |\n| способность | [стимуляция органов и выработка гормонов](../sushnosti/sposobnosti/SP-0044-stimulyaciya-organov-i-vyrabotka-gormonov.md) | 1 | 2024-01-04 | `sushnosti/sposobnosti/SP-0044-stimulyaciya-organov-i-vyrabotka-gormonov.md` |\n| способность | [стирание промежутка времени](../sushnosti/sposobnosti/SP-0037-stiranie-promezhutka-vremeni.md) | 1 | 2024-01-03 | `sushnosti/sposobnosti/SP-0037-stiranie-promezhutka-vremeni.md` |\n| способность | [телепортация в карманное измерение](../sushnosti/sposobnosti/SP-0034-teleportaciya-v-karmannoe-izmerenie.md) | 4 | 2024-01-04 | `sushnosti/sposobnosti/SP-0034-teleportaciya-v-karmannoe-izmerenie.md` |\n| способность | [умение ломать систему](../sushnosti/sposobnosti/SP-0043-umenie-lomat-sistemu.md) | 1 | 2024-01-04 | `sushnosti/sposobnosti/SP-0043-umenie-lomat-sistemu.md` |</div>"}];</script>
+<script src="../lib.js"></script>
+<script src="../site.js"></script>
+</body>
+</html>

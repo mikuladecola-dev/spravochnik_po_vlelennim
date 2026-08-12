@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Душа</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Душа<span>мир · MR-0098</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">мир</div>
+    <h1>Душа</h1>
+    
+    <div class="facts"><span>вселенная: Апостол</span><span>1 версия записи</span><span>2025-01-06 → 2025-01-06</span><span>2 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="VS-0002.html">Апостол</a></div><div class="crumb"><span>дословный исходник:</span><a href="kb/MR-0098-dusha.html">MR-0098-dusha.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Душа";
+const LEAD="";
+const CH=[{"t": "Устройство", "a": ["S01", "MR-0098-S01", "MR-0098--ustroystvo"], "h": "<p>Душа — понятие сеттинга, введённое одной репликой в ответ на прямой вопрос. Миколай спросил «че такое душа» (2025-01-06, id 278890), Слава ответил: «Это мы, наш фантомный облик» (id 278892).</p>\n<p>Определение построено на отождествлении: душа — не то, что человеку принадлежит, а сам человек («это мы»). Второе слово формулировки — «фантомный облик» — задаёт её как облик, а не как бесплотную сущность без формы.</p>\n<p>Именно душу Смерть таскает между мирами.</p>", "r": []}, {"t": "Население", "a": ["S02", "MR-0098-S02", "MR-0098--naselenie"], "h": "<p>Не применимо: душа не мир с населением, а понятие сеттинга, помещённое в раздел миров.</p>", "r": []}, {"t": "Место во вселенной — как связан с другими мирами", "a": ["S03", "MR-0098-S03", "MR-0098--mesto-vo-vselennoy"], "h": "<p>Душа связана с двумя вещами: с Вселенной (нашим миром) и со Смертью. Со Смертью — через перенос: душа есть то, что перемещается между мирами, и переносит её Смерть.</p>\n<p>Вопрос Миколая, заданный в том же сообщении, что и вопрос про душу, — «как они копируют наш мир» (id 278891) — остался без ответа в этом фрагменте. Так же без ответа остался и следующий его вопрос: «как создаются минимиры или они всегда есть/были?» (id 278893). Связь души с копированием мира и с минимирами таким образом обозначена соседством вопросов, но в переписке не проговорена.</p>", "r": []}, {"t": "Как менялся по версиям", "a": ["S04", "MR-0098-S04", "MR-0098--kak-menyalsya-po-versiyam"], "h": "<p>Зафиксировано одно состояние — 2025-01-06 (id 278890–278893).</p>\n<p>Отдельно отмечено расхождение с более ранней вселенной. В предыдущей вселенной на тот же вопрос был дан ответ «души нету» (w0069, id 276687–276689); здесь душа есть. Это не правка и не смена решения — это разные вселенные, и оба состояния сохраняются каждое в своей.</p>", "r": []}, {"t": "Пробелы", "a": ["S05", "MR-0098-S05", "MR-0098--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Не сказано, у кого есть душа, а у кого нет.</li>\n<li>Не сказано, что происходит с душой, когда Смерть переносит её между мирами, и зачем она это делает.</li>\n<li>«Фантомный облик» не раскрыт: видим ли он, есть ли у него плотность, отличается ли от прижизненного облика — не сказано.</li>\n<li>Вопросы про копирование нашего мира и про происхождение минимиров заданы, но в этом фрагменте ответа не получили.</li>\n</ul></div>", "r": []}, {"t": "Источники", "a": ["MR-0098--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2025-01-06</td>\n<td>278890–278893</td>\n<td>w0070</td>\n<td>Апостол (по дате объявления)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/miry/MR-0098-dusha.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["MR-0098--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/MR-0098.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

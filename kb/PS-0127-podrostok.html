@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Подросток</title>
+<link rel="stylesheet" href="../site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Подросток<span>персонаж · PS-0127 · исходник</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">исходник базы</div>
+    <h1>Подросток</h1>
+    
+    <div class="facts"><span>1 версий</span><span>2024-07-31 → 2024-07-31</span></div>
+    
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="../";const DOCNAME="Подросток";
+const LEAD="";
+const CH=[{"t": "Дословный исходник базы", "a": [], "r": [], "h": "<div class=\"rawnote\">Это не статья справочника, а дословная выписка из переписки. Текст не редактировался: сохранены опечатки, пунктуация и повторы.</div><div class=\"raw\"># Подросток\n\n*персонаж* · вселенные: неясно\n\n## Навигация\n\n- (w0049) Один из пятёрки. Возраст сначала 13, забракован С, стал 17.\n\n## Связано с\n\nДерзкий друг гг, Команда гиг (5 человек)\n\n## История по версиям\n\n_Ниже — дословные куски переписки. Старое не затирается, повторы сохранены._\n\n### Версия 1 — 2024-07-31\n\nвселенная: неясно (по дате объявления) · окно w0049 · сообщения 214316–214341\n\n*что здесь: Введён как роль; возраст 13 («говно» по С) → 17*\n\n\n\n```chat\n[214316] 2024-07-31 21:36 Слава: Кто они\n[214317] 2024-07-31 21:36 Слава: Врачи военные\n[214318] 2024-07-31 21:36 Миколай: люди\n[214319] 2024-07-31 21:36 Слава: Механик\n[214320] 2024-07-31 21:36 Слава: И та.\n[214321] 2024-07-31 21:36 Миколай: ты уже решил получается?\n[214322] 2024-07-31 21:37 Миколай: ну больной, врач, военный, механик и подросток\n[214323] 2024-07-31 21:37 Миколай: больной - кондитер\n[214324] 2024-07-31 21:38 Слава: Больной-фермер\n[214325] 2024-07-31 21:38 Миколай: да\n[214326] 2024-07-31 21:38 Слава: Вот\n[214327] 2024-07-31 21:38 Слава: Нет\n[214328] 2024-07-31 21:38 Миколай: бл\n[214329] 2024-07-31 21:38 Слава: Слишком идеально\n[214330] 2024-07-31 21:38 Слава: Механик минус\n[214331] 2024-07-31 21:38 Миколай: бомж\n[214332] 2024-07-31 21:38 Слава: Вместо него да бомж\n[214333] 2024-07-31 21:39 Миколай: журналист бывший\n[214334] 2024-07-31 21:39 Миколай: чья профессия нахуй не всралась\n[214335] 2024-07-31 21:39 Слава: Вово\n[214336] 2024-07-31 21:40 Миколай: ну подростку 13\n[214337] 2024-07-31 21:40 Слава: Говно\n[214338] 2024-07-31 21:40 Миколай: 17\n[214339] 2024-07-31 21:41 Миколай: бомжу 34, врачу 45, больному 28\n[214340] 2024-07-31 21:41 Миколай: военному 50\n[214341] 2024-07-31 21:41 Миколай: позавчера исполнилось\n```\n\n## Часть чего\n\nКоманда гиг (5 человек)</div>"}];</script>
+<script src="../lib.js"></script>
+<script src="../site.js"></script>
+</body>
+</html>

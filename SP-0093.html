@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Базовые приёмы</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Базовые приёмы<span>способность · SP-0093</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">способность</div>
+    <h1>Базовые приёмы</h1>
+    
+    <div class="facts"><span>вселенная: 7 островов</span><span>1 версия записи</span><span>2024-07-21 → 2024-07-21</span><span>2 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="VS-0001.html">7 островов</a></div><div class="crumb"><span>дословный исходник:</span><a href="kb/SP-0093-bazovye-priemy.html">SP-0093-bazovye-priemy.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Базовые приёмы";
+const LEAD="";
+const CH=[{"t": "Механика — как работает", "a": ["S01", "SP-0093-S01", "SP-0093--mehanika"], "h": "<p>Предложение Славы (2024-07-21, id 207748–207760): «приемы который могут пользоваться все кто владеет энергий». Названы два: «усиления и защита с помощью энергии». Отличие базовых приёмов от прочих способностей в том, что они не индивидуальны — доступны любому владеющему энергией, а не отдельному носителю.</p>", "r": []}, {"t": "Ограничения и цена", "a": ["S02", "SP-0093-S02", "SP-0093--ogranicheniya-i-cena"], "h": "<p>Ограничение названо Миколаем сразу: «не все ей владеют» — то есть владение энергией само по себе не всеобщее, и круг пользователей базовых приёмов сужается до тех, у кого энергия есть. Слава с этим согласился («Да»). Цена применения приёмов не обсуждалась.</p>", "r": []}, {"t": "Носители — у кого есть", "a": ["S03", "SP-0093-S03", "SP-0093--nositeli"], "h": "<p>Поимённо никто не назван. Носителями по формулировке являются все, кто владеет энергией.</p>", "r": []}, {"t": "Как менялась по версиям — по датам", "a": ["S04", "SP-0093-S04", "SP-0093--kak-menyalas-po-versiyam"], "h": "<p><strong>2024-07-21 (id 207748–207760), единственная версия.</strong> Приёмы предложены Славой в форме вопроса: «Вообще как думаешь, нужны ли базовый приемы ?». Миколай сначала переспросил, что это такое, затем возразил насчёт всеобщности энергии и в итоге предложил обойтись: «ну давай без попробуем». Слава согласился: «Ну ок».</p>", "r": []}, {"t": "Отклонённые варианты — что предлагали и забраковали", "a": ["S05", "SP-0093-S05", "SP-0093--otklonennye-varianty"], "h": "<p>Базовые приёмы предложены и тут же отложены. Решение — «попробуем без них». Формулировка Миколая оставляет возврат открытым: договорились попробовать без базовых приёмов, а не отменить их окончательно. Возвращались ли к вопросу позже, из этого фрагмента не видно.</p>", "r": []}, {"t": "Связь с другими способностями", "a": ["S06", "SP-0093-S06", "SP-0093--svyaz-s-drugimi-sposobnostyami"], "h": "<p>Связаны с концепцией появления силы и с темой «Семя» (базовые приёмы значатся частью «Семени»). Строятся на владении энергией. Как именно энергия соотносится с остальными способностями, в переписке не сказано.</p>", "r": []}, {"t": "Пробелы", "a": ["S07", "SP-0093-S07", "SP-0093--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Что такое энергия и кто ею владеет — не определено.</li>\n<li>«Усиление» и «защита» не расписаны: ни механики, ни границ.</li>\n<li>Не сказано, входили ли в набор другие приёмы кроме этих двух.</li>\n<li>Осталось нерешённым, вводить ли базовые приёмы вообще: договорились «попробовать без».</li>\n</ul></div>", "r": []}, {"t": "Связи — всё вместе", "a": ["SP-0093--svyazi"], "h": "<p><em>Сводный список. Под каждым разделом выше есть свой блок связей — только то, что упомянуто в нём. Связи сквозные и двусторонние.</em></p>\n<ul>\n<li><strong>Упомянут в статье о вселенной:</strong> <a href=\"VS-0001.html\">7 островов</a></li>\n</ul>", "r": []}, {"t": "Источники", "a": ["SP-0093--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2024-07-21</td>\n<td>207748–207760</td>\n<td>w0048</td>\n<td>7 островов (по дате объявления)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/sposobnosti/SP-0093-bazovye-priemy.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["SP-0093--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/SP-0093.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

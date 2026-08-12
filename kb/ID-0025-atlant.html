@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Атлант</title>
+<link rel="stylesheet" href="../site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Атлант<span>идея · ID-0025 · исходник</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">исходник базы</div>
+    <h1>Атлант</h1>
+    
+    <div class="facts"><span>1 версий</span><span>2023-12-26 → 2023-12-26</span></div>
+    
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="../";const DOCNAME="Атлант";
+const LEAD="";
+const CH=[{"t": "Дословный исходник базы", "a": [], "r": [], "h": "<div class=\"rawnote\">Это не статья справочника, а дословная выписка из переписки. Текст не редактировался: сохранены опечатки, пунктуация и повторы.</div><div class=\"raw\"># Атлант\n\n*идея* · вселенные: Падения небес\n\n## Навигация\n\n- (w0021) Названо в первой завязке как цель сюжета — «главная миссия найти атланта», тот, кто держит падающее небо. Дальше не развёрнуто, Миколай сразу сказал, что это, похоже, другое.\n\n## Связано с\n\nПадения небес\n\n## История по версиям\n\n_Ниже — дословные куски переписки. Старое не затирается, повторы сохранены._\n\n### Версия 1 — 2023-12-26\n\nвселенная: Падения небес (объявлено) · окно w0021 · сообщения 65976–65981\n\n*что здесь: Упомянут как цель поиска и брошен.*\n\n\n\n```chat\n[65976] 2023-12-26 06:26 Миколай: Когда полностью сломается всё исчезнет\n[65977] 2023-12-26 06:26 Миколай: А сверх люди не смогут помочь\n[65978] 2023-12-26 06:27 Миколай: И главная миссия найти атланта\n[65980] 2023-12-26 06:28 Миколай: Ну походу это другое\n[65981] 2023-12-26 07:00 Слава: Падения небес \nВ один день на землю начали падать метеориты , больше миллиарда метеоритов пала на землю \nИ этот день стал самым страшным в историй человечества больше 3 миллиардов смертей\n```\n\n## Неясности\n\n- (w0021) Кто такой атлант и как связан с падающим небом — не сказано; реплика 65980 «ну походу это другое» может относиться к нему.</div>"}];</script>
+<script src="../lib.js"></script>
+<script src="../site.js"></script>
+</body>
+</html>

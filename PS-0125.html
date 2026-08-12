@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Врач</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Врач<span>персонаж · PS-0125</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">персонаж</div>
+    <h1>Врач</h1>
+    
+    <div class="facts"><span>вселенная: неясно</span><span>2 версии записи</span><span>2024-07-31 → 2024-07-31</span><span>2 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="kb/VS-0016-neyasno.html">неясно</a> <span class="m">(статьи ещё нет)</span></div><div class="crumb"><span>дословный исходник:</span><a href="kb/PS-0125-vrach.html">PS-0125-vrach.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Врач";
+const LEAD="";
+const CH=[{"t": "Происхождение", "a": ["S01", "PS-0125-S01", "PS-0125--proishozhdenie"], "h": "<p>Материал относится к периоду, объявленному 2024-07-31 (id 214143); собственного названия эта вселенная в переписке не получила — в базе она отмечена как «неясно».</p>\n<p>Врач введён 2024-07-31 в окне w0049 как одна из пяти ролей будущей команды (id 214316–214322). Слава спрашивает «Кто они», перебирая варианты: «Врачи военные», «Механик», «И та.» Миколай уточняет — «люди» — и подтверждает состав фразой: «ну больной, врач, военный, механик и подросток».</p>", "r": []}, {"t": "Внешность", "a": ["S02", "PS-0125-S02", "PS-0125--vneshnost"], "h": "<p>В переписке не сказано.</p>", "r": []}, {"t": "Характер", "a": ["S03", "PS-0125-S03", "PS-0125--harakter"], "h": "<p>Единственная названная черта — «врач криминальные истории смотрит по вечерам» (id 214345, версия 2).</p>", "r": []}, {"t": "Способности", "a": ["S04", "PS-0125-S04", "PS-0125--sposobnosti"], "h": "<p>В переписке не сказано.</p>", "r": []}, {"t": "Связи с другими", "a": ["S05", "PS-0125-S05", "PS-0125--svyazi-s-drugimi"], "h": "<p>Часть команды гиг (5 человек) — вместе с больным, военным, механиком и подростком. Состав перечислен Миколаем: «ну больной, врач, военный, механик и подросток» (id 214322).</p>", "r": []}, {"t": "Как менялся — состояния по датам", "a": ["S06", "PS-0125-S06", "PS-0125--kak-menyalsya"], "h": "<h3>2024-07-31 (id 214316–214322)</h3>\n<p>Введён в состав как одна из ролей наравне с больным, военным, механиком и подростком.</p>\n<h3>2024-07-31 (id 214338–214346)</h3>\n<p>Получил возраст — 45 лет («бомжу 34, врачу 45, больному 28», id 214339) — и черту: смотрит криминальные истории по вечерам (id 214345). В том же сообщении Миколай называет и черту журналиста («увлекается животным миром»), на что Слава реагирует: «Ты не ахуел» (id 214346).</p>", "r": []}, {"t": "Что с ним стало", "a": ["S07", "PS-0125-S07", "PS-0125--chto-s-nim-stalo"], "h": "<p>Дальнейшая судьба персонажа после закрепления возраста и черты в переписке не прослеживается — осталось нерешённым.</p>", "r": []}, {"t": "Пробелы", "a": ["S08", "PS-0125-S08", "PS-0125--probely"], "h": "<div class=\"gaps\"><p>Внешность, имя, способности, дальнейшее развитие персонажа — не названы. В сообщении с возрастами (id 214339) наряду с врачом ещё раз упомянут бомж («бомжу 34»), хотя в составе команды позже фигурирует журналист (<a href=\"PS-0126.html\">Журналист (бывший)</a>) — является ли это одновременным существованием обоих вариантов состава или инерцией реплики, в переписке не сказано.</p></div>", "r": [["Журналист (бывший)", "PS-0126.html"]]}, {"t": "Связи — всё вместе", "a": ["PS-0125--svyazi"], "h": "<p><em>Сводный список. Под каждым разделом выше есть свой блок связей — только то, что упомянуто в нём. Связи сквозные и двусторонние.</em></p>\n<ul>\n<li><strong>Упоминает персонажей:</strong> <a href=\"PS-0126.html\">Журналист (бывший)</a></li>\n<li><strong>Упомянут в персонажах:</strong> <a href=\"PS-0126.html\">Журналист (бывший)</a></li>\n</ul>", "r": []}, {"t": "Источники", "a": ["PS-0125--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2024-07-31</td>\n<td>214316–214322</td>\n<td>w0049</td>\n<td>неясно (по дате объявления)</td>\n<td></td>\n</tr>\n<tr>\n<td>2024-07-31</td>\n<td>214338–214346</td>\n<td>w0049</td>\n<td>неясно (по дате объявления)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/personazhi/PS-0125-vrach.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["PS-0125--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/PS-0125.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

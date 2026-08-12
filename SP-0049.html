@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>режим ярости</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">режим ярости<span>способность · SP-0049</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">способность</div>
+    <h1>режим ярости</h1>
+    
+    <div class="facts"><span>вселенная: неясно</span><span>1 версия записи</span><span>2024-02-12 → 2024-02-12</span><span>4 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="kb/VS-0016-neyasno.html">неясно</a> <span class="m">(статьи ещё нет)</span></div><div class="crumb"><span>дословный исходник:</span><a href="kb/SP-0049-rezhim-yarosti.html">SP-0049-rezhim-yarosti.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="режим ярости";
+const LEAD="<p>Способность из куска переписки, вселенная которого объявлена 2024-02-05 (id 104329); имени в переписке ей не дали. В разборе окна w0025 отдельно отмечено, что для самой этой сцены вселенная не объявлена. Проговорена 2024-02-12 (окно w0025, сообщения 108622–108637), формулировка принадлежит Миколаю, повод задан Славой.</p>";
+const CH=[{"t": "Механика — как работает", "a": ["S01", "SP-0049-S01", "SP-0049--mehanika"], "h": "<p>Задана через аналогию с аниме «Восхождение героя щита». Миколай отсылает к состоянию Наофуми: «помнишь когда Наофуми выходил из под контроля» (id 108627), «И его негативные эмоции затмевали разум, щит становился дьявольский» (id 108629).</p>\n<p>Дальше механика переносится с поправками: «Вот такая же хуйня» (id 108631), «Но уже на инопришеленцах» (id 108632), «И без эмоциональной составляющей» (id 108633), «То есть, режим ярости» (id 108634).</p>\n<p>То есть берётся выход силы из-под контроля и превращение её в «дьявольскую» форму, но носителями оказываются инопланетяне, а эмоциональный триггер — негативные эмоции, затмевающие разум, — из механики убран. Что запускает режим вместо эмоций, в переписке не сказано.</p>\n<p>Имя «режим ярости» дано самим Миколаем в этой же реплике.</p>", "r": []}, {"t": "Носители — у кого есть", "a": ["S02", "SP-0049-S02", "SP-0049--nositeli"], "h": "<p>Носитель существует только в виде картинки: Слава прислал ссылку на изображение существа — «Взгляните на это… 👀 https://pin.it/3Gm6EHQir» (id 108622) — и спросил: «Какие у него особенности», «Как думаешь?» (id 108623–108624). Ответ Миколая про режим ярости — ответ именно на этот вопрос.</p>\n<p>Имени у существа в чате нет. В общем виде носители названы как «инопришеленцы» (id 108632).</p>", "r": []}, {"t": "Как менялась по версиям — по датам", "a": ["S03", "SP-0049-S03", "SP-0049--kak-menyalas-po-versiyam"], "h": "<p><strong>Версия 1 — 2024-02-12 (id 108622–108637).</strong> Первое и единственное проговаривание. После реплик «Крч» и «Как то так думаю» (id 108635–108636) Миколай переходит к постороннему разговору — про высказывание одноклассницы и шутку одноклассника про «омни… трикс». К режиму ярости не возвращаются.</p>", "r": []}, {"t": "Пробелы", "a": ["S04", "SP-0049-S04", "SP-0049--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Не сказано, что запускает режим, раз эмоциональная составляющая убрана.</li>\n<li>Не сказано, как режим заканчивается, есть ли выход по желанию.</li>\n<li>Ограничения и цена не названы.</li>\n<li>Не сказано, что именно у инопланетян меняется в режиме — у Наофуми менялся щит, аналога предмета здесь не назвали.</li>\n<li>Носитель есть только как картинка по ссылке pin.it, имени у него нет.</li>\n<li>Неясно, заготовка ли это для собственного материала соавторов или разбор чужого арта.</li>\n<li>Вселенная для этой сцены не объявлена.</li>\n</ul></div>", "r": []}, {"t": "Источники", "a": ["SP-0049--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2024-02-12</td>\n<td>108622–108637</td>\n<td>w0025</td>\n<td>неясно (по дате объявления)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/sposobnosti/SP-0049-rezhim-yarosti.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["SP-0049--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/SP-0049.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

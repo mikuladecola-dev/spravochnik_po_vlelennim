@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>История про мотылька</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">История про мотылька<span>история · IS-0022</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">история</div>
+    <h1>История про мотылька</h1>
+    
+    <div class="facts"><span>вселенная: монстры</span><span>2 версии записи</span><span>2024-08-08 → 2024-08-08</span><span>3 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="VS-0015.html">монстры</a></div><div class="crumb"><span>дословный исходник:</span><a href="kb/IS-0022-istoriya-pro-motylka.html">IS-0022-istoriya-pro-motylka.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="История про мотылька";
+const LEAD="";
+const CH=[{"t": "Содержание", "a": ["S01", "IS-0022-S01", "IS-0022--soderzhanie"], "h": "<p>История про мотылька — один из текстов, написанных Миколаем к 2024-08-08. Самого текста в переписке нет; есть упоминание о его существовании и короткий обмен о жанре (окно w0050).</p>\n<p>О содержании известно только одно: на реакцию Славы, что история звучит страшно, Миколай отвечает — «романтика, ахахах» (2024-08-08, id 215938).</p>", "r": []}, {"t": "Персонажи", "a": ["S02", "IS-0022-S02", "IS-0022--personazhi"], "h": "<p>В переписке не названы. Мотылёк упоминается только в названии истории, персонажем он назван не был.</p>", "r": []}, {"t": "Место во вселенной", "a": ["S03", "IS-0022-S03", "IS-0022--mesto-vo-vselennoy"], "h": "<p>Отнесена ко вселенной «монстры» по дате объявления. Упомянута в одном ряду с историей про трубадура — обе названы Миколаем как недавно написанные (id 215933–215934).</p>", "r": []}, {"t": "Состояние", "a": ["S04", "IS-0022-S04", "IS-0022--sostoyanie"], "h": "<p>На 2024-08-08 история существует как написанный текст. Дважды за один вечер она попадает в разговор.</p>\n<p><strong>2024-08-08, вечер, id 215933–215943.</strong> Миколай перечисляет недавно написанное: «и ещё историю про трубадура написал», «и про мотылька». Слава реагирует: «Вот его надо страшно звучит». Миколай: «романтика, ахахах». Дальше в этом же куске идут реплики Славы «0», «Самое страшное что есть на свете», «Нулевой». Разговор здесь идёт двумя переплетёнными линиями — параллельно Миколай спрашивает «как у тебя с арсом общение», и какие из этих коротких реплик относятся к историям, а какие к вопросу про общение, из текста однозначно не следует.</p>\n<p><strong>2024-08-08, 21:32–21:33, id 216076–216082.</strong> Миколай предлагает почитать свои истории — «ну которые те», «о которых говорил». Слава из предложенных выбирает одну: «Мотылек».</p>\n<p>Прочитал ли Слава историю и что сказал после — в переписке не сказано.</p>", "r": []}, {"t": "Пробелы", "a": ["S05", "IS-0022-S05", "IS-0022--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Текста истории в окне нет.</li>\n<li>Сюжет не изложен вообще: известен только жанр со слов автора («романтика») и первая реакция на название («страшно звучит»).</li>\n<li>Персонажи не названы.</li>\n<li>Не сказано, чем история связана с историей про трубадура, кроме того что обе упомянуты подряд как недавно написанные.</li>\n<li>Реакция Славы после чтения осталась незафиксированной.</li>\n<li>Соотношение реплик «0» / «Самое страшное что есть на свете» / «Нулевой» с историей про мотылька и с вопросом про общение осталось нерешённым.</li>\n</ul></div>", "r": []}, {"t": "Связи — всё вместе", "a": ["IS-0022--svyazi"], "h": "<p><em>Сводный список. Под каждым разделом выше есть свой блок связей — только то, что упомянуто в нём. Связи сквозные и двусторонние.</em></p>\n<ul>\n<li><strong>Упомянут в историях:</strong> <a href=\"IS-0020.html\">История про цветы, воспитание и романтику</a></li>\n</ul>", "r": []}, {"t": "Источники", "a": ["IS-0022--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2024-08-08</td>\n<td>215933–215943</td>\n<td>w0050</td>\n<td>монстры (по дате объявления)</td>\n<td></td>\n</tr>\n<tr>\n<td>2024-08-08</td>\n<td>216076–216082</td>\n<td>w0050</td>\n<td>монстры (по дате объявления)</td>\n<td>повтор</td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/istorii/IS-0022-istoriya-pro-motylka.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["IS-0022--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/IS-0022.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Дриада</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Дриада<span>персонаж · PS-0115</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">персонаж</div>
+    <h1>Дриада</h1>
+    
+    <div class="facts"><span>вселенная: 7 островов</span><span>1 версия записи</span><span>2024-07-04 → 2024-07-04</span><span>2 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="VS-0001.html">7 островов</a></div><div class="crumb"><span>дословный исходник:</span><a href="kb/PS-0115-driada.html">PS-0115-driada.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Дриада";
+const LEAD="";
+const CH=[{"t": "Характер", "a": ["S01", "PS-0115-S01", "PS-0115--harakter"], "h": "<p>Мотивация задана одной репликой Славы: «Типо дриада растения за чистоту» (2024-07-04, id 197073). Ничего, кроме этой связки — растения и чистота, — про неё в переписке не сказано.</p>", "r": []}, {"t": "Связи с другими", "a": ["S02", "PS-0115-S02", "PS-0115--svyazi-s-drugimi"], "h": "<p>За Дриадой закреплён мета-человек, утилизирующий мусор. Инициатива Славы: «У дриады» — «Будет человек» — «Этот» — «И он будет только у нее» (2024-07-04, id 197062–197069). Речь идёт о мета-человеке, который, по формулировке Миколая, «в другом, уменьшает количество».</p>\n<p>Миколай на закрепление согласился с оговоркой, что задумывал этого мета-человека для другой стороны: «ну вообще я хотел для современных, ну пускай» (id 197070), и следом уточнил условие эксклюзивности — «только один» (id 197072).</p>\n<p>Таким образом, у Дриады есть единственный мета-человек-утилизатор мусора, и он есть только у неё.</p>", "r": []}, {"t": "Как менялся", "a": ["S03", "PS-0115-S03", "PS-0115--kak-menyalsya"], "h": "<p><strong>Версия 1 — 2024-07-04 (окно w0043, id 197062–197073).</strong> Единственная версия. Дриада появляется сразу с закреплённым за ней мета-человеком-утилизатором и с мотивацией «растения за чистоту». Дальше в переписке к ней не возвращаются.</p>", "r": []}, {"t": "Пробелы", "a": ["S04", "PS-0115-S04", "PS-0115--probely"], "h": "<div class=\"gaps\"><ul>\n<li><strong>Кто она — остров или персонаж, — не разобрать.</strong> По репликам окна w0043 не определить, Дриада тут остров или персонаж-защитница острова.</li>\n<li><strong>Внешность, происхождение, способности не названы.</strong></li>\n<li><strong>Имя мета-человека-утилизатора не названо</strong>, описан он только по функции: перерабатывает мусор, «уменьшает количество».</li>\n<li><strong>Что с ней стало — в переписке не сказано</strong>, к персонажу больше не возвращаются.</li>\n</ul></div>", "r": []}, {"t": "Связи — всё вместе", "a": ["PS-0115--svyazi"], "h": "<p><em>Сводный список. Под каждым разделом выше есть свой блок связей — только то, что упомянуто в нём. Связи сквозные и двусторонние.</em></p>\n<ul>\n<li><strong>Упомянут в группах:</strong> <a href=\"GR-0031.html\">Мета-люди</a></li>\n<li><strong>Упомянут в статье о вселенной:</strong> <a href=\"VS-0001.html\">7 островов</a></li>\n</ul>", "r": []}, {"t": "Источники", "a": ["PS-0115--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2024-07-04</td>\n<td>197062–197073</td>\n<td>w0043</td>\n<td>7 островов (по дате объявления)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/personazhi/PS-0115-driada.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["PS-0115--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/PS-0115.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Гермес</title>
+<link rel="stylesheet" href="../site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Гермес<span>идея · ID-0028 · исходник</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">исходник базы</div>
+    <h1>Гермес</h1>
+    
+    <div class="facts"><span>1 версий</span><span>2024-01-03 → 2024-01-03</span></div>
+    
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="../";const DOCNAME="Гермес";
+const LEAD="";
+const CH=[{"t": "Дословный исходник базы", "a": [], "r": [], "h": "<div class=\"rawnote\">Это не статья справочника, а дословная выписка из переписки. Текст не редактировался: сохранены опечатки, пунктуация и повторы.</div><div class=\"raw\"># Гермес\n\n*идея* · вселенные: Падения небес\n\n## Навигация\n\n- (w0022) Слава проверяет ассоциации М с Гермесом и заявляет, что такой бог идеально ляжет на одного персонажа; дальше не развивается.\n\n## Связано с\n\nмир богов и аватаров\n\n## История по версиям\n\n_Ниже — дословные куски переписки. Старое не затирается, повторы сохранены._\n\n### Версия 1 — 2024-01-03\n\nвселенная: Падения небес (по дате объявления) · окно w0022 · сообщения 75993–76019\n\n*что здесь: по С: вор и торговец, у которого дохуя артефактов — идеально для одного персонажа; М ассоциировал его с чёрным, воронами, молниями и плохим характером*\n\n\n\n```chat\n[75995] 2024-01-03 20:01 Слава: Гермес\n[75996] 2024-01-03 20:02 Слава: Кто он в твоём преставлении без инета\n[75997] 2024-01-03 20:02 Слава: ?\n[75998] 2024-01-03 20:02 Миколай: Я слышал о нем\n[75999] 2024-01-03 20:02 Миколай: И вообще на самом деле никого не знал что за хуй\n[76000] 2024-01-03 20:02 Миколай: Но подожди\n[76001] 2024-01-03 20:02 Миколай: Ща\n[76002] 2024-01-03 20:02 Миколай: Чет наверное в черным с воронами и молниями ассоциируется\n[76003] 2024-01-03 20:03 Миколай: Ну и характер плохой\n[76004] 2024-01-03 20:03 Слава: Я думал ты скажешь бегун\n[76005] 2024-01-03 20:03 Миколай: Чтооо\n[76006] 2024-01-03 20:03 Миколай: Ммм\n[76007] 2024-01-03 20:03 Миколай: Ну ладно\n[76008] 2024-01-03 20:04 Миколай: У меня он с таким ассоциируется\n[76009] 2024-01-03 20:04 Слава: Вообще это в некоторых источника, вор и торговец и типо у него дохуя артефактов\n[76010] 2024-01-03 20:04 Миколай: Человек\n[76011] 2024-01-03 20:04 Слава: Идеальная для одного персонажа\n[76012] 2024-01-03 20:04 Миколай: ?\n[76013] 2024-01-03 20:05 Слава: Бог\n[76014] 2024-01-03 20:05 Миколай: Капец\n[76015] 2024-01-03 20:05 Миколай: Ну а вообще хоть что-то совпало\n[76016] 2024-01-03 20:06 Слава: Ну не знаю я только до этого читал также я помню его в мангах и там он вроде норм\n[76017] 2024-01-03 20:06 Миколай: Ну ладно\n[76018] 2024-01-03 20:06 Миколай: Просто вор обычно с плохим характером только\n[76019] 2024-01-03 20:06 Миколай: Разное бывает получается\n```\n\n## Неясности\n\n- (w0022) для какого персонажа предназначался, не сказано</div>"}];</script>
+<script src="../lib.js"></script>
+<script src="../site.js"></script>
+</body>
+</html>

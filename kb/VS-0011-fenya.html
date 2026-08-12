@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Феня</title>
+<link rel="stylesheet" href="../site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Феня<span>вселенная · VS-0011 · исходник</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">исходник базы</div>
+    <h1>Феня</h1>
+    
+    <div class="facts"><span>0 версий</span><span> → </span></div>
+    
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="../";const DOCNAME="Феня";
+const LEAD="";
+const CH=[{"t": "Дословный исходник базы", "a": [], "r": [], "h": "<div class=\"rawnote\">Это не статья справочника, а дословная выписка из переписки. Текст не редактировался: сохранены опечатки, пунктуация и повторы.</div><div class=\"raw\"># Вселенная: Феня\n\n## Отрезки жизни\n\n_Границы поставлены по объявлению в чате плюс дате, а не по содержанию. Отрезки могут быть несмежными — это нормально._\n\n| С | По | По какому объявлению |\n|---|---|---|\n| 2025-12-09 | 2026-02-06 | объявление 394734 — вторая вселенная названа «Феня» (первая при этом остаётся Оам), идёт параллельно |\n\n### События-объявления\n\n_Границы — по объявлению в чате плюс дате, а не по содержанию. Отрезки могут быть несмежными._\n\n| Дата | Событие | Окно | Сообщения |\n|---|---|---|---|\n| 2025-12-09 | объявление — Слава спрашивает, как назвать вторую вселенную (первая — Оам); Миколай предлагает «феня», Слава соглашается и обосновывает название | w0113 | 394730–394757 |\n\n### Дословно — объявления\n\n\n**2025-12-09 · объявление**\n\n```chat\n[394730] 2025-12-09 15:30 Слава: Кстати Вай\n[394732] 2025-12-09 15:30 Миколай: имя твоё?\n[394733] 2025-12-09 15:30 Миколай: Вайчеслав\n[394734] 2025-12-09 15:31 Слава: Как назвать вторую Вселенную. \nПервая Оам. \nЕщё есть семь островов \nИ правитель \nА эту как назвать?\n[394735] 2025-12-09 15:31 Слава: Вай Вай вай\n[394736] 2025-12-09 15:31 Миколай: та к и назовём\n[394737] 2025-12-09 15:31 Миколай: раз гг долбаеб\n[394738] 2025-12-09 15:31 Слава: Вторая\n[394739] 2025-12-09 15:31 Миколай: вай какой\n[394740] 2025-12-09 15:31 Слава: Это не гг\n[394741] 2025-12-09 15:31 Слава: Гг бессмертный\n[394742] 2025-12-09 15:31 Миколай: ...\n[394743] 2025-12-09 15:32 Миколай: эх\n[394745] 2025-12-09 15:32 Миколай: пусть будет феня\n[394746] 2025-12-09 15:32 Слава: Что это за унизительно остановки речь. \nОна предназначена для подавления воли?\n[394747] 2025-12-09 15:32 Миколай: типа Инфинити это бесконечность\n[394748] 2025-12-09 15:32 Слава: Сам ты Феня\n[394749] 2025-12-09 15:33 Миколай: феня это язык торговли, где всех наёбывали и придумали слово лох\n[394750] 2025-12-09 15:33 Миколай: жопа\n[394751] 2025-12-09 15:33 Слава: Тогда феня\n[394752] 2025-12-09 15:33 Миколай: паххахмхахмхм, Павла Воли чтоли\n[394753] 2025-12-09 15:34 Слава: Феня. Идеально описывает всех сверхлюдей. Их наебали\n[394754] 2025-12-09 15:34 Миколай: а когда появилась это вселенная?\n[394755] 2025-12-09 15:34 Миколай: сегодня ты первый раз о ней написал?\n[394756] 2025-12-09 15:36 Миколай: Что это за унизительно остановки речь. \nОна предназначена для подавления воли?\n[394757] 2025-12-09 15:36 Слава: Давненько. \nВообще это Вселенная появилась лишь потому что я пытался тот образ гг сделать в настоящим. \nА после она просто стало лёгкая вселенная\nТо есть сверх силы там слабее. И в теории даже обычные человек способен победить сверхчеловека. \nИз-за легче развивать отношения людей. \nПросто в Оам все чё-то слишком сильный. Да и Оам Вселенная большая как боевик\n```\n\n## Что внутри\n\n| Вид | Название | Версий | С даты | Файл |\n|---|---|---|---|---|\n| идея | [История про Апокалипсис](../sushnosti/idei/ID-0163-istoriya-pro-apokalipsis.md) | 1 | 2025-12-11 | `sushnosti/idei/ID-0163-istoriya-pro-apokalipsis.md` |\n| история | [Защитник](../sushnosti/istorii/IS-0017-zaschitnik.md) | 21 | 2024-07-04 | `sushnosti/istorii/IS-0017-zaschitnik.md` |\n| история | [Страх](../sushnosti/istorii/IS-0082-strah.md) | 4 | 2025-12-09 | `sushnosti/istorii/IS-0082-strah.md` |\n| история | [Фанатик](../sushnosti/istorii/IS-0083-fanatik.md) | 8 | 2025-12-09 | `sushnosti/istorii/IS-0083-fanatik.md` |\n| мир | [Боги во вселенной Феня](../sushnosti/miry/MR-0185-bogi-vo-vselennoy-fenya.md) | 2 | 2025-12-09 | `sushnosti/miry/MR-0185-bogi-vo-vselennoy-fenya.md` |\n| мир | [Королевство Пиор](../sushnosti/miry/MR-0187-korolevstvo-pior.md) | 1 | 2025-12-14 | `sushnosti/miry/MR-0187-korolevstvo-pior.md` |\n| мир | [Мир апостолов (современный)](../sushnosti/miry/MR-0188-mir-apostolov-sovremennyy.md) | 1 | 2025-12-17 | `sushnosti/miry/MR-0188-mir-apostolov-sovremennyy.md` |\n| мир | [Мир истории «Страх»](../sushnosti/miry/MR-0183-mir-istorii-strah.md) | 2 | 2025-12-09 | `sushnosti/miry/MR-0183-mir-istorii-strah.md` |\n| мир | [Семь островов](../sushnosti/miry/MR-0186-sem-ostrovov.md) | 2 | 2025-12-09 | `sushnosti/miry/MR-0186-sem-ostrovov.md` |\n| мир | [Феня](../sushnosti/miry/MR-0184-fenya.md) | 3 | 2025-12-09 | `sushnosti/miry/MR-0184-fenya.md` |\n| персонаж | [Апостол, ставший чудовищем](../sushnosti/personazhi/PS-0336-apostol-stavshiy-chudovischem.md) | 1 | 2025-12-17 | `sushnosti/personazhi/PS-0336-apostol-stavshiy-chudovischem.md` |\n| персонаж | [Бенжимен Бэнуар](../sushnosti/personazhi/PS-0328-benzhimen-benuar.md) | 3 | 2025-12-09 | `sushnosti/personazhi/PS-0328-benzhimen-benuar.md` |\n| персонаж | [Бессмертный главный герой](../sushnosti/personazhi/PS-0331-bessmertnyy-glavnyy-geroy.md) | 3 | 2025-12-09 | `sushnosti/personazhi/PS-0331-bessmertnyy-glavnyy-geroy.md` |\n| персонаж | [Бог красок](../sushnosti/personazhi/PS-0322-bog-krasok.md) | 5 | 2025-12-04 | `sushnosti/personazhi/PS-0322-bog-krasok.md` |\n| персонаж | [Дионис Бэлут](../sushnosti/personazhi/PS-0332-dionis-belut.md) | 3 | 2025-12-14 | `sushnosti/personazhi/PS-0332-dionis-belut.md` |\n| персонаж | [Дочь Бога красок](../sushnosti/personazhi/PS-0337-doch-boga-krasok.md) | 1 | 2025-12-17 | `sushnosti/personazhi/PS-0337-doch-boga-krasok.md` |\n| персонаж | [Коты](../sushnosti/personazhi/PS-0307-koty.md) | 5 | 2025-11-17 | `sushnosti/personazhi/PS-0307-koty.md` |\n| персонаж | [Летающий пришелец](../sushnosti/personazhi/PS-0343-letayuschiy-prishelec.md) | 1 | 2025-12-17 | `sushnosti/personazhi/PS-0343-letayuschiy-prishelec.md` |\n| персонаж | [Отец](../sushnosti/personazhi/PS-0330-otec.md) | 2 | 2025-12-09 | `sushnosti/personazhi/PS-0330-otec.md` |\n| персонаж | [Пастыри](../sushnosti/personazhi/PS-0338-pastyri.md) | 2 | 2025-12-17 | `sushnosti/personazhi/PS-0338-pastyri.md` |\n| персонаж | [Представитель правительства без способностей](../sushnosti/personazhi/PS-0341-predstavitel-pravitelstva-bez-sposobnostey.md) | 1 | 2025-12-17 | `sushnosti/personazhi/PS-0341-predstavitel-pravitelstva-bez-sposobnostey.md` |\n| персонаж | [Прежняя жизнь гг «Фанатика»](../sushnosti/personazhi/PS-0333-prezhnyaya-zhizn-gg-fanatika.md) | 1 | 2025-12-14 | `sushnosti/personazhi/PS-0333-prezhnyaya-zhizn-gg-fanatika.md` |\n| персонаж | [Пришельцы](../sushnosti/personazhi/PS-0342-prishelcy.md) | 2 | 2025-12-17 | `sushnosti/personazhi/PS-0342-prishelcy.md` |\n| персонаж | [Пузырик](../sushnosti/personazhi/PS-0344-puzyrik.md) | 1 | 2025-12-17 | `sushnosti/personazhi/PS-0344-puzyrik.md` |\n| персонаж | [Радуга](../sushnosti/personazhi/PS-0340-raduga.md) | 1 | 2025-12-17 | `sushnosti/personazhi/PS-0340-raduga.md` |\n| персонаж | [Семья Бенжимена](../sushnosti/personazhi/PS-0329-semya-benzhimena.md) | 2 | 2025-12-09 | `sushnosti/personazhi/PS-0329-semya-benzhimena.md` |\n| персонаж | [Семья Бэлут](../sushnosti/personazhi/PS-0334-semya-belut.md) | 2 | 2025-12-14 | `sushnosti/personazhi/PS-0334-semya-belut.md` |\n| персонаж | [Триколор](../sushnosti/personazhi/PS-0339-trikolor.md) | 1 | 2025-12-17 | `sushnosti/personazhi/PS-0339-trikolor.md` |\n| персонаж | [Черноволосая служанка](../sushnosti/personazhi/PS-0335-chernovolosaya-sluzhanka.md) | 2 | 2025-12-14 | `sushnosti/personazhi/PS-0335-chernovolosaya-sluzhanka.md` |\n| служебное | [Договорённость о режиме: 200 слов и история в неделю](../sushnosti/zametki/SL-0130-dogovorennost-o-rezhime-200-slov-i-istoriya-v-nedelyu.md) | 2 | 2026-02-02 | `sushnosti/zametki/SL-0130-dogovorennost-o-rezhime-200-slov-i-istoriya-v-nedelyu.md` |\n| служебное | [Документ и сайт по вселенным](../sushnosti/zametki/SL-0128-dokument-i-sayt-po-vselennym.md) | 3 | 2025-12-09 | `sushnosti/zametki/SL-0128-dokument-i-sayt-po-vselennym.md` |\n| служебное | [Заметка о лице повествования](../sushnosti/zametki/SL-0127-zametka-o-lice-povestvovaniya.md) | 1 | 2025-12-11 | `sushnosti/zametki/SL-0127-zametka-o-lice-povestvovaniya.md` |\n| служебное | [Список 12 апостолов](../sushnosti/zametki/SL-0054-spisok-12-apostolov.md) | 44 | 2025-01-28 | `sushnosti/zametki/SL-0054-spisok-12-apostolov.md` |\n| служебное | [Список того, что надо придумать по миру](../sushnosti/zametki/SL-0129-spisok-togo-chto-nado-pridumat-po-miru.md) | 1 | 2025-12-17 | `sushnosti/zametki/SL-0129-spisok-togo-chto-nado-pridumat-po-miru.md` |\n| способность | [Контракт на «души»](../sushnosti/sposobnosti/SP-0256-kontrakt-na-dushi.md) | 2 | 2025-12-09 | `sushnosti/sposobnosti/SP-0256-kontrakt-na-dushi.md` |\n| способность | [Маска](../sushnosti/sposobnosti/SP-0259-maska.md) | 3 | 2026-01-25 | `sushnosti/sposobnosti/SP-0259-maska.md` |\n| способность | [Сверхлюди Фени](../sushnosti/sposobnosti/SP-0257-sverhlyudi-feni.md) | 2 | 2025-12-09 | `sushnosti/sposobnosti/SP-0257-sverhlyudi-feni.md` |\n| способность | [Семя](../sushnosti/sposobnosti/SP-0092-semya.md) | 2 | 2024-07-21 | `sushnosti/sposobnosti/SP-0092-semya.md` |\n| способность | [Хромакей](../sushnosti/sposobnosti/SP-0258-hromakey.md) | 1 | 2025-12-17 | `sushnosti/sposobnosti/SP-0258-hromakey.md` |\n\n## Проза этой вселенной\n\n- 2025-12-09 — [Страх](../proza/PR-0104-strah.md) (обрывок)\n- 2025-12-09 — [Страх](../proza/PR-0104-strah.md) (обрывок)\n- 2025-12-14 — [Фанатик (обычный мир)](../proza/PR-0105-fanatik-obychnyy-mir.md) (обрывок)\n- 2026-02-02 — [Урок (про небеса и критическое мышление)](../proza/PR-0106-urok-pro-nebesa-i-kriticheskoe-myshlenie.md) (целиком)</div>"}];</script>
+<script src="../lib.js"></script>
+<script src="../site.js"></script>
+</body>
+</html>

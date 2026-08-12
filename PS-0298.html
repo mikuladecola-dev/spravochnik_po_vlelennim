@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Звездочёт</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Звездочёт<span>персонаж · PS-0298</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">персонаж</div>
+    <h1>Звездочёт</h1>
+    
+    <div class="facts"><span>вселенная: неясно</span><span>1 версия записи</span><span>2025-10-03 → 2025-10-03</span><span>2 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="kb/VS-0016-neyasno.html">неясно</a> <span class="m">(статьи ещё нет)</span></div><div class="crumb"><span>дословный исходник:</span><a href="kb/PS-0298-zvezdochet.html">PS-0298-zvezdochet.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Звездочёт";
+const LEAD="";
+const CH=[{"t": "Происхождение", "a": ["S01", "PS-0298-S01", "PS-0298--proishozhdenie"], "h": "<p>Звездочёт упомянут один раз, в переписке от 2025-10-03 (id 370838–370845, окно w0106). Материал относится к периоду, объявленному 2025-09-25 (id 368605) — в плане задания эта вселенная обозначена как «новая вселенная (безымянная, «Разрушаем вселенную»)»: вселенная объявлена тогда-то, имени в переписке ей не дали. В файле-источнике вселенная персонажа также помечена как «неясно».</p>", "r": []}, {"t": "Способности", "a": ["S02", "PS-0298-S02", "PS-0298--sposobnosti"], "h": "<p>Способен, наряду с Имитатором, «чувствовать» на расстоянии при концентрации. Разговор начался с вопроса Миколая: «насколько далеко? могут почувствовать что в России находясь в Австралии?» Слава ответил «Да», затем уточнил дальность: «100 м», добавив: «Имитатор и звездочёт могут . Но если сконцентрируется». На следующий вопрос Миколая «а по запаху?» Слава снова ответил «100 м». На это Миколай откликнулся «че значит» — реакция осталась без ответа, дальнейшего пояснения в переписке нет.</p>", "r": []}, {"t": "Связи с другими", "a": ["S03", "PS-0298-S03", "PS-0298--svyazi-s-drugimi"], "h": "<p>Назван рядом с Имитатором — способность связывает их напрямую («Имитатор и звездочёт могут»). Отнесён к группе Апостолы. В разделе «Связано с» файла-источника рядом также стоят Белые глаза, но характер этой связи в переписке не раскрыт.</p>", "r": []}, {"t": "Как менялся — состояния по датам, старое не затирается", "a": ["S04", "PS-0298-S04", "PS-0298--kak-menyalsya"], "h": "<h3>Версия 1 — 2025-10-03 (id 370838–370845, окно w0106)</h3>\n<p>Первое и единственное упоминание имени. Установлено одно свойство — сверхдальнее восприятие при концентрации, с дальностью «100 м» (в том числе «по запаху»). Других версий или изменений персонажа в переписке нет.</p>", "r": []}, {"t": "Пробелы — чего в переписке нет", "a": ["S05", "PS-0298-S05", "PS-0298--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Кроме имени и одной способности о персонаже ничего не сказано: внешность, характер и происхождение не описаны.</li>\n<li>Не объяснено, что означает ответ «100 м» на вопрос про восприятие на расстоянии Австралия — Россия; реплика Миколая «че значит» осталась без ответа.</li>\n<li>Связь с Белыми глазами не раскрыта — только упомянута в списке связанных сущностей.</li>\n<li>Что стало с персонажем дальше — не сказано, тема не продолжалась.</li>\n</ul></div>", "r": []}, {"t": "Источники", "a": ["PS-0298--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2025-10-03</td>\n<td>370838–370845</td>\n<td>w0106</td>\n<td>неясно (по дате объявления)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/personazhi/PS-0298-zvezdochet.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["PS-0298--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/PS-0298.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

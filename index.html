@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>База</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">База<span>справочник по переписке</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">справочник</div>
+    <h1>База</h1>
+    
+    <div class="facts"><span>1375 статей</span><span>1426 исходников базы</span><span>58 850 сообщений</span><span>2022-02-20 → 2026-07-26</span></div>
+    
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="База";
+const LEAD="";
+const CH=[{"t": "Вселенные", "a": ["S01"], "r": [], "h": "<p>Каждая вселенная объявлена в переписке датой и репликой. Одна вселенная может состоять из нескольких несмежных отрезков.</p><div class=\"homegrid\"><a class=\"homerow\" href=\"VS-0002.html\"><b>Апостол</b><span class=\"m\">VS-0002 · 342</span></a><a class=\"homerow\" href=\"VS-0015.html\"><b>монстры</b><span class=\"m\">VS-0015 · 180</span></a><a class=\"homerow\" href=\"VS-0001.html\"><b>7 островов</b><span class=\"m\">VS-0001 · 173</span></a><a class=\"homerow\" href=\"VS-0014.html\"><b>игра бога</b><span class=\"m\">VS-0014 · 82</span></a><a class=\"homerow\" href=\"VS-0006.html\"><b>Нимб</b><span class=\"m\">VS-0006 · 60</span></a><a class=\"homerow\" href=\"VS-0008.html\"><b>Оам</b><span class=\"m\">VS-0008 · 60</span></a><a class=\"homerow\" href=\"VS-0005.html\"><b>Иссекай</b><span class=\"m\">VS-0005 · 47</span></a><a class=\"homerow\" href=\"VS-0011.html\"><b>Феня</b><span class=\"m\">VS-0011 · 42</span></a><a class=\"homerow\" href=\"VS-0009.html\"><b>Падения небес</b><span class=\"m\">VS-0009 · 36</span></a><a class=\"homerow\" href=\"VS-0012.html\"><b>Цветной мир</b><span class=\"m\">VS-0012 · 23</span></a><a class=\"homerow\" href=\"VS-0007.html\"><b>Новый мир</b><span class=\"m\">VS-0007 · 22</span></a><a class=\"homerow\" href=\"VS-0004.html\"><b>Гигахрущевка</b><span class=\"m\">VS-0004 · 2</span></a></div>"}, {"t": "Разделы", "a": ["S02"], "r": [], "h": "<p>Всё остальное — через бургер слева: там поиск по всем статьям и списки по разделам.</p><div class=\"homegrid\"><a class=\"homerow\" href=\"#\"><b>Вселенные</b><span class=\"m\">12</span></a><a class=\"homerow\" href=\"#\"><b>Персонажи</b><span class=\"m\">344</span></a><a class=\"homerow\" href=\"#\"><b>Группы</b><span class=\"m\">99</span></a><a class=\"homerow\" href=\"#\"><b>Способности</b><span class=\"m\">260</span></a><a class=\"homerow\" href=\"#\"><b>Миры</b><span class=\"m\">179</span></a><a class=\"homerow\" href=\"#\"><b>Монументы</b><span class=\"m\">27</span></a><a class=\"homerow\" href=\"#\"><b>Истории</b><span class=\"m\">64</span></a><a class=\"homerow\" href=\"#\"><b>Проза</b><span class=\"m\">69</span></a><a class=\"homerow\" href=\"#\"><b>Идеи</b><span class=\"m\">169</span></a><a class=\"homerow\" href=\"#\"><b>Служебное</b><span class=\"m\">151</span></a><a class=\"homerow\" href=\"#\"><b>Прикладное</b><span class=\"m\">1</span></a></div>"}, {"t": "Как читается", "a": ["S03"], "r": [], "h": "<p>Статья не дробится на страницы: все разделы идут подряд одним полотном. Полоса справа — навигация по разделам: тяните ползунок, он примагничивается к засечкам.</p><p>Связи стоят под каждым разделом — только то, что упомянуто именно в нём. Повторы между разделами нормальны.</p><div class=\"mnote\"><b>⚙ машинный слой — не материал авторов</b><p>Блоки с такой рамкой и этой пометкой написала модель. Это не то, что придумали Миколай и Слава, и в базу это не входит.</p></div><div class=\"q\"><b>так выглядит дословная цитата</b><p>Текст из переписки приводится слово в слово, вместе с опечатками и пунктуацией.</p></div><div class=\"gapbox\">А так — пробел: место, где в переписке чего-то не сказано.</div>"}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

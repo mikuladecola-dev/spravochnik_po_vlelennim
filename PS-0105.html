@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Человек со способностью солнца</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Человек со способностью солнца<span>персонаж · PS-0105</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">персонаж</div>
+    <h1>Человек со способностью солнца</h1>
+    
+    <div class="facts"><span>вселенная: 7 островов</span><span>1 версия записи</span><span>2024-07-03 → 2024-07-03</span><span>2 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="VS-0001.html">7 островов</a></div><div class="crumb"><span>дословный исходник:</span><a href="kb/PS-0105-chelovek-so-sposobnostyu-solnca.html">PS-0105-chelovek-so-sposobnostyu-solnca.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Человек со способностью солнца";
+const LEAD="";
+const CH=[{"t": "Происхождение", "a": ["S01", "PS-0105-S01", "PS-0105--proishozhdenie"], "h": "<p>Предложен Славой 2024-07-03 (окно w0041, сообщения 194828–194835, вселенная «7 островов», объявлено) как решение бытовой проблемы подводного острова.</p>\n<p>Проблему поставил Миколай: острову всё равно нужны «порты коммуникации с внешним миром» (194828), «транспорт, все дела, хавать ведь надо чето, а без солнца еды норм не будет» (194829). Ответ Славы: «Ну может там будет жить человек со способностью солнца или типо того» (194830). Миколай поддержал: «о, неплохая идея» (194832).</p>\n<p>Имени у персонажа нет. В переписке он проходит по способности, а в разговорном виде — как «солнышко» (194834).</p>", "r": []}, {"t": "Способности", "a": ["S02", "PS-0105-S02", "PS-0105--sposobnosti"], "h": "<p>Способность — солнце. Функция названа прямо: заменять солнце под водой, чтобы на острове росла еда. Отдельно оговорено, что действие сохраняется в отсутствие защитника: «типо когда чел пойдёт по своим делам наёмника, солнышко останется» (194834, Миколай).</p>\n<p>Механика самой способности — как именно она работает, на какую площадь, постоянно ли — не описана.</p>", "r": []}, {"t": "Связи с другими", "a": ["S03", "PS-0105-S03", "PS-0105--svyazi-s-drugimi"], "h": "<ul>\n<li><strong>Нуар</strong> — персонаж, при котором этот человек состоит. Статус задан двумя вариантами сразу: житель острова либо помощник. Слава: «Ну может там будет жить человек со способностью солнца или типо того» (194830), тут же «Или он будет помощником» (194831). Который из двух принят, в переписке не решено. В исходнике персонаж отнесён к Нуару разделом «Часть чего».</li>\n<li><strong>Остров Нуара (подводный)</strong> — место, ради которого персонаж и заведён: без солнца там не растёт еда.</li>\n<li><strong>Имитатор</strong> — назван как прецедент: «У имитатор помощник есть» (194833, Слава). То есть конструкция «защитник + помощник» на момент разговора уже существовала. Миколай на это переспросил «кто» (194835) — ответа в приведённом куске нет.</li>\n</ul>\n<p>Формулировка «когда чел пойдёт по своим делам наёмника» (194834) относит Нуара к наёмникам; в этом окне это единственное упоминание такого рода.</p>", "r": []}, {"t": "Как менялся — состояния по датам", "a": ["S04", "PS-0105-S04", "PS-0105--kak-menyalsya"], "h": "<p><strong>2024-07-03, окно w0041, id 194828–194835.</strong> Единственное состояние. Персонаж предложен, поддержан, назначен на функцию замены солнца под водой, статус оставлен двойным (житель или помощник). Дальше не развит.</p>", "r": []}, {"t": "Пробелы", "a": ["S05", "PS-0105-S05", "PS-0105--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Имени нет.</li>\n<li>Житель он или помощник — осталось нерешённым.</li>\n<li>Внешность, характер, происхождение не описаны.</li>\n<li>Механика способности не описана.</li>\n<li>Переспрос Миколая «кто» (194835) по поводу помощника имитатора остался без ответа внутри окна.</li>\n<li>Дальнейшего развития у персонажа в переписке нет.</li>\n</ul></div>", "r": []}, {"t": "Связи — всё вместе", "a": ["PS-0105--svyazi"], "h": "<p><em>Сводный список. Под каждым разделом выше есть свой блок связей — только то, что упомянуто в нём. Связи сквозные и двусторонние.</em></p>\n<ul>\n<li><strong>Упомянут в персонажах:</strong> <a href=\"PS-0104.html\">Нуар</a></li>\n<li><strong>Упомянут в статье о вселенной:</strong> <a href=\"VS-0001.html\">7 островов</a></li>\n</ul>", "r": []}, {"t": "Источники", "a": ["PS-0105--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2024-07-03</td>\n<td>194828–194835</td>\n<td>w0041</td>\n<td>7 островов (объявлено)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/personazhi/PS-0105-chelovek-so-sposobnostyu-solnca.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["PS-0105--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/PS-0105.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

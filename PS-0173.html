@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ветреные человечки</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Ветреные человечки<span>персонаж · PS-0173</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">персонаж</div>
+    <h1>Ветреные человечки</h1>
+    
+    <div class="facts"><span>вселенная: неясно</span><span>1 версия записи</span><span>2024-12-21 → 2024-12-21</span><span>2 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="kb/VS-0016-neyasno.html">неясно</a> <span class="m">(статьи ещё нет)</span></div><div class="crumb"><span>дословный исходник:</span><a href="kb/PS-0173-vetrenye-chelovechki.html">PS-0173-vetrenye-chelovechki.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Ветреные человечки";
+const LEAD="";
+const CH=[{"t": "Происхождение", "a": ["S01", "PS-0173-S01", "PS-0173--proishozhdenie"], "h": "<p>Раса, названная Славой при составлении списка рас средневекового мира (2024-12-21, id 272804–272807). В переписке она подана не как новая выдумка, а как уже существующая: Слава вписывает её строкой «Ветренный челики ( который твой горы )», то есть со ссылкой на более раннюю разработку — судя по формулировке, принадлежавшую Миколаю и связанную с горами. Само это прежнее обсуждение в окне не приводится, и в чём оно состояло, здесь не сказано.</p>\n<p>Строка возникает внутри перечисления рас: перед ней Миколай называет «драконид» (id 272804), после неё Слава спрашивает «Оборотни ?» (id 272806), а Миколай уточняет «волк &lt;=&gt; человек?» (id 272807).</p>\n<p>Имя в переписке дано в форме «Ветренный челики»; в карточке сущности оно приведено как «Ветреные человечки».</p>", "r": []}, {"t": "Связи с другими", "a": ["S02", "PS-0173-S02", "PS-0173--svyazi-s-drugimi"], "h": "<p>Входят в список рас средневекового мира (вселенная объявлена 2024-12-21, id 272184). Больше никаких связей — ни с персонажами, ни со способностями, ни с местами — в переписке не названо.</p>", "r": []}, {"t": "Как менялся — состояния по датам", "a": ["S03", "PS-0173-S03", "PS-0173--kak-menyalsya"], "h": "<p><strong>2024-12-21 (id 272804–272807), версия 1.</strong> Единственное состояние. Название внесено в список рас с отсылкой к прежней разработке («который твой горы»). Никаких свойств расы в этот момент не проговаривается.</p>\n<p>Других версий нет: даты разработки в карточке — 2024-12-21 — 2024-12-21, окно одно (w0067).</p>", "r": []}, {"t": "Пробелы", "a": ["S04", "PS-0173-S04", "PS-0173--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Описание расы в окне отсутствует полностью: внешность, характер, способности, численность, устройство — ничего из этого в переписке не сказано.</li>\n<li>Отсылка «который твой горы» не раскрыта. К какому именно более раннему обсуждению она отправляет и что в нём было придумано — в переписке не сказано.</li>\n<li>К какой вселенной раса относилась изначально, до внесения в список рас средневекового мира, не названо; в карточке вселенная помечена как «неясно».</li>\n<li>Осталось нерешённым, что в этом мире стало с расой дальше: продолжения обсуждения в переписке нет.</li>\n</ul></div>", "r": []}, {"t": "Источники", "a": ["PS-0173--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2024-12-21</td>\n<td>272804–272807</td>\n<td>w0067</td>\n<td>неясно (по дате объявления)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/personazhi/PS-0173-vetrenye-chelovechki.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["PS-0173--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/PS-0173.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

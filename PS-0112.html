@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Отряд белых</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Отряд белых<span>персонаж · PS-0112</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">персонаж</div>
+    <h1>Отряд белых</h1>
+    
+    <div class="facts"><span>вселенная: 7 островов</span><span>1 версия записи</span><span>2024-07-04 → 2024-07-04</span><span>3 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="VS-0001.html">7 островов</a></div><div class="crumb"><span>дословный исходник:</span><a href="kb/PS-0112-otryad-belyh.html">PS-0112-otryad-belyh.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Отряд белых";
+const LEAD="";
+const CH=[{"t": "Происхождение", "a": ["S01", "PS-0112-S01", "PS-0112--proishozhdenie"], "h": "<p>Отряд Славы. В переписке заходит разговором 2024-07-04 (окно w0042, сообщения 196135–196149, вселенная «7 островов» по дате объявления) — не как новая выдумка, а как напоминание о старом: «А помнишь отряд белых про которых я давно говорил» (196136). Миколай отряда не помнил: «я не умею запоминать» (196138).</p>\n<p>Разговор шёл о тех, «кто выполняют некие задачи» (196135, Миколай).</p>\n<p>Название «отряд белых» — не первоначальное. Слава сразу оговорил: «Ну я их не так называл» (196141), «Я их как то назвал» (196143) — и прежнего названия не вспомнил. Вариант Миколая — «бесцветные?» (196142) — Слава не подтвердил, а ответил, что бесцветная только одна из отряда: «Одна из этого отряда бесцветная» (196144).</p>\n<p>Разбор отложен самим Славой: «Потом как-нибудь расскажу полностью» (196146).</p>", "r": []}, {"t": "Состав", "a": ["S02", "PS-0112-S02", "PS-0112--sostav"], "h": "<p>Отряд из трёх человек. Список дан Славой одним сообщением (196145):</p>\n<div class=\"q\"><p>«1. Бесцветная<br>2. Лев<br>3. Наблюдатель»</p></div>\n<p>Ничего, кроме имён, не названо: ни внешности, ни характеров, ни способностей, ни того, кто из них кто по роли.</p>", "r": []}, {"t": "Связи с другими", "a": ["S03", "PS-0112-S03", "PS-0112--svyazi-s-drugimi"], "h": "<ul>\n<li><strong>Асгард</strong> — отряд привязан к защитнику Асгарда. Формулировка Миколая: «они получается его сподручные» (196148), ответ Славы: «Ну получается» (196149). В навигации исходника то же зафиксировано как «приближённые/подручные защитника Асгарда». Сам защитник по имени в этом куске не назван.</li>\n</ul>", "r": []}, {"t": "Как менялся — состояния по датам", "a": ["S04", "PS-0112-S04", "PS-0112--kak-menyalsya"], "h": "<p><strong>2024-07-04, окно w0042, id 196135–196149.</strong> Единственное состояние. Отряд назван, состав перечислен (Бесцветная, Лев, Наблюдатель), привязка к защитнику Асгарда подтверждена, прежнее название отряда объявлено существующим, но не восстановлено. Подробный рассказ отложен.</p>\n<p>Других версий в переписке нет: в исходнике одна версия, даты 2024-07-04 — 2024-07-04.</p>\n<h3>Отклонённые варианты</h3>\n<ul>\n<li>«Бесцветные» как название всего отряда (196142, Миколай) — не принято. По ответу Славы бесцветная — одна из троих, а не все.</li>\n</ul>", "r": []}, {"t": "Пробелы", "a": ["S05", "PS-0112-S05", "PS-0112--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Прежнее название отряда авторы не вспомнили: известно только, что оно было и что оно другое.</li>\n<li>Названы только имена, без описаний.</li>\n<li>Способности участников не названы.</li>\n<li>Внешность не описана.</li>\n<li>Кто из троих главный, как отряд устроен внутри — не сказано.</li>\n<li>Какие именно «некие задачи» отряд выполняет, не расшифровано.</li>\n<li>Обещанный полный рассказ («Потом как-нибудь расскажу полностью») в этом окне не состоялся.</li>\n<li>Защитник Асгарда, чьими сподручными назван отряд, по имени здесь не назван.</li>\n</ul></div>", "r": []}, {"t": "Связи — всё вместе", "a": ["PS-0112--svyazi"], "h": "<p><em>Сводный список. Под каждым разделом выше есть свой блок связей — только то, что упомянуто в нём. Связи сквозные и двусторонние.</em></p>\n<ul>\n<li><strong>Упомянут в группах:</strong> <a href=\"GR-0028.html\">Отряд белых</a></li>\n<li><strong>Упомянут в статье о вселенной:</strong> <a href=\"VS-0001.html\">7 островов</a></li>\n</ul>", "r": []}, {"t": "Источники", "a": ["PS-0112--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2024-07-04</td>\n<td>196135–196149</td>\n<td>w0042</td>\n<td>7 островов (по дате объявления)</td>\n<td>повтор</td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/personazhi/PS-0112-otryad-belyh.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["PS-0112--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/PS-0112.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

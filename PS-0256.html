@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Черныши</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Черныши<span>персонаж · PS-0256</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">персонаж</div>
+    <h1>Черныши</h1>
+    
+    <div class="facts"><span>вселенная: Нимб</span><span>2 версии записи</span><span>2025-04-08 → 2025-04-08</span><span>2 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="VS-0006.html">Нимб</a></div><div class="crumb"><span>дословный исходник:</span><a href="kb/PS-0256-chernyshi.html">PS-0256-chernyshi.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Черныши";
+const LEAD="";
+const CH=[{"t": "Происхождение", "a": ["S01", "PS-0256-S01", "PS-0256--proishozhdenie"], "h": "<p>Черныши — аномальные объекты, которых ловит организация Нимб. Появляются 2025-04-08 (окно w0087, id 317251–317440) внутри описания самой организации, а не отдельно: Слава сначала задаёт рамку — «Они типа сцп» (2025-04-08 13:29, id 317251) — и сразу перечисляет улов: «Ловят разный объекты виде чернышей и медузы» (id 317252).</p>\n<p>Откуда берётся название, кто их так назвал и что оно означает — в переписке не сказано.</p>", "r": []}, {"t": "Внешность", "a": ["S02", "PS-0256-S02", "PS-0256--vneshnost"], "h": "<p>Не описана. Что черныши собой представляют — не сказано ни разу; они существуют в материале только как позиция в списке объектов.</p>", "r": []}, {"t": "Способности", "a": ["S03", "PS-0256-S03", "PS-0256--sposobnosti"], "h": "<p>Собственных свойств за чернышами не закреплено. Единственное, что о них известно функционально: они служат сырьём для препаратов — «И на основе их ней крови или чего-нибудь другого создають разный препараты» (2025-04-08 13:30, id 317253). Реплика относится сразу к чернышам и медузе (<a href=\"PS-0255.html\">Медуза</a>), отдельно про чернышей ничего не уточняется.</p>\n<p>Позже, при обсуждении медузы, Слава оговаривает, что крови у медузы нет и сырьём служат «биологический жидкости» (2025-04-08 21:24, id 317488–317490). Для чернышей эта поправка не делалась — есть ли у них кровь, в переписке не сказано.</p>", "r": [["Медуза", "PS-0255.html"]]}, {"t": "Связи с другими", "a": ["S04", "PS-0256-S04", "PS-0256--svyazi-s-drugimi"], "h": "<ul>\n<li><strong>Медуза (<a href=\"PS-0255.html\">Медуза</a>)</strong> — второй объект, с которым чернышей называют в паре. Оба упоминания чернышей идут вместе с медузой (id 317252, id 317440). Что именно связывает их, кроме соседства в перечне, не названо.</li>\n<li><strong>Серафим</strong> — третий пункт в оборванном списке объектов (id 317440).</li>\n<li><strong>Нимб</strong> — организация, которая их ловит.</li>\n<li><strong>Препараты Нимба</strong> — то, для чего чернышей добывают.</li>\n</ul>", "r": [["Медуза", "PS-0255.html"]]}, {"t": "Как менялся", "a": ["S05", "PS-0256-S05", "PS-0256--kak-menyalsya"], "h": "<p><strong>Версия 1 (2025-04-08 13:29–13:30, id 317251–317253).</strong> Черныши названы в паре с медузами как основной улов организации; из их крови «или чего-нибудь другого» делают препараты.</p>\n<p><strong>Версия 2 (2025-04-08 21:17, id 317440).</strong> Повтор прежней мысли: черныши перечислены в списке объектов — «Медуза, черныши, серафим,..». Список оборван многоточием, дальше не продолжен. Ничего нового по сравнению с версией 1 не добавлено.</p>", "r": []}, {"t": "Что с ним стало", "a": ["S06", "PS-0256-S06", "PS-0256--chto-s-nim-stalo"], "h": "<p>После второго упоминания того же дня к чернышам не возвращались. Разработка остановилась на уровне названия и места в списке.</p>", "r": []}, {"t": "Пробелы", "a": ["S07", "PS-0256-S07", "PS-0256--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Что черныши собой представляют — не описано.</li>\n<li>Не сказано, живые ли это существа, разумны ли, единичный это объект или класс объектов.</li>\n<li>Не сказано, есть ли у них кровь: поправка про «биологический жидкости» была сделана только для медузы.</li>\n<li>Не описано, как их ловят и что за препараты из них получают.</li>\n<li>Полный список объектов, которые ловит Нимб, не назван — перечисление в id 317440 оборвано.</li>\n</ul></div>", "r": []}, {"t": "Связи — всё вместе", "a": ["PS-0256--svyazi"], "h": "<p><em>Сводный список. Под каждым разделом выше есть свой блок связей — только то, что упомянуто в нём. Связи сквозные и двусторонние.</em></p>\n<ul>\n<li><strong>Упоминает персонажей:</strong> <a href=\"PS-0255.html\">Медуза</a></li>\n<li><strong>Упомянут в персонажах:</strong> <a href=\"PS-0255.html\">Медуза</a></li>\n<li><strong>Упомянут в группах:</strong> <a href=\"GR-0009.html\">Организация Нимб (НБО)</a>, <a href=\"GR-0076.html\">Черныши</a></li>\n</ul>", "r": []}, {"t": "Источники", "a": ["PS-0256--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2025-04-08</td>\n<td>317251–317253</td>\n<td>w0087</td>\n<td>Нимб (объявлено)</td>\n<td></td>\n</tr>\n<tr>\n<td>2025-04-08</td>\n<td>317440–317440</td>\n<td>w0087</td>\n<td>Нимб (объявлено)</td>\n<td>повтор</td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/personazhi/PS-0256-chernyshi.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["PS-0256--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/PS-0256.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Радуга</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Радуга<span>персонаж · PS-0340</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">персонаж</div>
+    <h1>Радуга</h1>
+    
+    <div class="facts"><span>вселенная: Феня</span><span>1 версия записи</span><span>2025-12-17 → 2025-12-17</span><span>1 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="VS-0011.html">Феня</a></div><div class="crumb"><span>дословный исходник:</span><a href="kb/PS-0340-raduga.html">PS-0340-raduga.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Радуга";
+const LEAD="";
+const CH=[{"t": "Происхождение", "a": ["S01", "PS-0340-S01", "PS-0340--proishozhdenie"], "h": "<p>Радуга появляется 2025-12-17 (окно w0114, id 399541–399545) в списке из четырёх имён, который Миколай выдаёт одним сообщением подряд, без пояснений:</p>\n<div class=\"q\"><p>«триколор<br>радуга<br>градиент<br>монохром»</p></div>\n<p>Список назван без вводной части — в переписке не сказано, откуда взялась сама идея четвёрки и обсуждалась ли она до этого сообщения. Все четыре имени построены по одному признаку — способ обращения с цветом. Радуга занимает в списке второе место.</p>", "r": []}, {"t": "Способности", "a": ["S02", "PS-0340-S02", "PS-0340--sposobnosti"], "h": "<p>За Радугой закреплена способность хромакей. Способность названа сразу, в том же окне, и привязана к персонажу отдельным сообщением:</p>\n<div class=\"q\"><p>«и у кого-то способность хромокей» (id 399542)<br>«у радуги» (id 399543)</p></div>\n<p>Написание в переписке — «хромокей», через «о». Механика способности не разбирается: не сказано, что именно хромакей делает, на что действует, есть ли у него цена или ограничение. Названо только имя способности и её носитель.</p>", "r": []}, {"t": "Связи с другими", "a": ["S03", "PS-0340-S03", "PS-0340--svyazi-s-drugimi"], "h": "<p>Радуга входит в четвёрку Пастырей — вместе с Триколором, Градиентом и Монохромом. Принадлежность к Пастырям зафиксирована в записи, но в самом куске переписки (id 399541–399545) слово «Пастыри» не произносится: там идёт только перечисление четырёх имён. Что объединяет четвёрку кроме цветового принципа именования, в переписке не сказано; иерархия внутри четвёрки не названа.</p>", "r": []}, {"t": "Что с ним стало", "a": ["S04", "PS-0340-S04", "PS-0340--chto-s-nim-stalo"], "h": "<p>Разговор обрывается на реплике:</p>\n<div class=\"q\"><p>«то есть сразу в сюжете будет монстром» (id 399545)</p></div>\n<p>К кому относится эта реплика — к Радуге или к кому-то другому из четвёрки — из текста однозначно не следует; подлежащее опущено. Что за сюжет имеется в виду и в каком качестве персонаж в нём появляется, осталось нерешённым. Дальше этого сообщения работа над Радугой в переписке не идёт.</p>", "r": []}, {"t": "Пробелы", "a": ["S05", "PS-0340-S05", "PS-0340--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Внешность не описана вообще.</li>\n<li>Характер не описан вообще.</li>\n<li>Механика хромакея не разобрана: только название способности и её носитель.</li>\n<li>Не сказано, кто такие Пастыри и чем они занимаются.</li>\n<li>Не сказано, чем Радуга отличается от остальных троих из четвёрки, кроме имени.</li>\n<li>Реплика про «сразу в сюжете будет монстром» не имеет явного подлежащего — адресат не назван.</li>\n<li>Версия одна (2025-12-17); изменений по датам нет, отклонённых вариантов в переписке не зафиксировано.</li>\n</ul></div>", "r": []}, {"t": "Связи — всё вместе", "a": ["PS-0340--svyazi"], "h": "<p><em>Сводный список. Под каждым разделом выше есть свой блок связей — только то, что упомянуто в нём. Связи сквозные и двусторонние.</em></p>\n<ul>\n<li><strong>Входит в группы:</strong> <a href=\"GR-0079.html\">Пастыри</a></li>\n<li><strong>Упомянут в группах:</strong> <a href=\"GR-0079.html\">Пастыри</a></li>\n</ul>", "r": []}, {"t": "Источники", "a": ["PS-0340--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2025-12-17</td>\n<td>399541–399545</td>\n<td>w0114</td>\n<td>Феня (по дате объявления)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/personazhi/PS-0340-raduga.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["PS-0340--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/PS-0340.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

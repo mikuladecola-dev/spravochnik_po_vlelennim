@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Смотрящий</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Смотрящий<span>персонаж · PS-0172</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">персонаж</div>
+    <h1>Смотрящий</h1>
+    
+    <div class="facts"><span>вселенная: 7 островов</span><span>1 версия записи</span><span>2024-12-13 → 2024-12-13</span><span>2 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="VS-0001.html">7 островов</a></div><div class="crumb"><span>дословный исходник:</span><a href="kb/PS-0172-smotryaschiy.html">PS-0172-smotryaschiy.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Смотрящий";
+const LEAD="";
+const CH=[{"t": "Связи с другими", "a": ["S01", "PS-0172-S01", "PS-0172--svyazi-s-drugimi"], "h": "<p>Смотрящий назван в перечне сильнейших персонажей вселенной вместе с Имитатором, Палачом и Нуаром. Формулировка Славы: «И сильнейшего виде Имитатора и Палача, Нуара, смотрящего / Какой уровень силы у них по твоему» (2024-12-13, id 269820). Перечисление идёт в разговоре про уровни сил 1-10, с которыми запись и связана в базе.</p>\n<p>Ответа на заданный вопрос по этому персонажу не последовало: Миколай ответил на саму идею шкалы — «ну вводить четкие уровни силы идея сложная кнш» (id 269822), Слава уточнил «Не примерно» и добавил про шкалу: «Да ито она наверное не раз смениться» (id 269823–269824). Ни один уровень силы Смотрящему в этом окне не присвоен.</p>", "r": []}, {"t": "Как менялся", "a": ["S02", "PS-0172-S02", "PS-0172--kak-menyalsya"], "h": "<p><strong>Версия 1 — 2024-12-13 (окно w0066, id 269818–269824).</strong> Единственная версия. Имя названо в списке сильнейших и не раскрыто. Больше в переписке к персонажу не возвращаются.</p>", "r": []}, {"t": "Пробелы", "a": ["S03", "PS-0172-S03", "PS-0172--probely"], "h": "<div class=\"gaps\"><ul>\n<li><strong>В окне только имя.</strong> Происхождение, внешность, характер, способности, судьба — ничего из этого не названо.</li>\n<li><strong>Уровень силы не назван</strong>, хотя вопрос про уровень был задан именно в связи с этим перечнем.</li>\n<li><strong>Чем Смотрящий связан с Имитатором, Палачом и Нуаром</strong>, кроме попадания в один перечень сильнейших, в переписке не сказано.</li>\n</ul></div>", "r": []}, {"t": "Связи — всё вместе", "a": ["PS-0172--svyazi"], "h": "<p><em>Сводный список. Под каждым разделом выше есть свой блок связей — только то, что упомянуто в нём. Связи сквозные и двусторонние.</em></p>\n<ul>\n<li><strong>Упомянут в персонажах:</strong> <a href=\"PS-0104.html\">Нуар</a></li>\n<li><strong>Упомянут в статье о вселенной:</strong> <a href=\"VS-0001.html\">7 островов</a></li>\n</ul>", "r": []}, {"t": "Источники", "a": ["PS-0172--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2024-12-13</td>\n<td>269818–269824</td>\n<td>w0066</td>\n<td>7 островов (объявлено)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/personazhi/PS-0172-smotryaschiy.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["PS-0172--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/PS-0172.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

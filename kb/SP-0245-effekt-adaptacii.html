@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Эффект адаптации</title>
+<link rel="stylesheet" href="../site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Эффект адаптации<span>способность · SP-0245 · исходник</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">исходник базы</div>
+    <h1>Эффект адаптации</h1>
+    
+    <div class="facts"><span>2 версий</span><span>2025-10-22 → 2025-10-22</span></div>
+    
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="../";const DOCNAME="Эффект адаптации";
+const LEAD="";
+const CH=[{"t": "Дословный исходник базы", "a": [], "r": [], "h": "<div class=\"rawnote\">Это не статья справочника, а дословная выписка из переписки. Текст не редактировался: сохранены опечатки, пунктуация и повторы.</div><div class=\"raw\"># Эффект адаптации\n\n*способность* · вселенные: Оам\n\n## Навигация\n\n- (w0108) Слава требует у апостолов повышенный эффект адаптации: раз у них мутировали только мозг и нервная связь, иначе они не смогут полноценно сражаться.\n\n## Связано с\n\nАпостолы, Оам\n\n## История по версиям\n\n_Ниже — дословные куски переписки. Старое не затирается, повторы сохранены._\n\n### Версия 1 — 2025-10-22\n\nвселенная: Оам (объявлено) · окно w0108 · сообщения 377616–377619\n\n*что здесь: Заявлено требование повышенной адаптации как следствие того, что мутация затронула только мозг и нервную связь*\n\n\n\n```chat\n[377616] 2025-10-22 21:22 Слава: Кстати вернём старых апостолов \nОни насекомые произошли от неизвестного мутировшого существа.\n[377617] 2025-10-22 21:23 Слава: Просто если у них развита только мозг и нервная связь. Они не смогут в моей голове сражаться полноценная. ( эффект адаптации повышенный у них должен быть)\n[377618] 2025-10-22 21:25 Миколай: так стой\n[377619] 2025-10-22 21:25 Миколай: не совсем понимаю\n```\n\n### Версия 2 — 2025-10-22\n\nвселенная: Оам (объявлено) · окно w0108 · сообщения 377632–377647\n\n*что здесь: Разъяснение оборванной фразы: речь про «в моей голове» (в голове автора), а не про бой внутри головы*\n\n\n\n```chat\n[377632] 2025-10-22 21:28 Миколай: че\n[377633] 2025-10-22 21:28 Слава: Так вот это существо мутировал из-за воздействием Оам\n[377634] 2025-10-22 21:28 Слава: Все монстры это мутированный под воздействием Оам\n[377635] 2025-10-22 21:29 Слава: Че\n[377638] 2025-10-22 21:42 Миколай: кстати\n[377639] 2025-10-22 21:42 Миколай: ещё вариант\n[377640] 2025-10-22 21:42 Миколай: это существо умерло\n[377641] 2025-10-22 21:42 Слава: Нет\n[377642] 2025-10-22 21:42 Миколай: и 21 насекомые съели его труп\n[377643] 2025-10-22 21:43 Слава: Насекомые это апостолы который выглядит как люди. (Насекомые я назвал их по приколу)\n[377644] 2025-10-22 21:43 Миколай: а, ок\n[377645] 2025-10-22 21:44 Миколай: че значит в своей голове сражаться\n[377646] 2025-10-22 21:44 Слава: В моей\n[377647] 2025-10-22 21:44 Миколай: ааа\n```\n\n## Часть чего\n\nАпостолы\n\n## Неясности\n\n- (w0108) Механика самой адаптации не описана</div>"}];</script>
+<script src="../lib.js"></script>
+<script src="../site.js"></script>
+</body>
+</html>

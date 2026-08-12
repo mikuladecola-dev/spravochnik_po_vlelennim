@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ГГ — всезнающий бог</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">ГГ — всезнающий бог<span>персонаж · PS-0006</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">персонаж</div>
+    <h1>ГГ — всезнающий бог</h1>
+    
+    <div class="facts"><span>вселенная: неясно</span><span>1 версия записи</span><span>2023-01-07 → 2023-01-07</span><span>2 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="kb/VS-0016-neyasno.html">неясно</a> <span class="m">(статьи ещё нет)</span></div><div class="crumb"><span>дословный исходник:</span><a href="kb/PS-0006-gg-vseznayuschiy-bog.html">PS-0006-gg-vseznayuschiy-bog.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="ГГ — всезнающий бог";
+const LEAD="";
+const CH=[{"t": "Происхождение", "a": ["S01", "PS-0006-S01", "PS-0006--proishozhdenie"], "h": "<p>Заготовка персонажа, появившаяся одной строкой в разговоре о том, какой будет будущая вселенная (2023-01-07, id 28898–28906). Обсуждался «3 вариант» — «Повседневность». Миколай: «Ну крч хз какая будет первая вселенная, но я вообще хочу повседневность». Дальше он же задаёт устройство сезонов: «Ну типа 3 сезона повседневность допустим, а 4 повседневность + фентези». И сразу за этим — сама заготовка: «Гг стал всезнающим богом».</p>\n<p>То есть персонаж возникает не сам по себе, а как обозначение поворота: превращение главного героя во всезнающего бога — это и есть переход повседневности в фентези на четвёртом сезоне.</p>", "r": []}, {"t": "Способности", "a": ["S02", "PS-0006-S02", "PS-0006--sposobnosti"], "h": "<p>Названо одно свойство, и то в форме итога, а не механики: гг «стал всезнающим богом». Как это работает, откуда взялось, есть ли ограничения — в переписке не сказано.</p>", "r": []}, {"t": "Связи с другими", "a": ["S03", "PS-0006-S03", "PS-0006--svyazi-s-drugimi"], "h": "<p>В карточке персонаж отнесён к «Параллельные реальности в голове» и «Повседневность + фентези». Внутри самого разговора связь названа только со вторым: всезнающий бог — это признак того, что четвёртый сезон становится «повседневность + фентези». Связь с параллельными реальностями в приведённом куске переписки не проговаривается.</p>", "r": []}, {"t": "Как менялся — состояния по датам", "a": ["S04", "PS-0006-S04", "PS-0006--kak-menyalsya"], "h": "<p><strong>2023-01-07 (окно w0008, id 28898–28906)</strong> — единственное состояние. Одна строка: главный герой становится всезнающим богом на переходе от повседневности к фентези. Версия одна, изменений нет.</p>", "r": []}, {"t": "Пробелы", "a": ["S05", "PS-0006-S05", "PS-0006--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Имени у персонажа нет.</li>\n<li>Внешность, характер не описаны.</li>\n<li>Не сказано, в какой вселенной он находится: в карточке вселенная помечена как «неясно», не определено.</li>\n<li>Не сказано, как именно он становится богом и что это значит по механике.</li>\n<li>Не сказано, что с ним стало дальше: «дальше в окне не развивается, ни имени, ни деталей». Разговор в этом месте уходит в сторону — следующая реплика Миколая уже про другое («У тебя какая цель по жизни»).</li>\n</ul></div>", "r": []}, {"t": "Источники", "a": ["PS-0006--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2023-01-07</td>\n<td>28898–28906</td>\n<td>w0008</td>\n<td>неясно (не определено)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/personazhi/PS-0006-gg-vseznayuschiy-bog.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["PS-0006--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/PS-0006.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

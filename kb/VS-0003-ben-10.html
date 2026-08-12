@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Бен 10</title>
+<link rel="stylesheet" href="../site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Бен 10<span>вселенная · VS-0003 · исходник</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">исходник базы</div>
+    <h1>Бен 10</h1>
+    
+    <div class="facts"><span>0 версий</span><span> → </span></div>
+    
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="../";const DOCNAME="Бен 10";
+const LEAD="";
+const CH=[{"t": "Дословный исходник базы", "a": [], "r": [], "h": "<div class=\"rawnote\">Это не статья справочника, а дословная выписка из переписки. Текст не редактировался: сохранены опечатки, пунктуация и повторы.</div><div class=\"raw\"># Вселенная: Бен 10\n\n## Отрезки жизни\n\n### События-объявления\n\n_Явных объявлений границ в прочитанных окнах не найдено._\n\n## Что внутри\n\n| Вид | Название | Версий | С даты | Файл |\n|---|---|---|---|---|\n| идея | [Омнитрикс](../sushnosti/idei/ID-0006-omnitriks.md) | 9 | 2022-10-21 | `sushnosti/idei/ID-0006-omnitriks.md` |\n| идея | [Рэп про Бен 10](../sushnosti/idei/ID-0009-rep-pro-ben-10.md) | 1 | 2022-12-16 | `sushnosti/idei/ID-0009-rep-pro-ben-10.md` |\n| идея | [Свой мир в Майнкрафт](../sushnosti/idei/ID-0003-svoy-mir-v-maynkraft.md) | 1 | 2022-06-05 | `sushnosti/idei/ID-0003-svoy-mir-v-maynkraft.md` |\n| история | [Аддон по Бен 10 (для Майнкрафта)](../sushnosti/istorii/IS-0007-addon-po-ben-10-dlya-maynkrafta.md) | 18 | 2023-05-24 | `sushnosti/istorii/IS-0007-addon-po-ben-10-dlya-maynkrafta.md` |\n| персонаж | [Вечные рыцари](../sushnosti/personazhi/PS-0016-vechnye-rycari.md) | 1 | 2023-05-28 | `sushnosti/personazhi/PS-0016-vechnye-rycari.md` |\n| персонаж | [Вилгакс](../sushnosti/personazhi/PS-0015-vilgaks.md) | 1 | 2023-05-28 | `sushnosti/personazhi/PS-0015-vilgaks.md` |\n| персонаж | [Гвен](../sushnosti/personazhi/PS-0019-gven.md) | 1 | 2023-06-12 | `sushnosti/personazhi/PS-0019-gven.md` |\n| персонаж | [Обезьяна паук](../sushnosti/personazhi/PS-0014-obezyana-pauk.md) | 3 | 2023-05-24 | `sushnosti/personazhi/PS-0014-obezyana-pauk.md` |\n| персонаж | [Слуги чистопородных](../sushnosti/personazhi/PS-0017-slugi-chistoporodnyh.md) | 2 | 2023-05-28 | `sushnosti/personazhi/PS-0017-slugi-chistoporodnyh.md` |\n| персонаж | [Чистопородный](../sushnosti/personazhi/PS-0018-chistoporodnyy.md) | 1 | 2023-05-28 | `sushnosti/personazhi/PS-0018-chistoporodnyy.md` |\n| служебное | [Заимствуемые способности из чужих аддонов](../sushnosti/zametki/SL-0006-zaimstvuemye-sposobnosti-iz-chuzhih-addonov.md) | 1 | 2023-05-28 | `sushnosti/zametki/SL-0006-zaimstvuemye-sposobnosti-iz-chuzhih-addonov.md` |\n| способность | [Алмаз](../sushnosti/sposobnosti/SP-0029-almaz.md) | 2 | 2023-05-24 | `sushnosti/sposobnosti/SP-0029-almaz.md` |\n| способность | [Граваттак](../sushnosti/sposobnosti/SP-0027-gravattak.md) | 6 | 2023-05-24 | `sushnosti/sposobnosti/SP-0027-gravattak.md` |\n| способность | [Гумангозавор](../sushnosti/sposobnosti/SP-0022-gumangozavor.md) | 4 | 2023-05-24 | `sushnosti/sposobnosti/SP-0022-gumangozavor.md` |\n| способность | [Жиле](../sushnosti/sposobnosti/SP-0024-zhile.md) | 2 | 2023-05-24 | `sushnosti/sposobnosti/SP-0024-zhile.md` |\n| способность | [Краб](../sushnosti/sposobnosti/SP-0030-krab.md) | 4 | 2023-05-24 | `sushnosti/sposobnosti/SP-0030-krab.md` |\n| способность | [Крылатый](../sushnosti/sposobnosti/SP-0025-krylatyy.md) | 5 | 2023-05-24 | `sushnosti/sposobnosti/SP-0025-krylatyy.md` |\n| способность | [Лучистый](../sushnosti/sposobnosti/SP-0026-luchistyy.md) | 3 | 2023-05-24 | `sushnosti/sposobnosti/SP-0026-luchistyy.md` |\n| способность | [Пламенный](../sushnosti/sposobnosti/SP-0021-plamennyy.md) | 5 | 2023-05-24 | `sushnosti/sposobnosti/SP-0021-plamennyy.md` |\n| способность | [Ультиматрекс](../sushnosti/sposobnosti/SP-0019-ultimatreks.md) | 4 | 2023-05-24 | `sushnosti/sposobnosti/SP-0019-ultimatreks.md` |\n| способность | [Ультиформа](../sushnosti/sposobnosti/SP-0020-ultiforma.md) | 3 | 2023-05-24 | `sushnosti/sposobnosti/SP-0020-ultiforma.md` |\n| способность | [Часы](../sushnosti/sposobnosti/SP-0028-chasy.md) | 4 | 2023-05-24 | `sushnosti/sposobnosti/SP-0028-chasy.md` |\n| способность | [Эхо эхо](../sushnosti/sposobnosti/SP-0023-eho-eho.md) | 2 | 2023-05-24 | `sushnosti/sposobnosti/SP-0023-eho-eho.md` |</div>"}];</script>
+<script src="../lib.js"></script>
+<script src="../site.js"></script>
+</body>
+</html>

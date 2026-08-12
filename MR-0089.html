@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Зимние человечки</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Зимние человечки<span>мир · MR-0089</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">мир</div>
+    <h1>Зимние человечки</h1>
+    
+    <div class="facts"><span>вселенная: неясно</span><span>1 версия записи</span><span>2024-12-21 → 2024-12-21</span><span>2 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="kb/VS-0016-neyasno.html">неясно</a> <span class="m">(статьи ещё нет)</span></div><div class="crumb"><span>дословный исходник:</span><a href="kb/MR-0089-zimnie-chelovechki.html">MR-0089-zimnie-chelovechki.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Зимние человечки";
+const LEAD="<p>Зимние человечки (в переписке — «зимний челики») — раса из общего списка рас. Придумана раньше окна w0067 и вспоминается в нём заново (2024-12-21, id 272822–272833). Версия одна, дата 2024-12-21.</p>";
+const CH=[{"t": "Устройство", "a": ["S01", "MR-0089-S01", "MR-0089--ustroystvo"], "h": "<p>Особенность расы — лёд. Выбор шёл между двумя вариантами: Миколай — «либо природу либо лёд хочется дать» (id 272830), Слава — «Лёд наверное» (id 272832). На льде и остановились. Как именно работает лёд у этой расы, в переписке не сказано.</p>\n<p>Особенность задаётся по тому же принципу, что и у соседних рас: Слава тут же перечисляет — «Вампир кровь / Эльф растения» (id 272833), то есть каждой расе полагается своя привязанная стихия или материя.</p>", "r": []}, {"t": "Население", "a": ["S02", "MR-0089-S02", "MR-0089--naselenie"], "h": "<p>Раса зимних человечков. Ранее Миколай помнил их как оленей — «это олень какой-то», «да?» (id 272825–272826). Слава на это отвечает: «Больше не олень» (id 272828), Миколай соглашается — «ок». То есть оленья форма отменена; чем зимние человечки выглядят вместо неё, в переписке не сказано.</p>", "r": []}, {"t": "Место во вселенной", "a": ["S03", "MR-0089-S03", "MR-0089--mesto-vo-vselennoy"], "h": "<p>Часть списка рас (Расы). Рядом с ними в том же разговоре по тому же принципу «раса — особенность» стоят вампиры (кровь) и эльфы (растения).</p>\n<p>Принадлежность к вселенной по записи стоит как «неясно» и определяется только по дате объявления (безымянная вселенная, объявленная 2024-12-21, id 272184).</p>", "r": []}, {"t": "Как менялся по версиям", "a": ["S04", "MR-0089-S04", "MR-0089--kak-menyalsya-po-versiyam"], "h": "<p><strong>Версия 1 — 2024-12-21 (окно w0067, id 272822–272833).</strong> Раса вспомянута. Снята прежняя привязка к оленям («Больше не олень»). Задана особенность — лёд.</p>\n<p>Отклонённый вариант: природа как особенность зимних человечков (Миколай, id 272830) — вместо неё выбран лёд.</p>", "r": []}, {"t": "Пробелы", "a": ["S05", "MR-0089-S05", "MR-0089--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Исходное описание расы — за пределами окна, в более раннем куске переписки; в записи оно не приведено.</li>\n<li>Как выглядят зимние человечки после отказа от оленьей формы — не сказано.</li>\n<li>Как работает лёд как особенность расы — не сказано.</li>\n<li>Численность, места обитания, отдельные персонажи — не названы.</li>\n<li>Принадлежность к конкретной вселенной в переписке не проговорена, стоит по дате.</li>\n</ul></div>", "r": []}, {"t": "Источники", "a": ["MR-0089--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2024-12-21</td>\n<td>272822–272833</td>\n<td>w0067</td>\n<td>неясно (по дате объявления)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/miry/MR-0089-zimnie-chelovechki.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["MR-0089--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/MR-0089.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

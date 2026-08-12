@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Средний мир</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Средний мир<span>мир · MR-0111</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">мир</div>
+    <h1>Средний мир</h1>
+    
+    <div class="facts"><span>вселенная: Апостол</span><span>1 версия записи</span><span>2025-02-25 → 2025-02-25</span><span>3 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="VS-0002.html">Апостол</a></div><div class="crumb"><span>дословный исходник:</span><a href="kb/MR-0111-sredniy-mir.html">MR-0111-sredniy-mir.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Средний мир";
+const LEAD="";
+const CH=[{"t": "Устройство", "a": ["S01", "MR-0111-S01", "MR-0111--ustroystvo"], "h": "<p>Мир, полностью повторяющий Землю: «Это средний мир, который полностью скопировал землю» (2025-02-25, окно w0077, id 295209). Второе название в переписке — «копия земли» (id 295220).</p>\n<p>Средний мир — место действия истории про сломанное солнце и мир, в котором находится главный герой.</p>\n<p>Мир уничтожен. Уничтожил его Рай, но уточнено, кто именно: «Точнее это были жители рая, сам правитель ничего не сделал» (id 295217). На вопрос «зачем?» (id 295214) ответа в переписке нет.</p>", "r": []}, {"t": "Население", "a": ["S02", "MR-0111-S02", "MR-0111--naselenie"], "h": "<p>На копии земли есть люди, способные мыслить. Вопрос «и откуда там люди? способные мыслить?» (id 295215–295216) получил общий ответ, распространяющийся на всю вселенную: «Там почти в каждом мире есть разумный существа, некоторый похожий на людей некоторый нет» (id 295221).</p>\n<p>То есть люди среднего мира не требуют отдельного объяснения происхождения — разумная жизнь есть почти везде, и часть её похожа на людей, часть нет.</p>", "r": []}, {"t": "Место во вселенной", "a": ["S03", "MR-0111-S03", "MR-0111--mesto-vo-vselennoy"], "h": "<p>Название «средний» указывает на положение в ряду миров, но сам ряд в переписке не перечислен.</p>\n<p>Связан с Раем — жители Рая уничтожили средний мир. Связан с чужемирцами (запись «Чужимириц» в исходнике), но чем именно, в этом окне не раскрыто.</p>", "r": []}, {"t": "Как менялся по версиям", "a": ["S04", "MR-0111-S04", "MR-0111--kak-menyalsya-po-versiyam"], "h": "<p>Версия одна, 2025-02-25 (окно w0077, id 295204–295222). К этому моменту уже существовала история про сломанное солнце, и средний мир вводится как ответ на вопрос о её месте действия — «далее такой вопрос, что за место, время и вселенная» (id 295205).</p>", "r": []}, {"t": "Пробелы", "a": ["S05", "MR-0111-S05", "MR-0111--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Вселенная не названа. Вопрос о вселенной был задан прямо (id 295205), ответ дан только про место.</li>\n<li>Время действия не названо — вопрос задан в том же сообщении и остался без ответа.</li>\n<li>Зачем жители Рая уничтожили средний мир — «зачем?» (id 295214) осталось без ответа.</li>\n<li>Насколько буквальна «полная копия земли» — совпадают ли история, люди, события — не разобрано.</li>\n<li>Роль правителя Рая обозначена только отрицанием: «сам правитель ничего не сделал». Знал ли он, разрешал ли — не сказано.</li>\n<li>Как связаны средний мир и чужемирцы — не раскрыто.</li>\n</ul></div>", "r": []}, {"t": "Источники", "a": ["MR-0111--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2025-02-25</td>\n<td>295204–295222</td>\n<td>w0077</td>\n<td>Апостол (по дате объявления)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/miry/MR-0111-sredniy-mir.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["MR-0111--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/MR-0111.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

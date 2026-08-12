@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Бомж</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Бомж<span>персонаж · PS-0128</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">персонаж</div>
+    <h1>Бомж</h1>
+    
+    <div class="facts"><span>вселенная: неясно</span><span>2 версии записи</span><span>2024-07-31 → 2024-07-31</span><span>4 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="kb/VS-0016-neyasno.html">неясно</a> <span class="m">(статьи ещё нет)</span></div><div class="crumb"><span>дословный исходник:</span><a href="kb/PS-0128-bomzh.html">PS-0128-bomzh.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Бомж";
+const LEAD="";
+const CH=[{"t": "Происхождение", "a": ["S01", "PS-0128-S01", "PS-0128--proishozhdenie"], "h": "<p>Материал относится к периоду, объявленному 2024-07-31 (id 214143); имени в переписке этой вселенной не дали.</p>\n<p>Роль возникла в ходе обсуждения состава команды из пяти человек («Команда гиг»). Первоначально в пятёрке значился «механик», которого Слава забраковал: «Слишком идеально. Механик минус». Миколай тут же предложил замену: «бомж» (2024-07-31, id 214328–214332). Слава согласился: «Вместо него да бомж». Следом Миколай уточнил его прошлое — бывший журналист, «чья профессия нахуй не всралась» (id 214333–214334), то есть эта деталь для сюжета значения не имеет.</p>\n<p>Позже в тот же вечер (id 214364–214390) Слава пересмотрел состав целиком: «У нас бомж за 40, больной гг, и никому не всраты журналист» — и отметил, что из пятёрки «нормальные» только врач и военные. По итогу роль бомжа была вытеснена: «Вместо бомжа. Дерзкий друг гг» (см. <a href=\"PS-0129.html\">Дерзкий друг гг</a>).</p>", "r": [["Дерзкий друг гг", "PS-0129.html"]]}, {"t": "Связи с другими", "a": ["S02", "PS-0128-S02", "PS-0128--svyazi-s-drugimi"], "h": "<p>Часть команды гиг (5 человек) наряду с врачом, военным, подростком (<a href=\"PS-0127.html\">Подросток</a>) и больным. В переписке фигурирует также как «бывший журналист» — эта профессия названа, но признана несущественной. Впоследствии роль в составе пятёрки занял <a href=\"PS-0129.html\">Дерзкий друг гг</a> «дерзкий друг гг».</p>", "r": [["Подросток", "PS-0127.html"], ["Дерзкий друг гг", "PS-0129.html"]]}, {"t": "Как менялся", "a": ["S03", "PS-0128-S03", "PS-0128--kak-menyalsya"], "h": "<h3>2024-07-31, id 214328–214340</h3>\n<p>Введён вместо «механика» («слишком идеально»). Назван возраст — 34 года (в одном ряду с остальными: «бомжу 34, врачу 45, больному 28, военному 50»).</p>\n<h3>2024-07-31, id 214364–214390</h3>\n<p>Возраст расходится с первой версией: Слава называет его «бомж за 40». Слава указывает, что состав пятёрки неровный (только врач и военные — «из нормальных»), и роль бомжа заменяется на «дерзкого друга гг».</p>", "r": []}, {"t": "Что с ним стало", "a": ["S04", "PS-0128-S04", "PS-0128--chto-s-nim-stalo"], "h": "<p>Роль вытеснена другим персонажем: «Вместо бомжа» появился «дерзкий друг гг» (<a href=\"PS-0129.html\">Дерзкий друг гг</a>), который по социальной роли тоже подросток. Дальнейшая судьба самой роли бомжа в переписке не обсуждается.</p>", "r": [["Дерзкий друг гг", "PS-0129.html"]]}, {"t": "Пробелы", "a": ["S05", "PS-0128-S05", "PS-0128--probely"], "h": "<div class=\"gaps\"><p>Возраст расходится между версиями (34 года в первой версии против «за 40» во второй) — согласован не был. Внешность и характер персонажа в переписке не описаны. Причина, по которой уточнение «бывший журналист» появилось и затем не потребовалось, отдельно не проговорена — состав окончательных данных персонажа не назван.</p></div>", "r": []}, {"t": "Связи — всё вместе", "a": ["PS-0128--svyazi"], "h": "<p><em>Сводный список. Под каждым разделом выше есть свой блок связей — только то, что упомянуто в нём. Связи сквозные и двусторонние.</em></p>\n<ul>\n<li><strong>Упоминает персонажей:</strong> <a href=\"PS-0127.html\">Подросток</a>, <a href=\"PS-0129.html\">Дерзкий друг гг</a></li>\n<li><strong>Упомянут в персонажах:</strong> <a href=\"PS-0127.html\">Подросток</a>, <a href=\"PS-0129.html\">Дерзкий друг гг</a></li>\n</ul>", "r": []}, {"t": "Источники", "a": ["PS-0128--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2024-07-31</td>\n<td>214328–214340</td>\n<td>w0049</td>\n<td>неясно (по дате объявления)</td>\n<td></td>\n</tr>\n<tr>\n<td>2024-07-31</td>\n<td>214364–214390</td>\n<td>w0049</td>\n<td>неясно (по дате объявления)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/personazhi/PS-0128-bomzh.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["PS-0128--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/PS-0128.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

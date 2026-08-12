@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Режим оленя</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Режим оленя<span>способность · SP-0062</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">способность</div>
+    <h1>Режим оленя</h1>
+    
+    <div class="facts"><span>вселенная: игра бога</span><span>2 версии записи</span><span>2024-05-11 → 2024-05-11</span><span>4 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="VS-0014.html">игра бога</a></div><div class="crumb"><span>дословный исходник:</span><a href="kb/SP-0062-rezhim-olenya.html">SP-0062-rezhim-olenya.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Режим оленя";
+const LEAD="";
+const CH=[{"t": "Механика — как работает", "a": ["S01", "SP-0062-S01", "SP-0062--mehanika"], "h": "<p>Вторая форма десятого персонажа — целителя. Задача, из которой способность выросла, поставлена Славой: «Ну вот он такой миленький добренький / И какая у него должна быть защитная или атакующая способность» (2024-05-11, id 167939). То есть форма закрывает для доброго целителя нехватку защиты и атаки.</p>\n<p>Предложение Миколая: «Может биполярку ебанём? / И как у героя щита у него будет режим гнева» (id 167942–167943). Механика опирается на смену состояния — переключение в гнев, — а образцом назван режим гнева героя щита.</p>\n<p>Название дал Слава, ответив на уточнение Миколая «Я про защиту» (id 167946) словами «Режим оленя» (id 167949).</p>\n<p>Как режим работает — что даёт, чем включается, чем выключается — в переписке не описано.</p>", "r": []}, {"t": "Ограничения и цена", "a": ["S02", "SP-0062-S02", "SP-0062--ogranicheniya-i-cena"], "h": "<p>Не названы.</p>", "r": []}, {"t": "Носители — у кого есть", "a": ["S03", "SP-0062-S03", "SP-0062--nositeli"], "h": "<p>Десятый персонаж, целитель. По описанию Славы — «такой миленький добренький» (id 167939). Отдельным именем персонаж в этом окне не назван.</p>", "r": []}, {"t": "Как менялась по версиям — по датам", "a": ["S04", "SP-0062-S04", "SP-0062--kak-menyalas-po-versiyam"], "h": "<p><strong>Версия 1 — 2024-05-11, день (id 167939–167955, окно w0034).</strong> Постановка задачи и первое оформление: биполярка, режим гнева «как у героя щита», переименование в «режим оленя». В том же куске переписки идёт параллельный разговор о внешности персонажа — упрощение рисунков на голове, зимняя одежда «старых веков а не нового», длинные волосы; Миколай при этом отмечает, что «специально решил для стиня современную впизнуть» (id 167950). К механике режима это не относится.</p>\n<p><strong>Версия 2 — 2024-05-11, вечер (id 168319–168323, окно w0034).</strong> Повторный заход в тот же день. Миколай спрашивает: «Ты продумал режим оленя?» — Слава: «Нет ещё» (id 168321–168322). Новых деталей нет; на этом разработка в окне обрывается.</p>", "r": []}, {"t": "Отклонённые варианты — что предлагали и забраковали", "a": ["S05", "SP-0062-S05", "SP-0062--otklonennye-varianty"], "h": "<p>Отклонённых вариантов в переписке нет. Названия «биполярка» и «режим гнева» не забракованы, а вытеснены названием «режим оленя»; в записи они значатся вариантами имени.</p>", "r": []}, {"t": "Пробелы", "a": ["S06", "SP-0062-S06", "SP-0062--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Механика режима так и не описана.</li>\n<li>Не сказано, защитная это форма, атакующая или обе сразу, — вопрос Славы был про «защитную или атакующую», а Миколай уточнял «Я про защиту» (id 167946), но ответа по существу нет.</li>\n<li>Не объяснено, что именно берётся от режима гнева героя щита.</li>\n<li>Не объяснено, при чём тут олень и почему такое название.</li>\n<li>Не сказано, как режим связан с «биполяркой» — это две стороны одного состояния или разные вещи.</li>\n<li>Прямо зафиксировано, что на 2024-05-11 вечера способность не продумана.</li>\n</ul></div>", "r": []}, {"t": "Связи — всё вместе", "a": ["SP-0062--svyazi"], "h": "<p><em>Сводный список. Под каждым разделом выше есть свой блок связей — только то, что упомянуто в нём. Связи сквозные и двусторонние.</em></p>\n<ul>\n<li><strong>Упомянут в статье о вселенной:</strong> <a href=\"VS-0014.html\">игра бога</a></li>\n</ul>", "r": []}, {"t": "Источники", "a": ["SP-0062--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2024-05-11</td>\n<td>167939–167955</td>\n<td>w0034</td>\n<td>игра бога (по дате объявления)</td>\n<td></td>\n</tr>\n<tr>\n<td>2024-05-11</td>\n<td>168319–168323</td>\n<td>w0034</td>\n<td>игра бога (по дате объявления)</td>\n<td>повтор</td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/sposobnosti/SP-0062-rezhim-olenya.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["SP-0062--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/SP-0062.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

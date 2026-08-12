@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Учитель мага ветра</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Учитель мага ветра<span>персонаж · PS-0175</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">персонаж</div>
+    <h1>Учитель мага ветра</h1>
+    
+    <div class="facts"><span>вселенная: неясно</span><span>2 версии записи</span><span>2024-12-23 → 2024-12-23</span><span>3 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="kb/VS-0016-neyasno.html">неясно</a> <span class="m">(статьи ещё нет)</span></div><div class="crumb"><span>дословный исходник:</span><a href="kb/PS-0175-uchitel-maga-vetra.html">PS-0175-uchitel-maga-vetra.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Учитель мага ветра";
+const LEAD="";
+const CH=[{"t": "Происхождение", "a": ["S01", "PS-0175-S01", "PS-0175--proishozhdenie"], "h": "<p>Введён Славой 2024-12-23 (id 273313–273322) в ответ на вопрос Миколая о том, как персонажи получают задания: «это на доске объявления?». Слава: «Вообще у моего перс есть учитель который вечно пихает ему задание и посылает на лысый гору». Тут же он пояснил, что доска объявлений — «Ну это для обычных наемников», то есть учитель существует как отдельный от общей системы источник заданий.</p>\n<p>Имени у персонажа нет, он назван только по роли — учитель мага ветра.</p>", "r": []}, {"t": "Способности", "a": ["S02", "PS-0175-S02", "PS-0175--sposobnosti"], "h": "<p>Отдельных способностей за ним не закреплено. Названо одно свойство: он «просто связывается» со своим учеником и выдаёт задание (2024-12-23, id 273320). Каким способом происходит связь, в переписке не сказано.</p>", "r": []}, {"t": "Связи с другими", "a": ["S03", "PS-0175-S03", "PS-0175--svyazi-s-drugimi"], "h": "<p>Наставник мага ветра (<a href=\"PS-0174.html\">Маг ветра</a>) — персонажа Славы. Отношения описаны односторонне: учитель выдаёт задания, «вечно пихает ему задание и посылает на лысый гору».</p>\n<p>Лысая гора названа как место, куда он посылает ученика; что там находится и зачем он туда посылает — в переписке не сказано.</p>", "r": [["Маг ветра", "PS-0174.html"]]}, {"t": "Как менялся — состояния по датам, старое не затирается", "a": ["S04", "PS-0175-S04", "PS-0175--kak-menyalsya"], "h": "<p><strong>2024-12-23, id 273313–273322.</strong> Введён как источник заданий в обход доски объявлений обычных наёмников; связывается с учеником и выдаёт задание; посылает на лысую гору.</p>\n<p><strong>2024-12-23, id 273334–273337.</strong> Уточнение по вопросу Миколая «сам задание придумывает а не чужое даёт?»: «Ну сам находит где а иногда ему кто говорит, по разному». То есть учитель работает и как источник, и как передаточное звено — устойчивого правила нет.</p>", "r": []}, {"t": "Пробелы — чего в переписке нет", "a": ["S05", "PS-0175-S05", "PS-0175--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Имени нет.</li>\n<li>Внешность, возраст, раса, характер не описаны.</li>\n<li>Не сказано, обладает ли он магией и какой.</li>\n<li>Не сказано, каким образом он «связывается» с учеником.</li>\n<li>Не сказано, кто те, кто иногда даёт задания ему самому.</li>\n<li>Не сказано, что такое лысая гора и почему он посылает туда ученика.</li>\n<li>В обсуждении состава команды («2 моих и 2 твоих») не оговорено, входит ли учитель в число персонажей Славы.</li>\n</ul></div>", "r": []}, {"t": "Связи — всё вместе", "a": ["PS-0175--svyazi"], "h": "<p><em>Сводный список. Под каждым разделом выше есть свой блок связей — только то, что упомянуто в нём. Связи сквозные и двусторонние.</em></p>\n<ul>\n<li><strong>Упоминает персонажей:</strong> <a href=\"PS-0174.html\">Маг ветра</a></li>\n<li><strong>Упомянут в персонажах:</strong> <a href=\"PS-0174.html\">Маг ветра</a></li>\n</ul>", "r": []}, {"t": "Источники", "a": ["PS-0175--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2024-12-23</td>\n<td>273313–273322</td>\n<td>w0068</td>\n<td>неясно (по дате объявления)</td>\n<td></td>\n</tr>\n<tr>\n<td>2024-12-23</td>\n<td>273334–273337</td>\n<td>w0068</td>\n<td>неясно (по дате объявления)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/personazhi/PS-0175-uchitel-maga-vetra.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["PS-0175--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/PS-0175.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

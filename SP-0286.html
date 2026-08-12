@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Био реконструкция</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Био реконструкция<span>способность · SP-0286</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">способность</div>
+    <h1>Био реконструкция</h1>
+    
+    <div class="facts"><span>вселенная: неясно</span><span>1 версия записи</span><span>2026-07-14 → 2026-07-14</span><span>2 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="kb/VS-0016-neyasno.html">неясно</a> <span class="m">(статьи ещё нет)</span></div><div class="crumb"><span>дословный исходник:</span><a href="kb/SP-0286-bio-rekonstrukciya.html">SP-0286-bio-rekonstrukciya.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Био реконструкция";
+const LEAD="";
+const CH=[{"t": "Механика — как работает", "a": ["S01", "SP-0286-S01", "SP-0286--mehanika"], "h": "<p>Способность позволяет «из неживого делать живое то бишь создавать себе армию» (2026-07-14, id 502780). Так она описана целиком: превращение неживого в живое и получение за счёт этого армии. Автор описания сам отметил, что этим исчерпывается всё: «Если кратко то все.»</p>\n<p>Что именно считается «неживым» — исходный материал, его объём, условия — в переписке не сказано. Как выглядит и подчиняется ли создаваемая армия, тоже не названо.</p>", "r": []}, {"t": "Носители — у кого есть", "a": ["S02", "SP-0286-S02", "SP-0286--nositeli"], "h": "<p>Носителей трое: «Есть три чела с способностью Био реконструкция» (2026-07-14, id 502780). Ни имён, ни описаний этих троих в переписке нет — они названы только числом.</p>", "r": []}, {"t": "Как менялась по версиям — по датам", "a": ["S03", "SP-0286-S03", "SP-0286--kak-menyalas-po-versiyam"], "h": "<p>Способность появляется в один заход 2026-07-14 (id 502779–502784) и в дальнейшем не меняется. Вселенная при этом определена только по дате объявления, в самой переписке она не названа.</p>", "r": []}, {"t": "Связь с другими способностями", "a": ["S04", "SP-0286-S04", "SP-0286--svyaz-s-drugimi-sposobnostyami"], "h": "<p>Био реконструкция названа как причина сомнений в способности Апола: «И вот способность апола как-то слишком на них похожа. Поэтому я и думаю оставить или нет» (2026-07-14, id 502780–502781). То есть Био реконструкция здесь выступает уже существующим образцом, на фоне которого звериная способность Апола выглядела вторичной, и обсуждался вопрос, оставлять ли способность Апола.</p>\n<p>Уточняющий вопрос Миколая — «челов? или способность» (id 502782–502783), то есть что именно похоже, — остался без ответа. Чем именно способность Апола похожа на Био реконструкцию, в переписке не разобрано; итог обсуждения («оставить или нет») не подведён, вопрос остался нерешённым.</p>", "r": []}, {"t": "Пробелы", "a": ["S05", "SP-0286-S05", "SP-0286--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Носители не названы — только «три чела».</li>\n<li>Ограничения, цена и любые условия применения не описаны.</li>\n<li>Не сказано, что именно превращается в живое и во что превращается.</li>\n<li>Не сказано, подчиняется ли созданное носителю и в каком смысле это «армия».</li>\n<li>Вселенная не названа прямо, только выведена по дате.</li>\n<li>Решение по способности Апола (оставлять или нет) в переписке не принято.</li>\n</ul></div>", "r": []}, {"t": "Источники", "a": ["SP-0286--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2026-07-14</td>\n<td>502779–502784</td>\n<td>w0122</td>\n<td>неясно (по дате объявления)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/sposobnosti/SP-0286-bio-rekonstrukciya.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["SP-0286--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/SP-0286.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

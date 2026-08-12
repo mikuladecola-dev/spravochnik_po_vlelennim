@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Антоша</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Антоша<span>история · IS-0040</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">история</div>
+    <h1>Антоша</h1>
+    
+    <div class="facts"><span>вселенная: Апостол</span><span>1 версия записи</span><span>2025-03-18 → 2025-03-18</span><span>2 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="VS-0002.html">Апостол</a></div><div class="crumb"><span>дословный исходник:</span><a href="kb/IS-0040-antosha.html">IS-0040-antosha.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Антоша";
+const LEAD="";
+const CH=[{"t": "Содержание", "a": ["S01", "IS-0040-S01", "IS-0040--soderzhanie"], "h": "<p>Текста истории в переписке нет — «самого текста истории в окне нет» (окно w0082). История существует в архиве только как название и как отсылка.</p>\n<p>Единственное содержательное указание: сцена с цепью и белыми глазами, названная ранее в сообщении 305116, относится к Антоше. Миколай говорит про эту сцену: «и это я где-то слышал... ну я прикол пока чувствую», Слава отвечает: «Так это про Антошу» (2025-03-18, id 305329–305330).</p>\n<p>В том же разговоре Миколай переводит разговор с конкретной сцены на общий вывод: «я про то что у этих апостолов такая система получается» (id 305333). Что именно за «система» и как она устроена — в этих сообщениях не раскрыто.</p>", "r": []}, {"t": "Место во вселенной", "a": ["S02", "IS-0040-S02", "IS-0040--mesto-vo-vselennoy"], "h": "<p>Вселенная: Апостол (по дате объявления).</p>\n<p>История связана с Имитатором: приёмы имитатора отсылают к истории про Антошу. Именно эта сшивка и составляет всё, что зафиксировано об Антоше в окне w0082.</p>\n<p>В рейтинге историй Антоша стоит вторым (id 305098). Из чего состоит рейтинг и по какому критерию он выстроен — в переписке не сказано.</p>", "r": []}, {"t": "Состояние", "a": ["S03", "IS-0040-S03", "IS-0040--sostoyanie"], "h": "<p>Одна версия, одна дата: 2025-03-18 (окно w0082, id 305329–305333). Помечена как «повтор прежней мысли» — в этом окне история не разрабатывается заново, а вспоминается как уже существующая.</p>", "r": []}, {"t": "Пробелы", "a": ["S04", "IS-0040-S04", "IS-0040--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Текста истории в окне нет; известны только название, отсылка к сцене с цепью и белыми глазами и место в рейтинге.</li>\n<li>Кто такой Антоша — персонаж, рассказчик или что-то ещё — в переписке не сказано.</li>\n<li>Что за «система» у апостолов, о которой говорит Миколай в id 305333, здесь не объяснено.</li>\n<li>Как именно приёмы имитатора соотносятся с Антошей — названо только как факт сходства, механика связи не описана.</li>\n</ul></div>", "r": []}, {"t": "Источники", "a": ["IS-0040--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2025-03-18</td>\n<td>305329–305333</td>\n<td>w0082</td>\n<td>Апостол (по дате объявления)</td>\n<td>повтор</td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/istorii/IS-0040-antosha.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["IS-0040--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/IS-0040.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

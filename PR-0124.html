@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Как же тебе жарко Бэн</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Как же тебе жарко Бэн<span>проза · PR-0124</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">проза</div>
+    <h1>Как же тебе жарко Бэн</h1>
+    
+    <div class="facts"><span>вселенная: Иссекай</span><span>2026-02-21 → 2026-02-21</span><span>1 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="VS-0005.html">Иссекай</a></div><div class="crumb"><span>дословный исходник:</span><a href="kb/PR-0124-kak-zhe-tebe-zharko-ben.html">PR-0124-kak-zhe-tebe-zharko-ben.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Как же тебе жарко Бэн";
+const LEAD="<h1>Как же тебе жарко Бэн</h1>";
+const CH=[{"t": "Об этом тексте", "a": ["S01", "PR-0124-S01", "PR-0124--ob-etom-tekste"], "h": "<ul>\n<li>Дата: 2026-02-21</li>\n<li>Сообщения: 435656 (в окне переписки 435654–435662)</li>\n<li>Состояние: брошено на середине — обрывается на «Че за»; автор тут же пишет «это все что я написал», «потом не продолжил», «я просто не придумал как я опишу»</li>\n<li>Действующие лица: Бэн; рассказчик (имя не названо)</li>\n</ul>", "r": []}, {"t": "Текст", "a": ["S02", "PR-0124-S02", "PR-0124--tekst"], "h": "<p>Как же тебе жарко Бэн. Жалко тебя. воду холодную налил, не пьёшь, уже кипяток. Не выходишь из будки. Да и та жгёт.<br>Че за</p>", "r": []}, {"t": "Связи — всё вместе", "a": ["PR-0124--svyazi"], "h": "<p><em>Сводный список. Под каждым разделом выше есть свой блок связей — только то, что упомянуто в нём. Связи сквозные и двусторонние.</em></p>\n<ul>\n<li><strong>Упомянут в статье о вселенной:</strong> <a href=\"VS-0005.html\">Иссекай</a></li>\n</ul>", "r": []}, {"t": "Примечания и поправки", "a": ["PR-0124--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/PR-0124.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Хромакей</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Хромакей<span>способность · SP-0258</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">способность</div>
+    <h1>Хромакей</h1>
+    
+    <div class="facts"><span>вселенная: Феня</span><span>1 версия записи</span><span>2025-12-17 → 2025-12-17</span><span>2 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="VS-0011.html">Феня</a></div><div class="crumb"><span>дословный исходник:</span><a href="kb/SP-0258-hromakey.html">SP-0258-hromakey.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Хромакей";
+const LEAD="";
+const CH=[{"t": "Носители", "a": ["S01", "SP-0258-S01", "SP-0258--nositeli"], "h": "<p>Способность закреплена за Радугой — одним из Пастырей. Названа она была в тот же заход, что и сами имена Пастырей: Миколай перечислил «триколор / радуга / градиент / монохром», а следующей репликой добавил «и у кого-то способность хромокей», после чего сам же ответил на свой вопрос — «у радуги» (2025-12-17, id 399541–399543).</p>\n<p>Написание имени способности в переписке — «хромокей»; в карточке сущности оно зафиксировано как «Хромакей», второе написание отмечено как вариант имени.</p>\n<p>Кроме Радуги носители не названы. Из формулировки «и у кого-то способность хромокей» видно, что изначально носитель не был определён и подбирался на месте.</p>", "r": []}, {"t": "Как менялась по версиям", "a": ["S02", "SP-0258-S02", "SP-0258--kak-menyalas-po-versiyam"], "h": "<p>Версия одна.</p>\n<p><strong>2025-12-17 (id 399541–399545, окно w0114).</strong> Способность названа и отдана Радуге. Тем же заходом идёт реплика «то есть сразу в сюжете будет монстром» (id 399545) — к кому или к чему она относится и что означает применительно к хромакею, в переписке не объяснено.</p>", "r": []}, {"t": "Связь с другими способностями", "a": ["S03", "SP-0258-S03", "SP-0258--svyaz-s-drugimi-sposobnostyami"], "h": "<p>Хромакей возник внутри перечня имён Пастырей — «триколор / радуга / градиент / монохром». Связей с другими конкретными способностями в переписке не названо.</p>", "r": []}, {"t": "Пробелы", "a": ["S04", "SP-0258-S04", "SP-0258--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Механика не раскрыта: как именно работает хромакей — не сказано.</li>\n<li>Ограничения и цена не обсуждались.</li>\n<li>Реплика «то есть сразу в сюжете будет монстром» осталась без пояснения — связь с хромакеем не проговорена.</li>\n<li>Разночтение «хромакей / хромокей» в переписке не разбиралось, окончательное написание не выбрано.</li>\n<li>К способности возвращались один раз, за одну минуту разговора; продолжения нет.</li>\n</ul></div>", "r": []}, {"t": "Связи — всё вместе", "a": ["SP-0258--svyazi"], "h": "<p><em>Сводный список. Под каждым разделом выше есть свой блок связей — только то, что упомянуто в нём. Связи сквозные и двусторонние.</em></p>\n<ul>\n<li><strong>Упомянут в группах:</strong> <a href=\"GR-0079.html\">Пастыри</a></li>\n</ul>", "r": []}, {"t": "Источники", "a": ["SP-0258--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2025-12-17</td>\n<td>399541–399545</td>\n<td>w0114</td>\n<td>Феня (по дате объявления)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/sposobnosti/SP-0258-hromakey.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["SP-0258--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/SP-0258.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

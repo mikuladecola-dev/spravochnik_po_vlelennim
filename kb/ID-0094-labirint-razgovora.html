@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Лабиринт разговора</title>
+<link rel="stylesheet" href="../site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Лабиринт разговора<span>идея · ID-0094 · исходник</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">исходник базы</div>
+    <h1>Лабиринт разговора</h1>
+    
+    <div class="facts"><span>1 версий</span><span>2024-08-26 → 2024-08-26</span></div>
+    
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="../";const DOCNAME="Лабиринт разговора";
+const LEAD="";
+const CH=[{"t": "Дословный исходник базы", "a": [], "r": [], "h": "<div class=\"rawnote\">Это не статья справочника, а дословная выписка из переписки. Текст не редактировался: сохранены опечатки, пунктуация и повторы.</div><div class=\"raw\"># Лабиринт разговора\n\n*идея* · вселенные: монстры\n\n## Навигация\n\n- (w0055) Развёрнутая метафора М (224953, написана «позавчера»): разговор с человеком как проход по тёмному лабиринту с системой наград и наказаний — стены, факелы, расширяющееся пространство, отсутствие награды за выход. Прозвучало и заглохло, Слава не ответил по существу.\n\n## История по версиям\n\n_Ниже — дословные куски переписки. Старое не затирается, повторы сохранены._\n\n### Версия 1 — 2024-08-26\n\nвселенная: монстры (по дате объявления) · окно w0055 · сообщения 224952–224956\n\n*что здесь: полный текст метафоры выложен в чат*\n\n\n\n```chat\n[224952] 2024-08-26 14:29 Миколай: ч как?\n[224953] 2024-08-26 14:36 Миколай: говорить с другим человеком, особенно стремясь уважать границы это как проходить лабиринт в темноте, но со следующей системой наград и наказаний: если проходишь сквозь стену то ты получаешь урон, а стена пытается сохранить закон существования и поэтому пытается убрать вас в разрешение системой пространство, визави может поставить на стену факел, тогда ты уже можешь осознанно обходить стену или нет. при проходе по открытому пространству за определённое количество безошибочных шагов в качестве наград появляются опции а пространство увеличивается, но то как с ними работать вопрос личный и зачастую проблематичный. этот лабиринт не наградит за выход ибо в его системе это не достижение, но в некоторых ситуациях лично для вас выход из него будет ценным и спасительным, особенно когда стены сужаются и разрешённого пространства не остаётся.\n[224954] 2024-08-26 14:36 Миколай: позавчера накулякал\n[224955] 2024-08-26 14:36 Слава: Не прочел ещё\n[224956] 2024-08-26 14:36 Миколай: ок\n```\n\n## Неясности\n\n- (w0055) к вселенным отношения не заявлено — авторская заметка</div>"}];</script>
+<script src="../lib.js"></script>
+<script src="../site.js"></script>
+</body>
+</html>

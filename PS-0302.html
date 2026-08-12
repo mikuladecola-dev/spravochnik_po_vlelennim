@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Пепельный человек</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Пепельный человек<span>персонаж · PS-0302</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">персонаж</div>
+    <h1>Пепельный человек</h1>
+    
+    <div class="facts"><span>вселенная: Оам</span><span>1 версия записи</span><span>2025-10-20 → 2025-10-20</span><span>3 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="VS-0008.html">Оам</a></div><div class="crumb"><span>дословный исходник:</span><a href="kb/PS-0302-pepelnyy-chelovek.html">PS-0302-pepelnyy-chelovek.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Пепельный человек";
+const LEAD="";
+const CH=[{"t": "Происхождение", "a": ["S01", "PS-0302-S01", "PS-0302--proishozhdenie"], "h": "<p>Не названо. Персонаж появляется сразу внутри боевой сцены, отдельной карточки у него нет (2025-10-20, id 376506–376512, окно w0107). Вселенная Оам проставлена по дате объявления, а не потому, что она названа в самой сцене.</p>\n<p>Варианты имени, встречающиеся в переписке: «пепельник», «пепельный».</p>", "r": []}, {"t": "Способности", "a": ["S02", "PS-0302-S02", "PS-0302--sposobnosti"], "h": "<p>Работа с пеплом, показанная в двух проявлениях.</p>\n<p>Первое — пепел внутри тела противника. Слава: «В моменте пепельный заполняет лёгкий имитатора пеплом. Лишая имитатор воздуха и заставляя его задыхаться.» Имитатор, «держась за горло не мог придумать способ вытащить пепел» — то есть изъять пепел из лёгких напрямую нельзя.</p>\n<p>Второе — пепел вокруг. Окружающий пепел гасит огонь: когда Имитатор поджигает себя изнутри, «Огонь бушует, но пепел вокруг него его гасят».</p>\n<p>Механика того, откуда берётся пепел и как он вводится в лёгкие, в переписке не описана.</p>", "r": []}, {"t": "Связи с другими", "a": ["S03", "PS-0302-S03", "PS-0302--svyazi-s-drugimi"], "h": "<p>Имитатор — противник в сцене 376510. Единственная связь, названная в переписке.</p>\n<p>Исход сцены: Имитатор создаёт пламя в ладонях, прикрывая его ладонями от окружающего пепла, подносит ко рту и глотает. Дальше — «имитатор извергает пламя из горла, поджаривая само горло и рот. Его грудная клетка прожигается оранжевым светом. Из щелей между ребров вырывается пламя. Прожигая кожу, плоть.» Огонь гасится окружающим пеплом. Финал сцены — про Имитатора, не про пепельного: «Имитатор ели стоя поднимает обоженое лицо, на котором сгорела вся кожа и улыбается. Сквозь его рёбра можно увидеть бьющей его сердца. Но его это не волнует, он понял как использовать способность пепельника.»</p>\n<p>То, что именно Имитатор понял и как он потом использует способность пепельника, в переписке не сказано.</p>", "r": []}, {"t": "Как менялся", "a": ["S04", "PS-0302-S04", "PS-0302--kak-menyalsya"], "h": "<p>Версия 1 — 2025-10-20 (id 376506–376512, окно w0107). Единственная версия. Персонаж вводится как противник в сцене и в этом же виде остаётся; изменений и пересмотров нет.</p>", "r": []}, {"t": "Пробелы", "a": ["S05", "PS-0302-S05", "PS-0302--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Происхождения нет.</li>\n<li>Вселенная в самой сцене не названа — проставлена по дате объявления.</li>\n<li>Внешность не описана.</li>\n<li>Характер не описан, реплик у персонажа нет.</li>\n<li>Чем сцена кончилась для самого пепельного человека — не сказано.</li>\n<li>Кроме этой сцены о нём ничего нет.</li>\n</ul></div>", "r": []}, {"t": "Источники", "a": ["PS-0302--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2025-10-20</td>\n<td>376506–376512</td>\n<td>w0107</td>\n<td>Оам (по дате объявления)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/personazhi/PS-0302-pepelnyy-chelovek.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["PS-0302--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/PS-0302.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

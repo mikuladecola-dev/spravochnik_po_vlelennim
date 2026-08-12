@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Повседневность + фентези</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Повседневность + фентези<span>мир · MR-0001</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">мир</div>
+    <h1>Повседневность + фентези</h1>
+    
+    <div class="facts"><span>вселенная: неясно</span><span>1 версия записи</span><span>2023-01-07 → 2023-01-07</span><span>3 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="kb/VS-0016-neyasno.html">неясно</a> <span class="m">(статьи ещё нет)</span></div><div class="crumb"><span>дословный исходник:</span><a href="kb/MR-0001-povsednevnost-fentezi.html">MR-0001-povsednevnost-fentezi.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Повседневность + фентези";
+const LEAD="";
+const CH=[{"t": "Устройство", "a": ["S01", "MR-0001-S01", "MR-0001--ustroystvo"], "h": "<p>Мир задан не через географию или физические законы, а через жанр и порядок сезонов\nпредполагаемого аниме (2023-01-07, id 28892–28910). Слава спрашивает Миколая, какая у него\nбудет первая вселенная, и перечисляет варианты — «магия, сверхспособности , повседневность»,\nоговорив, что «Нет там больше их просто лень писать». Миколай выбирает третий из перечисленных:\n«3 вариант», «Повседневность». Отсюда варианты имени, под которыми мир проходит в базе:\n«3 вариант», «повседневность».</p>\n<p>Устройство мира описано одной репликой о сезонной структуре: «Ну типа 3 сезона повседневность\nдопустим, а 4 повседневность + фентези». То есть первые три сезона — чистая повседневность,\nфентези входит только в четвёртом и не заменяет повседневность, а добавляется к ней. Число\nсезонов дано с оговоркой «допустим».</p>\n<p>Событие, которым обозначен переход в фентезийную часть: «Гг стал всезнающим богом».\nКак именно главный герой им стал, что это даёт и как соотносится с тремя предыдущими сезонами\nповседневности, в переписке не сказано.</p>", "r": []}, {"t": "Население", "a": ["S02", "MR-0001-S02", "MR-0001--naselenie"], "h": "<p>Назван один обитатель — главный герой, становящийся всезнающим богом. Имени у него нет,\nдругих персонажей мира в переписке не названо.</p>", "r": []}, {"t": "Место во вселенной", "a": ["S03", "MR-0001-S03", "MR-0001--mesto-vo-vselennoy"], "h": "<p>Мир заявлен как «первая вселенная» Миколая для аниме. На вопрос, какая она будет, Миколай\nсначала отвечает «Наша», после перечисления жанров выбирает повседневность, а затем сам\nоставляет вопрос открытым: «Ну крч хз какая будет первая вселенная, но я вообще хочу\nповседневность». То есть выбор зафиксирован как желание, а не как решение.</p>\n<p>Название вселенной в переписке не дано — она обозначена только жанрами. В базе принадлежность\nк вселенной помечена как «неясно».</p>\n<p>В связях мира числятся «ГГ — всезнающий бог» и «Параллельные реальности в голове». Первая\nсвязь опирается на реплику 28903. Вторая в приведённом куске переписки не проговаривается —\nна чём она основана, из текста не следует.</p>", "r": []}, {"t": "Как менялся по версиям", "a": ["S04", "MR-0001-S04", "MR-0001--kak-menyalsya-po-versiyam"], "h": "<p>Версия одна, 2023-01-07 (id 28892–28910), окно w0008. Позже к миру не возвращались.</p>", "r": []}, {"t": "Пробелы", "a": ["S05", "MR-0001-S05", "MR-0001--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Название вселенной не дано, есть только жанровое обозначение.</li>\n<li>Не сказано, что такое здесь «повседневность» как сеттинг: место действия, время, страна.</li>\n<li>Не сказано, что за фентези входит в четвёртый сезон — какая система, какие существа, какие\n  правила.</li>\n<li>Не сказано, как главный герой становится всезнающим богом и что за этим следует.</li>\n<li>Главный герой не назван по имени, других персонажей нет.</li>\n<li>Число сезонов дано приблизительно («3 сезона допустим»), точная структура осталась\n  нерешённой.</li>\n<li>Связь с «Параллельными реальностями в голове» указана в базе, но в переписке не объяснена.</li>\n</ul></div>", "r": []}, {"t": "Источники", "a": ["MR-0001--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2023-01-07</td>\n<td>28892–28910</td>\n<td>w0008</td>\n<td>неясно (не определено)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/miry/MR-0001-povsednevnost-fentezi.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["MR-0001--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/MR-0001.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

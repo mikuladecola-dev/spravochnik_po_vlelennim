@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Перо Кладович</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Перо Кладович<span>персонаж · PS-0046</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">персонаж</div>
+    <h1>Перо Кладович</h1>
+    
+    <div class="facts"><span>вселенная: игра бога</span><span>1 версия записи</span><span>2024-04-02 → 2024-04-02</span><span>2 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="VS-0014.html">игра бога</a></div><div class="crumb"><span>дословный исходник:</span><a href="kb/PS-0046-pero-kladovich.html">PS-0046-pero-kladovich.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Перо Кладович";
+const LEAD="";
+const CH=[{"t": "Происхождение", "a": ["S01", "PS-0046-S01", "PS-0046--proishozhdenie"], "h": "<p>Персонаж вселенной «игра бога», придуман Миколаем. Введён одним сообщением — короткой карточкой (2024-04-02, id 153334, окно w0029), в том же заходе, что и остальные карточки персонажей этого вечера. Одна версия, к персонажу не возвращались.</p>\n<p>Возраст — 698 лет. Откуда такой возраст и что он собой означает для этого мира, в переписке не сказано.</p>", "r": []}, {"t": "Характер", "a": ["S02", "PS-0046-S02", "PS-0046--harakter"], "h": "<p>Описан одной строкой: «Ну так, чисто кабанчик на побегушках». То есть персонаж заявлен как мелкая фигура на подхвате, исполнитель поручений, а не самостоятельное лицо. Чьих поручений — не сказано.</p>", "r": []}, {"t": "Способности", "a": ["S03", "PS-0046-S03", "PS-0046--sposobnosti"], "h": "<p>Копирование чужих способностей: «копия способностей и использование 1 раз без людей, потом чтобы снова использовать надо увидеть в реальности этого человека и повторить процесс».</p>\n<p>Механика в том виде, как она записана:</p>\n<ul>\n<li>он снимает копию чужой способности;</li>\n<li>скопированное можно использовать один раз;</li>\n<li>после этого, чтобы получить эту способность снова, нужно «увидеть в реальности этого человека», то есть носителя, вживую, а не через изображение или на расстоянии;</li>\n<li>увидев, надо «повторить процесс» — то есть снять копию заново.</li>\n</ul>\n<p>Формулировка «использование 1 раз без людей» в самой карточке неоднозначна, это отмечено и в исходнике как неясность. Что означает «без людей» — что применять можно вне присутствия носителя, или что-то другое — в переписке не разъяснено.</p>\n<p>Отдельно назван ключ повторного применения: носителя надо увидеть именно «в реальности».</p>", "r": []}, {"t": "Как менялся", "a": ["S04", "PS-0046-S04", "PS-0046--kak-menyalsya"], "h": "<p>Одно состояние.</p>\n<ul>\n<li><strong>2024-04-02 (id 153334, окно w0029)</strong> — полная карточка: 698 лет, «чисто кабанчик на побегушках», копирование способностей с одним применением и необходимостью снова увидеть носителя вживую для повтора.</li>\n</ul>\n<p>Изменений после этого не было.</p>", "r": []}, {"t": "Пробелы", "a": ["S05", "PS-0046-S05", "PS-0046--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Внешность не описана вообще.</li>\n<li>Не сказано, у кого он «на побегушках» — хозяин или наниматель не назван.</li>\n<li>Не сказано, что даёт возраст 698 лет: другой вид, долголетие, что-то ещё.</li>\n<li>Формулировка «использование 1 раз без людей» осталась нерасшифрованной.</li>\n<li>Не сказано, как именно снимается копия — нужен ли контакт, взгляд, время; сказано только, что для повтора носителя надо «увидеть в реальности».</li>\n<li>Не сказано, сколько копий он может держать одновременно и есть ли предел по силе копируемого.</li>\n<li>Связи с другими персонажами не названы.</li>\n<li>Судьба персонажа не описана.</li>\n</ul></div>", "r": []}, {"t": "Связи — всё вместе", "a": ["PS-0046--svyazi"], "h": "<p><em>Сводный список. Под каждым разделом выше есть свой блок связей — только то, что упомянуто в нём. Связи сквозные и двусторонние.</em></p>\n<ul>\n<li><strong>Входит в группы:</strong> <a href=\"GR-0049.html\">Команда Миколая (10 персонажей игры бога)</a></li>\n<li><strong>Упомянут в группах:</strong> <a href=\"GR-0049.html\">Команда Миколая (10 персонажей игры бога)</a></li>\n<li><strong>Упомянут в статье о вселенной:</strong> <a href=\"VS-0014.html\">игра бога</a></li>\n</ul>", "r": []}, {"t": "Источники", "a": ["PS-0046--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2024-04-02</td>\n<td>153334–153334</td>\n<td>w0029</td>\n<td>игра бога (объявлено)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/personazhi/PS-0046-pero-kladovich.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["PS-0046--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/PS-0046.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

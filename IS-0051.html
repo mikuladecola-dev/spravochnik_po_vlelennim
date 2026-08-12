@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Новая история Славы</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Новая история Славы<span>история · IS-0051</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">история</div>
+    <h1>Новая история Славы</h1>
+    
+    <div class="facts"><span>вселенная: Нимб</span><span>2 версии записи</span><span>2025-04-19 → 2025-04-23</span><span>3 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="VS-0006.html">Нимб</a></div><div class="crumb"><span>дословный исходник:</span><a href="kb/IS-0051-novaya-istoriya-slavy.html">IS-0051-novaya-istoriya-slavy.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Новая история Славы";
+const LEAD="";
+const CH=[{"t": "Содержание", "a": ["S01", "IS-0051-S01", "IS-0051--soderzhanie"], "h": "<p>Содержания у истории в переписке нет. Известно только то, что Слава её начал писать — сначала как намерение (2025-04-19, id 320684–320691), затем как факт (2025-04-23, id 321316). Ни названия, ни сюжета, ни персонажей, ни места действия не названо.</p>\n<p>Единственное, что сказано о самом решении, — что ему предшествовали два отказа от прежних работ: «Вообще я уже две кинул» (id 320685). Слово «кинул» тут же пояснено самим автором: «Кинул (бросил, перестал писать, заебалься)» (id 320687). Отсюда и решение: «Поэтому начну новую писать» (id 320689).</p>\n<p>Реакция Миколая на такой способ работы: «по сути эт норм» (id 320690), «лучше бросать чем вечно исправлять» (id 320691).</p>", "r": []}, {"t": "Персонажи", "a": ["S02", "IS-0051-S02", "IS-0051--personazhi"], "h": "<p>Персонажи истории не названы.</p>\n<p>Автор — Слава. Миколай в обсуждении выступает только как собеседник, комментирующий решение бросить и начать заново.</p>", "r": []}, {"t": "Место во вселенной", "a": ["S03", "IS-0051-S03", "IS-0051--mesto-vo-vselennoy"], "h": "<p>К вселенной «Нимб» история отнесена по дате объявления, а не по сказанному в переписке: в самих сообщениях вселенная не названа.</p>\n<p>Связь с двумя предыдущими историями — «Брошенная история про Артёма и жену» и «Брошенная история про корабль желаний» — состоит только в том, что новая история начата вместо них. Что именно из брошенного перешло в новую (и перешло ли), в переписке не сказано.</p>", "r": []}, {"t": "Состояние", "a": ["S04", "IS-0051-S04", "IS-0051--sostoyanie"], "h": "<p>Два состояния по датам, старое не затирается:</p>\n<ul>\n<li><strong>2025-04-19</strong> (id 320684–320691) — намерение. «Возможно я кину свою историю», «Поэтому начну новую писать». На этот момент история ещё не начата, и даже отказ от текущей сформулирован как возможность («возможно»).</li>\n<li><strong>2025-04-23</strong> (id 321314–321317) — начата. «Кстати я новую историю писать начал» (id 321316). Формулировка от намерения к факту сменилась, содержание при этом не появилось.</li>\n</ul>\n<p>Текста истории в окне w0088 нет. По навигации окна он идёт дальше, в w0089.</p>", "r": []}, {"t": "Пробелы", "a": ["S05", "IS-0051-S05", "IS-0051--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Названия истории нет.</li>\n<li>Содержания, сюжета, персонажей нет.</li>\n<li>Вселенная в переписке не названа — отнесение к «Нимбу» сделано по дате объявления.</li>\n<li>Не сказано, была ли история дописана, брошена ли она так же, как две предыдущие, и была ли она вообще той же историей, о которой шла речь 19 апреля: 19-го объявлено намерение, 23-го — факт начала, но что это один и тот же замысел, прямо не сказано.</li>\n<li>Не сказано, чем именно не устроили две брошенные истории, кроме «заебалься».</li>\n<li>Реплика Миколая «не пока нет» (id 321317) идёт сразу после сообщения о начале новой истории, но к чему она относится, из окна не следует.</li>\n</ul></div>", "r": []}, {"t": "Источники", "a": ["IS-0051--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2025-04-19</td>\n<td>320684–320691</td>\n<td>w0088</td>\n<td>Нимб (по дате объявления)</td>\n<td></td>\n</tr>\n<tr>\n<td>2025-04-23</td>\n<td>321314–321317</td>\n<td>w0088</td>\n<td>Нимб (по дате объявления)</td>\n<td>повтор</td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/istorii/IS-0051-novaya-istoriya-slavy.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["IS-0051--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/IS-0051.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

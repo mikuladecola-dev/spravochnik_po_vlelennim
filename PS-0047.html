@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Аполлон</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Аполлон<span>персонаж · PS-0047</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">персонаж</div>
+    <h1>Аполлон</h1>
+    
+    <div class="facts"><span>вселенная: игра бога</span><span>1 версия записи</span><span>2024-04-03 → 2024-04-03</span><span>1 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="VS-0014.html">игра бога</a></div><div class="crumb"><span>дословный исходник:</span><a href="kb/PS-0047-apollon.html">PS-0047-apollon.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Аполлон";
+const LEAD="";
+const CH=[{"t": "Происхождение", "a": ["S01", "PS-0047-S01", "PS-0047--proishozhdenie"], "h": "<p>Персонаж вселенной «игра бога», карточку составил Слава (2024-04-03, id 153365, окно w0029). Появляется в переписке единожды — сразу готовой карточкой, без предварительного обсуждения. Откуда персонаж взялся внутри мира, в переписке не сказано.</p>", "r": []}, {"t": "Внешность", "a": ["S02", "PS-0047-S02", "PS-0047--vneshnost"], "h": "<p>Мужчина 34 лет, «крупного телосложения». Других деталей внешности в карточке нет.</p>", "r": []}, {"t": "Характер", "a": ["S03", "PS-0047-S03", "PS-0047--harakter"], "h": "<p>«Общительный». Больше о характере ничего не названо.</p>", "r": []}, {"t": "Способности", "a": ["S04", "PS-0047-S04", "PS-0047--sposobnosti"], "h": "<p>Способность названа «мастер на все руки». Расшифровка дана Славой в скобках: «мастер любого оружия, боевые искусства, механик, электрик, то бишь мастер любого физического труда».</p>\n<p>То есть способность покрывает не одну область, а весь физический труд целиком — оружие, рукопашный бой и технические ремёсла перечислены как частные случаи общего «мастер любого физического труда». Ограничений, цены или условий работы способности в переписке не названо.</p>", "r": []}, {"t": "Как менялся — состояния по датам", "a": ["S05", "PS-0047-S05", "PS-0047--kak-menyalsya"], "h": "<ul>\n<li><strong>2024-04-03 (id 153365, окно w0029)</strong> — единственное состояние. Полная карточка: имя, возраст 34, телосложение, характер, способность с расшифровкой. Версия одна, переработок и отклонённых вариантов в переписке нет.</li>\n</ul>", "r": []}, {"t": "Пробелы", "a": ["S06", "PS-0047-S06", "PS-0047--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Происхождение персонажа не описано.</li>\n<li>Связи с другими персонажами не названы — ни один другой персонаж рядом с Аполлоном не упомянут.</li>\n<li>Что с персонажем стало дальше, в переписке не сказано: после 2024-04-03 он не возвращается.</li>\n<li>Нет ограничений способности: не сказано, есть ли предел мастерству, распространяется ли оно на умственный труд (в формулировке оговорён именно физический), можно ли способность отнять или заглушить.</li>\n<li>Не сказано, отсылает ли имя к греческому Аполлону и связано ли это с сутью персонажа.</li>\n</ul></div>", "r": []}, {"t": "Связи — всё вместе", "a": ["PS-0047--svyazi"], "h": "<p><em>Сводный список. Под каждым разделом выше есть свой блок связей — только то, что упомянуто в нём. Связи сквозные и двусторонние.</em></p>\n<ul>\n<li><strong>Входит в группы:</strong> <a href=\"GR-0050.html\">Команда Славы (персонажи игры бога)</a></li>\n<li><strong>Упомянут в группах:</strong> <a href=\"GR-0050.html\">Команда Славы (персонажи игры бога)</a></li>\n<li><strong>Упомянут в статье о вселенной:</strong> <a href=\"VS-0014.html\">игра бога</a></li>\n</ul>", "r": []}, {"t": "Источники", "a": ["PS-0047--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2024-04-03</td>\n<td>153365–153365</td>\n<td>w0029</td>\n<td>игра бога (объявлено)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/personazhi/PS-0047-apollon.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["PS-0047--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/PS-0047.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

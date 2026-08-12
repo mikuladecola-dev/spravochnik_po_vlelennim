@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Стихи и рэп — в справочник не вошли</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Стихи и рэп — в справочник не вошли<span>перечень · DOC-STIHI-NE-VOSHLI</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">перечень</div>
+    <h1>Стихи и рэп — в справочник не вошли</h1>
+    
+    <div class="facts"></div>
+    
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Стихи и рэп — в справочник не вошли";
+const LEAD="<p><em>По решению автора стихи и рэп к работе над мирами не относятся и в разделы справочника не идут. Здесь они перечислены, чтобы отсеянное было видно: тексты никуда не делись, дословные лежат в базе.</em></p>\n<p>Всего: 53.</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>id</th>\n<th>Название</th>\n<th>Дата</th>\n<th>Исходник в базе</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>PR-0001</code></td>\n<td>Малолетний нигилист</td>\n<td>2022-04-19</td>\n<td><code>kb/proza/PR-0001-maloletniy-nigilist.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0002</code></td>\n<td>О, как же красен день в аду (про Уробороса) — версия 1</td>\n<td>2022-04-19</td>\n<td><code>kb/proza/PR-0002-o-kak-zhe-krasen-den-v-adu-pro-uroborosa-versiya-1.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0003</code></td>\n<td>О, как же красен день в аду (про Уробороса) — версия 2, переделанная</td>\n<td>2022-04-20</td>\n<td><code>kb/proza/PR-0003-o-kak-zhe-krasen-den-v-adu-pro-uroborosa-versiya-2-peredelan.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0004</code></td>\n<td>Повсюду челюсти</td>\n<td>2022-04-19</td>\n<td><code>kb/proza/PR-0004-povsyudu-chelyusti.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0007</code></td>\n<td>Наступает осень, я иду домой (стих про потерянные наушники)</td>\n<td>2022-09-30</td>\n<td><code>kb/proza/PR-0007-nastupaet-osen-ya-idu-domoy-stih-pro-poteryannye-naushniki.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0008</code></td>\n<td>Рэп про Улан-Удэ</td>\n<td>2022-12-16</td>\n<td><code>kb/proza/PR-0008-rep-pro-ulan-ude.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0009</code></td>\n<td>Рэп про Наруто</td>\n<td>2023-02-13</td>\n<td><code>kb/proza/PR-0009-rep-pro-naruto.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0011</code></td>\n<td>Стих про девять этажей («О, как же красен день в аду»)</td>\n<td>2023-07-25</td>\n<td><code>kb/proza/PR-0011-stih-pro-devyat-etazhey-o-kak-zhe-krasen-den-v-adu.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0012</code></td>\n<td>Реп про класс («Давайте поговорим про наш 9 класс»)</td>\n<td>2023-07-25</td>\n<td><code>kb/proza/PR-0012-rep-pro-klass-davayte-pogovorim-pro-nash-9-klass.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0013</code></td>\n<td>Повсюду челюсти</td>\n<td>2023-07-25</td>\n<td><code>kb/proza/PR-0013-povsyudu-chelyusti.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0016</code></td>\n<td>как пахнет свобода</td>\n<td>2024-07-09</td>\n<td><code>kb/proza/PR-0016-kak-pahnet-svoboda.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0017</code></td>\n<td>Стих про дорогу в Додо («по обочине и брегу я скитаюсь в одиночку»)</td>\n<td>2024-07-10</td>\n<td><code>kb/proza/PR-0017-stih-pro-dorogu-v-dodo-po-obochine-i-bregu-ya-skitayus-v-odi.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0018</code></td>\n<td>Обрывок стиха «поток образов или автологичность»</td>\n<td>2024-07-12</td>\n<td><code>kb/proza/PR-0018-obryvok-stiha-potok-obrazov-ili-avtologichnost.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0019</code></td>\n<td>добрый день, не против поучаствовать..</td>\n<td>2024-07-26</td>\n<td><code>kb/proza/PR-0019-dobryy-den-ne-protiv-pouchastvovat.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0024</code></td>\n<td>О трубадур, дурак наш бравый (история о трубадуре)</td>\n<td>2024-08-11</td>\n<td><code>kb/proza/PR-0024-o-trubadur-durak-nash-bravyy-istoriya-o-trubadure.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0034</code></td>\n<td>когда нежность растекаясь по телу</td>\n<td>2024-09-14</td>\n<td><code>kb/proza/PR-0034-kogda-nezhnost-rastekayas-po-telu.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0036</code></td>\n<td>осматривая панораму на мосту</td>\n<td>2024-09-17</td>\n<td><code>kb/proza/PR-0036-osmatrivaya-panoramu-na-mostu.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0037</code></td>\n<td>я накрыл сей день на стол</td>\n<td>2024-09-20</td>\n<td><code>kb/proza/PR-0037-ya-nakryl-sey-den-na-stol.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0044</code></td>\n<td>Наш костёр, он уж пылает в темноте (стих Славы)</td>\n<td>2025-02-11</td>\n<td><code>kb/proza/PR-0044-nash-koster-on-uzh-pylaet-v-temnote-stih-slavy.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0045</code></td>\n<td>Стих про президента школы и захват актового зала</td>\n<td>2025-02-11</td>\n<td><code>kb/proza/PR-0045-stih-pro-prezidenta-shkoly-i-zahvat-aktovogo-zala.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0046</code></td>\n<td>Дисс на самого себя (Ты тупой гандон)</td>\n<td>2025-02-11</td>\n<td><code>kb/proza/PR-0046-diss-na-samogo-sebya-ty-tupoy-gandon.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0047</code></td>\n<td>Хейт на слово нож в своих стихах</td>\n<td>2025-02-11</td>\n<td><code>kb/proza/PR-0047-heyt-na-slovo-nozh-v-svoih-stihah.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0048</code></td>\n<td>По утрам гуляйте смело (зимний стих)</td>\n<td>2025-02-11</td>\n<td><code>kb/proza/PR-0048-po-utram-gulyayte-smelo-zimniy-stih.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0050</code></td>\n<td>Хочу цветочки посадить в полсадник</td>\n<td>2025-02-13</td>\n<td><code>kb/proza/PR-0050-hochu-cvetochki-posadit-v-polsadnik.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0051</code></td>\n<td>Мотылёк</td>\n<td>2025-02-19</td>\n<td><code>kb/proza/PR-0051-motylek.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0057</code></td>\n<td>Миколашка, шоколашка (стихотворение про зубки)</td>\n<td>2025-03-10</td>\n<td><code>kb/proza/PR-0057-mikolashka-shokolashka-stihotvorenie-pro-zubki.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0066</code></td>\n<td>HPL</td>\n<td>2025-04-10</td>\n<td><code>kb/proza/PR-0066-hpl.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0067</code></td>\n<td>Стих про силу слов и суицид (по первой строке «если ты знаешь силу слов»)</td>\n<td>2025-04-19</td>\n<td><code>kb/proza/PR-0067-stih-pro-silu-slov-i-suicid-po-pervoy-stroke-esli-ty-znaesh-.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0073</code></td>\n<td>Стих: лежа на кровати смотрю телеграмм</td>\n<td>2025-05-04</td>\n<td><code>kb/proza/PR-0073-stih-lezha-na-krovati-smotryu-telegramm.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0076</code></td>\n<td>это не диалог а звук из стереодинамика</td>\n<td>2025-05-15</td>\n<td><code>kb/proza/PR-0076-eto-ne-dialog-a-zvuk-iz-stereodinamika.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0077</code></td>\n<td>и делиться молодёжь на два лагеря</td>\n<td>2025-05-15</td>\n<td><code>kb/proza/PR-0077-i-delitsya-molodezh-na-dva-lagerya.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0078</code></td>\n<td>Стих «нельзя писать стихи, не ебя мозги»</td>\n<td>2025-05-17</td>\n<td><code>kb/proza/PR-0078-stih-nelzya-pisat-stihi-ne-ebya-mozgi.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0079</code></td>\n<td>Стих «противный ветер майский обдувает кожу»</td>\n<td>2025-05-17</td>\n<td><code>kb/proza/PR-0079-stih-protivnyy-veter-mayskiy-obduvaet-kozhu.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0081</code></td>\n<td>бесы в деталях, ками в мелочах</td>\n<td>2025-05-20</td>\n<td><code>kb/proza/PR-0081-besy-v-detalyah-kami-v-melochah.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0082</code></td>\n<td>мое творчество это итерация по чужим идеям в сотой тетрации</td>\n<td>2025-05-22</td>\n<td><code>kb/proza/PR-0082-moe-tvorchestvo-eto-iteraciya-po-chuzhim-ideyam-v-sotoy-tetr.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0083</code></td>\n<td>вылавливая прыщ, задену аудиторию</td>\n<td>2025-05-23</td>\n<td><code>kb/proza/PR-0083-vylavlivaya-prysch-zadenu-auditoriyu.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0084</code></td>\n<td>Я устал и поднял пятку с мины (стих о войне и обесчеловечении)</td>\n<td>2025-05-27</td>\n<td><code>kb/proza/PR-0084-ya-ustal-i-podnyal-pyatku-s-miny-stih-o-voyne-i-obeschelovec.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0085</code></td>\n<td>как же меня разрывают люди</td>\n<td>2025-06-23</td>\n<td><code>kb/proza/PR-0085-kak-zhe-menya-razryvayut-lyudi.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0089</code></td>\n<td>Стих (лп: Лондон-Париж — Иракли)</td>\n<td>2025-09-10</td>\n<td><code>kb/proza/PR-0089-stih-lp-london-parizh-irakli.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0092</code></td>\n<td>Уродливый кот</td>\n<td>2025-10-26</td>\n<td><code>kb/proza/PR-0092-urodlivyy-kot.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0093</code></td>\n<td>я был одним из тех, кто избивал кота</td>\n<td>2025-10-28</td>\n<td><code>kb/proza/PR-0093-ya-byl-odnim-iz-teh-kto-izbival-kota.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0110</code></td>\n<td>Стих «ем козявки, вытираю о штанину сопли»</td>\n<td>2026-02-16</td>\n<td><code>kb/proza/PR-0110-stih-em-kozyavki-vytirayu-o-shtaninu-sopli.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0111</code></td>\n<td>Стих «я летал и терял перья, чтобы люди знали, чем писать»</td>\n<td>2026-02-16</td>\n<td><code>kb/proza/PR-0111-stih-ya-letal-i-teryal-perya-chtoby-lyudi-znali-chem-pisat.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0112</code></td>\n<td>Стих «любимый нёс в подарок плюшевых котят»</td>\n<td>2026-02-16</td>\n<td><code>kb/proza/PR-0112-stih-lyubimyy-nes-v-podarok-plyushevyh-kotyat.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0113</code></td>\n<td>Стих «в свои двадцать я одинок»</td>\n<td>2026-02-16</td>\n<td><code>kb/proza/PR-0113-stih-v-svoi-dvadcat-ya-odinok.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0114</code></td>\n<td>Стих «да почему он так бесчувственно отказывает мне?»</td>\n<td>2026-02-16</td>\n<td><code>kb/proza/PR-0114-stih-da-pochemu-on-tak-beschuvstvenno-otkazyvaet-mne.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0115</code></td>\n<td>Стих «я был одним из тех, кто избивал кота»</td>\n<td>2026-02-16</td>\n<td><code>kb/proza/PR-0115-stih-ya-byl-odnim-iz-teh-kto-izbival-kota.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0116</code></td>\n<td>Стих «от тебя глаза у солнца морщатся»</td>\n<td>2026-02-16</td>\n<td><code>kb/proza/PR-0116-stih-ot-tebya-glaza-u-solnca-morschatsya.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0117</code></td>\n<td>Стих «как же сильно болит что-то в груди»</td>\n<td>2026-02-16</td>\n<td><code>kb/proza/PR-0117-stih-kak-zhe-silno-bolit-chto-to-v-grudi.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0118</code></td>\n<td>Стих «раз я для тебя воздух, буду вызывать эмболию»</td>\n<td>2026-02-16</td>\n<td><code>kb/proza/PR-0118-stih-raz-ya-dlya-tebya-vozduh-budu-vyzyvat-emboliyu.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0119</code></td>\n<td>Стих «в конце осени тёмным пасмурным утром» (про снежный ком)</td>\n<td>2026-02-16</td>\n<td><code>kb/proza/PR-0119-stih-v-konce-oseni-temnym-pasmurnym-utrom-pro-snezhnyy-kom.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0120</code></td>\n<td>Стих «у меня много персов, все они дебилы»</td>\n<td>2026-02-16</td>\n<td><code>kb/proza/PR-0120-stih-u-menya-mnogo-persov-vse-oni-debily.md</code></td>\n</tr>\n<tr>\n<td><code>PR-0122</code></td>\n<td>Две строки Славы («Среди ночей я жду когда же...», «Не заводится мой мотоцикал оптимиста»)</td>\n<td>2026-02-16</td>\n<td><code>kb/proza/PR-0122-dve-stroki-slavy-sredi-nochey-ya-zhdu-kogda-zhe-ne-zavoditsy.md</code></td>\n</tr>\n</tbody>\n</table></div>";
+const CH=[];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

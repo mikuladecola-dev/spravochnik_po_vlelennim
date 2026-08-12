@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Отделы Нимба</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Отделы Нимба<span>мир · MR-0133</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">мир</div>
+    <h1>Отделы Нимба</h1>
+    
+    <div class="facts"><span>вселенная: Нимб</span><span>1 версия записи</span><span>2025-04-08 → 2025-04-08</span><span>1 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="VS-0006.html">Нимб</a></div><div class="crumb"><span>дословный исходник:</span><a href="kb/MR-0133-otdely-nimba.html">MR-0133-otdely-nimba.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Отделы Нимба";
+const LEAD="";
+const CH=[{"t": "Устройство", "a": ["S01", "MR-0133-S01", "MR-0133--ustroystvo"], "h": "<p>Внутренняя структура организации «Нимб». Перечислена списком одним сообщением (2025-04-08, id 317257).</p>\n<p>Три основных отдела:</p>\n<ul>\n<li>Силовики — «ну здесь всё ясно», пояснения автор не даёт.</li>\n<li>Бухгалтерия.</li>\n<li>Исследования.</li>\n</ul>\n<p>Помимо трёх основных есть ещё один: «Ещё есть отдал Этики, который часто ругается с отделом силовиков и исследования». То есть отдел этики вынесен за рамки трёх основных и задан через конфликт — он конфликтует с двумя отделами из трёх, с силовиками и с исследованиями. С бухгалтерией конфликт не назван.</p>\n<p>Ориентир, который автор даёт сразу следом: «Грубо говоря это организация сцп только измененая под мои рамки» (id 317258). В чём именно состоит изменение «под мои рамки», не расшифровано.</p>", "r": []}, {"t": "Место во вселенной", "a": ["S02", "MR-0133-S02", "MR-0133--mesto-vo-vselennoy"], "h": "<p>Вселенная — «Нимб» (объявлено). Отделы являются частью организации «Нимб».</p>", "r": []}, {"t": "Как менялся по версиям", "a": ["S03", "MR-0133-S03", "MR-0133--kak-menyalsya-po-versiyam"], "h": "<p>Версия 1 — 2025-04-08, окно w0087, сообщения 317257–317258. Единственная версия; после неё структура в переписке не пересматривалась.</p>", "r": []}, {"t": "Пробелы", "a": ["S04", "MR-0133-S04", "MR-0133--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Функции отделов не описаны, кроме отсылки «ну здесь всё ясно» для силовиков. Чем занимается отдел исследований и что именно ведёт бухгалтерия, не сказано.</li>\n<li>Полномочия отдела этики не названы — сказано только, что он «часто ругается» с силовиками и исследованиями; чем заканчиваются эти конфликты и кто в них главнее, не сказано.</li>\n<li>Отношения отдела этики с бухгалтерией не упомянуты.</li>\n<li>Ни одного сотрудника, руководителя или численности отделов не названо.</li>\n<li>Существуют ли отделы помимо перечисленных четырёх, не сказано.</li>\n<li>В чём «Нимб» отличается от организации SCP («изменена под мои рамки»), не расшифровано.</li>\n</ul></div>", "r": []}, {"t": "Связи — всё вместе", "a": ["MR-0133--svyazi"], "h": "<p><em>Сводный список. Под каждым разделом выше есть свой блок связей — только то, что упомянуто в нём. Связи сквозные и двусторонние.</em></p>\n<ul>\n<li><strong>Упомянут в группах:</strong> <a href=\"GR-0009.html\">Организация Нимб (НБО)</a></li>\n<li><strong>Упомянут в статье о вселенной:</strong> <a href=\"VS-0006.html\">Нимб</a></li>\n</ul>", "r": []}, {"t": "Источники", "a": ["MR-0133--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2025-04-08</td>\n<td>317257–317258</td>\n<td>w0087</td>\n<td>Нимб (объявлено)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/miry/MR-0133-otdely-nimba.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["MR-0133--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/MR-0133.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

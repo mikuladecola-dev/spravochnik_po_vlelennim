@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Летающий пришелец</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Летающий пришелец<span>персонаж · PS-0343</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">персонаж</div>
+    <h1>Летающий пришелец</h1>
+    
+    <div class="facts"><span>вселенная: Феня</span><span>1 версия записи</span><span>2025-12-17 → 2025-12-17</span><span>2 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="VS-0011.html">Феня</a></div><div class="crumb"><span>дословный исходник:</span><a href="kb/PS-0343-letayuschiy-prishelec.html">PS-0343-letayuschiy-prishelec.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Летающий пришелец";
+const LEAD="";
+const CH=[{"t": "Происхождение", "a": ["S01", "PS-0343-S01", "PS-0343--proishozhdenie"], "h": "<p>Один из пришельцев. В окне w0114 (2025-12-17, id 399321–399332) Слава напоминает описание, данное им ранее: «Плюсом у летающего. Я говорил на плечах три отверстия с каждой стороны откуда тентакли вылетают с острым концом» (id 399324). Само это описание — повтор прежней мысли; исходный разговор, где оно прозвучало впервые, в данном фрагменте не приведён.</p>\n<p>Постоянного имени у персонажа нет, он называется по признаку — «летающий».</p>", "r": []}, {"t": "Внешность", "a": ["S02", "PS-0343-S02", "PS-0343--vneshnost"], "h": "<p>На плечах по три отверстия с каждой стороны, из которых вылетают тентакли с острым концом.</p>\n<p>Разговор идёт вокруг картинок, которые генерировала нейронка по запросам Миколая. Слава замечает про сгенерированное: «Ну там они выглядели круче что-ли» (id 399321), и плечевые отверстия с тентаклями называет как то, чего в изображении не хватает. Миколай отвечает, что этого не было в запросе: «аа, ну я тогда в описание не кидал это» (id 399327). То есть описание внешности существует в переписке, но в сгенерированные изображения не попало.</p>", "r": []}, {"t": "Способности", "a": ["S03", "PS-0343-S03", "PS-0343--sposobnosti"], "h": "<p>Из внешности прямо следует полёт (персонаж называется «летающий») и тентакли с острым концом, вылетающие из плечевых отверстий. Как именно эти тентакли применяются, в переписке не сказано.</p>", "r": []}, {"t": "Связи с другими", "a": ["S04", "PS-0343-S04", "PS-0343--svyazi-s-drugimi"], "h": "<p>Часть пришельцев.</p>\n<p>Упоминается в одной реплике с <a href=\"PS-0344.html\">Пузырик</a> (Пузырик) — оба разбираются как примеры того, что Слава описывал, а нейронка не отрисовала.</p>", "r": [["Пузырик", "PS-0344.html"]]}, {"t": "Как менялся — состояния по датам", "a": ["S05", "PS-0343-S05", "PS-0343--kak-menyalsya"], "h": "<p><strong>2025-12-17 (id 399321–399332).</strong> Единственное зафиксированное состояние: плечевые отверстия по три с каждой стороны, тентакли с острым концом. Версия одна, помечена как повтор прежней мысли.</p>\n<p>Тут же проговаривается разделение работы над пришельцами: «ну это было в целом по моим идеям, ты дополнял, но я кидал первые запросы» (Миколай, id 399332) — первые запросы к нейронке делал Миколай по своим идеям, Слава дополнял.</p>", "r": []}, {"t": "Пробелы", "a": ["S06", "PS-0343-S06", "PS-0343--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Имени нет.</li>\n<li>Остальная внешность, кроме плечевых отверстий и тентаклей, не описана.</li>\n<li>Как работают тентакли — оружие, средство передвижения, что-то ещё — не сказано.</li>\n<li>Что за существо в реплике «Это я вообще хуй знает кто» (Слава, id 399326) — не установлено; сам Слава его не опознаёт.</li>\n<li>Роль персонажа в сюжете не названа.</li>\n</ul></div>", "r": []}, {"t": "Связи — всё вместе", "a": ["PS-0343--svyazi"], "h": "<p><em>Сводный список. Под каждым разделом выше есть свой блок связей — только то, что упомянуто в нём. Связи сквозные и двусторонние.</em></p>\n<ul>\n<li><strong>Входит в группы:</strong> <a href=\"GR-0082.html\">Пришельцы (линия Фени)</a></li>\n<li><strong>Упоминает персонажей:</strong> <a href=\"PS-0344.html\">Пузырик</a></li>\n<li><strong>Упомянут в персонажах:</strong> <a href=\"PS-0344.html\">Пузырик</a></li>\n<li><strong>Упомянут в группах:</strong> <a href=\"GR-0082.html\">Пришельцы (линия Фени)</a></li>\n</ul>", "r": []}, {"t": "Источники", "a": ["PS-0343--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2025-12-17</td>\n<td>399321–399332</td>\n<td>w0114</td>\n<td>Феня (по дате объявления)</td>\n<td>повтор</td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/personazhi/PS-0343-letayuschiy-prishelec.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["PS-0343--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/PS-0343.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

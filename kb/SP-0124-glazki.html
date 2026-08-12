@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Глазки</title>
+<link rel="stylesheet" href="../site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Глазки<span>способность · SP-0124 · исходник</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">исходник базы</div>
+    <h1>Глазки</h1>
+    
+    <div class="facts"><span>2 версий</span><span>2024-11-30 → 2024-11-30</span></div>
+    
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="../";const DOCNAME="Глазки";
+const LEAD="";
+const CH=[{"t": "Дословный исходник базы", "a": [], "r": [], "h": "<div class=\"rawnote\">Это не статья справочника, а дословная выписка из переписки. Текст не редактировался: сохранены опечатки, пунктуация и повторы.</div><div class=\"raw\"># Глазки\n\n*способность* · вселенные: монстры\n\n## Навигация\n\n- (w0065) Комбинация структура+тело — наследственные структуры по типу глаз. М уточняет, что их можно отнести к структуре. Отдельная разработка была отложена, С просил про них идею раньше.\n\n## Связано с\n\nСемья, Три элемента: сосуд, тело, структура\n\n## История по версиям\n\n_Ниже — дословные куски переписки. Старое не затирается, повторы сохранены._\n\n### Версия 1 — 2024-11-30\n\nвселенная: монстры (по дате объявления) · окно w0065 · сообщения 263590–263592\n\n*что здесь: Упоминание: М уточняет, про глазки ли просили идею или про двух новых*\n\n\n\n```chat\n[263590] 2024-11-30 20:17 Миколай: вопрос\n[263591] 2024-11-30 20:17 Миколай: ты про растения чет придумал или отложил\n[263592] 2024-11-30 20:17 Миколай: ты про глазки идею просил или про 2 новые?\n```\n\n### Версия 2 — 2024-11-30\n\nвселенная: монстры (по дате объявления) · окно w0065 · сообщения 263677–263680\n\n*что здесь: Глазки закреплены как комбинация структура+тело; М предлагает считать их наследственной структурой*\n\n\n\n```chat\n[263677] 2024-11-30 20:35 Слава: Есть три элемента \nСосуд тело структура\n[263678] 2024-11-30 20:36 Миколай: и некоторые наследственые структуры по типу глаз\n[263679] 2024-11-30 20:36 Миколай: но это можно в структуру кинуть лан\n[263680] 2024-11-30 20:36 Слава: Структура+тела=глазки\nСосуд+тело=изменяющую сосуд\n```\n\n## Часть чего\n\nСемья\n\n## Неясности\n\n- (w0065) Сама механика глаз в окне не раскрыта — только место в системе комбинаций</div>"}];</script>
+<script src="../lib.js"></script>
+<script src="../site.js"></script>
+</body>
+</html>

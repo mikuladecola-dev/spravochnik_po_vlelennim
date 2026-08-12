@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Выбор будущего при смерти</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Выбор будущего при смерти<span>способность · SP-0007</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">способность</div>
+    <h1>Выбор будущего при смерти</h1>
+    
+    <div class="facts"><span>вселенная: неясно</span><span>1 версия записи</span><span>2023-02-22 → 2023-02-22</span><span>2 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="kb/VS-0016-neyasno.html">неясно</a> <span class="m">(статьи ещё нет)</span></div><div class="crumb"><span>дословный исходник:</span><a href="kb/SP-0007-vybor-buduschego-pri-smerti.html">SP-0007-vybor-buduschego-pri-smerti.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Выбор будущего при смерти";
+const LEAD="";
+const CH=[{"t": "Механика — как работает", "a": ["S01", "SP-0007-S01", "SP-0007--mehanika"], "h": "<p>Способность носителя выбирать своё будущее в момент смерти при том, что смерть его не берёт: «Он типа может будущее выбирать если умрёт, а он бессмертный» (2023-02-22, id 34336). То есть в связке идут два свойства — бессмертие и выбор будущего, привязанный к моменту гибели.</p>\n<p>Как именно происходит выбор, из чего он делается и что при этом меняется — в переписке не сказано. Миколай отметил, что это заготовка под дальнейшую проработку: «Вот можно подробно обыграть что-то» (id 34340).</p>", "r": []}, {"t": "Происхождение идеи", "a": ["S02", "SP-0007-S02", "SP-0007--proishozhdenie-idei"], "h": "<p>Идея заимствована из аниме и переработана. Миколай спросил: «Смотрел аниме ложные выводы?» (id 34332); Слава ответил, что смотрел только первый сезон (id 34333). Дальше Миколай изложил исходный материал: «Том парень русалку и еще какую-то ебатню съел и стал очень сильным, можно такую же идею для злодея использовать» (id 34334) — и сразу оговорил, что переносить будут не буквально: «Ну немного по другому обыграть» (id 34335). Переработкой и стал выбор будущего при смерти.</p>", "r": []}, {"t": "Ограничения и цена", "a": ["S03", "SP-0007-S03", "SP-0007--ogranicheniya-i-cena"], "h": "<p>Ограничений и цены в переписке не названо.</p>", "r": []}, {"t": "Носители — у кого есть", "a": ["S04", "SP-0007-S04", "SP-0007--nositeli"], "h": "<p>Предполагаемый носитель — главный злодей (слизевик). Идея прямо предлагалась «для злодея» (id 34334).</p>", "r": []}, {"t": "Как менялась по версиям — по датам", "a": ["S05", "SP-0007-S05", "SP-0007--kak-menyalas-po-versiyam"], "h": "<p>Версия одна.</p>\n<p><strong>2023-02-22 (id 34330–34341, окно w0010).</strong> Предложение обыграть по-другому идею съеденной русалки и выдать злодею выбор будущего при смерти. Слава согласился коротко: «Да» и знак одобрения (id 34338–34339). Дальше разговор перешёл на другое — Миколай спросил: «А ты что делаешь?» (id 34341). Разработка на этом остановилась.</p>", "r": []}, {"t": "Связь с другими способностями", "a": ["S06", "SP-0007-S06", "SP-0007--svyaz-s-drugimi-sposobnostyami"], "h": "<p>Разрабатывалась в одном ряду с другими заготовками для главного злодея (слизевика) в окне w0010, среди них — <a href=\"SP-0005.html\">Очень быстрая регенерация</a> («Очень быстрая регенерация»), предложенная и отвергнутая в тот же день.</p>\n<p>Бессмертие в этой способности не отдельное свойство, а условие работы выбора: выбор будущего срабатывает «если умрёт», а носитель при этом бессмертен.</p>", "r": [["Очень быстрая регенерация", "SP-0005.html"]]}, {"t": "Пробелы", "a": ["S07", "SP-0007-S07", "SP-0007--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Не сказано, из чего носитель выбирает будущее и насколько широк выбор.</li>\n<li>Не сказано, отматывается ли при этом время, перезапускается ли ход событий или меняется что-то другое.</li>\n<li>Не сказано, сколько раз способность можно применить и есть ли счётчик смертей.</li>\n<li>Не разобрано соотношение бессмертия и смерти: умирает ли носитель на самом деле или смерть только повод для выбора.</li>\n<li>Не сказано, как способность связана с исходным образом из аниме — с поеданием русалки и обретением силы: заимствование названо, но что именно перенесено, кроме общей идеи, не расписано.</li>\n<li>Заготовка, конкретики нет.</li>\n</ul></div>", "r": []}, {"t": "Связи — всё вместе", "a": ["SP-0007--svyazi"], "h": "<p><em>Сводный список. Под каждым разделом выше есть свой блок связей — только то, что упомянуто в нём. Связи сквозные и двусторонние.</em></p>\n<ul>\n<li><strong>Упоминает способности:</strong> <a href=\"SP-0005.html\">Очень быстрая регенерация</a></li>\n<li><strong>Упомянут в способностях:</strong> <a href=\"SP-0005.html\">Очень быстрая регенерация</a></li>\n</ul>", "r": []}, {"t": "Источники", "a": ["SP-0007--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2023-02-22</td>\n<td>34330–34341</td>\n<td>w0010</td>\n<td>неясно (не определено)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/sposobnosti/SP-0007-vybor-buduschego-pri-smerti.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["SP-0007--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/SP-0007.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

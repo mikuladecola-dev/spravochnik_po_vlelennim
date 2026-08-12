@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Рассказ про садик Солнышко</title>
+<link rel="stylesheet" href="../site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Рассказ про садик Солнышко<span>проза · PR-0014 · исходник</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">исходник базы</div>
+    <h1>Рассказ про садик Солнышко</h1>
+    
+    <div class="facts"><span>0 версий</span><span>2023-12-23 → 2023-12-23</span></div>
+    
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="../";const DOCNAME="Рассказ про садик Солнышко";
+const LEAD="";
+const CH=[{"t": "Дословный исходник базы", "a": [], "r": [], "h": "<div class=\"rawnote\">Это не статья справочника, а дословная выписка из переписки. Текст не редактировался: сохранены опечатки, пунктуация и повторы.</div><div class=\"raw\"># Рассказ про садик Солнышко\n\n*2023-12-23 · неясно · Три пересланных куска текста Славы: об одиночестве, о встрече и о пребывании в садике «Солнышко» в 15 лет. Обрывки, начала и конца в окне нет.*\n\n---\n\n\n\n```chat\n[65038] 2023-12-23 19:54 Миколай: з найти когда в фильмах от одиночества сума сходят я когда на это смотреть мне казалось это бредовой но когда я сам оказался в такой ситуаций то голова начинает гудети и вдруг что-то охота делать и наоборот нечего не охото делать просто валяться\n[65039] 2023-12-23 19:54 Миколай: Ещё здесь я впервые в жизни встретил дауна настоящего не когда не думал что хоть когда-нибудь их встречу ну вдруг встретил ну даун это тот который показывает на тебя пальцем и ржёт как лошадь\n[65040] 2023-12-23 19:55 Миколай: Это мой рассказ про садик солнышко я здесь был раньше когда мне было 6 лет и нечего не помню а вот этот раз я сюда попал в 15 лет из-за клеток туберкулёза первую неделю я был в изоляторе и мне было норм но потом меня отправили ко всем здесь мне сразу не понравилось не знаю почему первой что мне не нравилось это то что здесь все маленькой даже туалет ну кровать хотя бы нормальная \nА второй то что здесь есть ребенок 2 лет и на него часто орали из за того что он ничего не понимал а обидно мне было из за того что у меня есть братик 3 лет и я приставил что бы была быть он здесь и это меня бесила\nТретий то что здесь очень наглый девочки наверное из за того что ино были старше всех кроме меня\n```</div>"}];</script>
+<script src="../lib.js"></script>
+<script src="../site.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ограничение видения монстров</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">ограничение видения монстров<span>мир · MR-0058</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">мир</div>
+    <h1>ограничение видения монстров</h1>
+    
+    <div class="facts"><span>вселенная: монстры</span><span>1 версия записи</span><span>2024-08-12 → 2024-08-12</span><span>4 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="VS-0015.html">монстры</a></div><div class="crumb"><span>дословный исходник:</span><a href="kb/MR-0058-ogranichenie-videniya-monstrov.html">MR-0058-ogranichenie-videniya-monstrov.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="ограничение видения монстров";
+const LEAD="";
+const CH=[{"t": "Устройство", "a": ["S01", "MR-0058-S01", "MR-0058--ustroystvo"], "h": "<p>Правило о том, кто и чем может воспринимать материализованного монстра.</p>\n<p>Камеры монстра не видят. Это утверждено Миколаем в ответ на предложение показать монстра публично: «ты серьёзно думаешь камеры его видят» — «нет» — «нихуя» (2024-08-12, id 218404–218407). Отсюда следствие, вокруг которого шёл спор: показать монстра по телевизору или в прямом эфире нельзя.</p>\n<p>Кто видеть может — названо двумя категориями: дети и «взрослые в чью жизнь вмешался злой дух» (id 218412).</p>\n<p>Возражение Славы к правилу опиралось на материальность: «Он материален ты сам писал» (id 218408), и дальше — «Поймать он материален, и показать» (id 218419). Как материальность монстра сочетается с невидимостью для камер, в переписке не объяснено; Миколай на прямое «Почему» (id 218409) ответил точкой (id 218410).</p>\n<p>Отдельной чертой в этой же ветке названа слабость монстров: «ты же понимаешь что он слабый», «они всегда слабые» (id 218417–218418). Слава на это переспросил: «Ты что хочешь чисто слабых что ли» (id 218420).</p>", "r": []}, {"t": "Место во вселенной", "a": ["S02", "MR-0058-S02", "MR-0058--mesto-vo-vselennoy"], "h": "<p>Ограничение отнесено к принципам материализации и её продуктов — оно часть их, а не отдельное правило. Через категорию видящих связано со злым духом.</p>", "r": []}, {"t": "Как менялся по версиям", "a": ["S03", "MR-0058-S03", "MR-0058--kak-menyalsya-po-versiyam"], "h": "<p>Одно состояние.</p>\n<p>2024-08-12 (id 218398–218422, окно w0052) — правило подтверждено Миколаем в споре и сразу же оспорено Славой.</p>\n<p>Что предлагалось в этой ветке и не было принято:</p>\n<ul>\n<li>Показать монстра в центре большого города или в прямом эфире (id 218400), «заставить разрушить город показать перед толпой людей» (id 218411). Упирается в то, что камеры не видят.</li>\n<li>Прямое предложение Славы отменить само правило: «Давай нафиг уберем в ограничений видения» (id 218415). Ответа на это предложение в окне нет — осталось нерешённым.</li>\n<li>Механика усиления от публичности: «Ну показать в центре города он станет сильней и сможет уничтожить город» (id 218422). Реакции в этом окне нет.</li>\n</ul>", "r": []}, {"t": "Пробелы", "a": ["S04", "MR-0058-S04", "MR-0058--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Исходная формулировка ограничения в этом окне не приведена: ветка отвечает на сообщение 217239 из предыдущего окна, формулировка там.</li>\n<li>Отменили ограничение или оставили — в переписке не сказано.</li>\n<li>Как материальность монстра уживается с невидимостью для камер — не объяснено, вопрос Славы остался без ответа.</li>\n<li>Видят ли монстра обычные взрослые, в чью жизнь злой дух не вмешивался, — прямо не сказано, следует только из того, что этих двух категорий названо две.</li>\n<li>Что считается «вмешательством злого духа в жизнь» — не определено.</li>\n<li>Механика усиления монстра от показа толпе — предложена, не разобрана.</li>\n</ul></div>", "r": []}, {"t": "Связи — всё вместе", "a": ["MR-0058--svyazi"], "h": "<p><em>Сводный список. Под каждым разделом выше есть свой блок связей — только то, что упомянуто в нём. Связи сквозные и двусторонние.</em></p>\n<ul>\n<li><strong>Упомянут в статье о вселенной:</strong> <a href=\"VS-0015.html\">монстры</a></li>\n</ul>", "r": []}, {"t": "Источники", "a": ["MR-0058--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2024-08-12</td>\n<td>218398–218422</td>\n<td>w0052</td>\n<td>монстры (по дате объявления)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/miry/MR-0058-ogranichenie-videniya-monstrov.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["MR-0058--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/MR-0058.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

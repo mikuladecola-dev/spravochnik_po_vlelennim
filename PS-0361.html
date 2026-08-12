@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Юра</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Юра<span>персонаж · PS-0361</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">персонаж</div>
+    <h1>Юра</h1>
+    
+    <div class="facts"><span>вселенная: неясно</span><span>1 версия записи</span><span>2026-04-19 → 2026-04-19</span><span>8 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="kb/VS-0016-neyasno.html">неясно</a> <span class="m">(статьи ещё нет)</span></div><div class="crumb"><span>дословный исходник:</span><a href="kb/PS-0361-yura.html">PS-0361-yura.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Юра";
+const LEAD="";
+const CH=[{"t": "Происхождение", "a": ["S01", "PS-0361-S01", "PS-0361--proishozhdenie"], "h": "<p>Юра назван Славой 2026-04-19 в сообщении, перечисляющем кандидатов в «благословенные» (id 462204–462206, окно w0120). Вселенная, к которой относится этот кусок переписки, объявлена в тот же день (id 462203); имени в переписке ей не дали.</p>\n<p>Слава вводит категорию: «Благословенный это люди, что способны чувствовать присутствия когото. Кого именно неизвестно, может бог, может ещё какое-то существо». В этом же сообщении подряд перечислены несколько благословенных — Герой, Мистер белая рубашка (он же Александр), Юра, безымянный «четвёртый», Азуриэль, «сверхчеловек» Максим. Юра — третий в этом списке.</p>", "r": []}, {"t": "Способности", "a": ["S02", "PS-0361-S02", "PS-0361--sposobnosti"], "h": "<p>Про Юру сказано: «тоже вроде Героя в каком-то роде может будущее предсказывать. Вот он видит две белый точки, то бишь глаза не понятного существа, а это означает что сейчас будет опасна. Ну и так он способен предсказывать опасность».</p>\n<p>Отдельно оговорена его живучесть: «он как и в тех двух случаях как-то не способен умереть. Ну он заранее знает о опасности и может её избежать. А если всё же попадёт в неё то как-то спасется, иногда опасность самая может устранить себя. То есть в случае опасности он тоже удачлив, конечно не так как Саша, ну вполне достаточно чтобы выжить».</p>\n<p>То есть удача Юры прямо сравнивается с удачей Александра («Мистер белая рубашка») и признаётся меньшей, но достаточной для выживания.</p>", "r": []}, {"t": "Связи с другими", "a": ["S03", "PS-0361-S03", "PS-0361--svyazi-s-drugimi"], "h": "<p>Введён в одном сообщении вместе с остальными благословенными — Героем, Александром, безымянным «четвёртым», Азуриэлем и Максимом. Формулировка «тоже вроде Героя в каком-то роде» прямо связывает его способность (предчувствие опасности через предсказание) со способностью Героя (слышать мольбы о помощи, тоже своего рода предсказание). Прямое сравнение по степени удачи — с Александром.</p>", "r": []}, {"t": "Как менялся", "a": ["S04", "PS-0361-S04", "PS-0361--kak-menyalsya"], "h": "<p>Версия 1 — 2026-04-19 (id 462204–462206). Единственное появление персонажа в переписке; дальнейших изменений или уточнений не зафиксировано.</p>", "r": []}, {"t": "Что с ним стало", "a": ["S05", "PS-0361-S05", "PS-0361--chto-s-nim-stalo"], "h": "<p>В переписке не сказано — после первого перечисления Юра больше не упоминается.</p>", "r": []}, {"t": "Пробелы", "a": ["S06", "PS-0361-S06", "PS-0361--probely"], "h": "<div class=\"gaps\"><p>Внешность не описана. Характер не описан. Происхождение способности (кто или что показывает две белые точки) не раскрыто — сказано только «не понятного существа». Дальнейшая судьба персонажа и его использование в сюжете остались нерешёнными.</p></div>", "r": []}, {"t": "Источники", "a": ["PS-0361--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2026-04-19</td>\n<td>462204–462206</td>\n<td>w0120</td>\n<td>неясно (по дате объявления)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/personazhi/PS-0361-yura.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["PS-0361--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/PS-0361.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

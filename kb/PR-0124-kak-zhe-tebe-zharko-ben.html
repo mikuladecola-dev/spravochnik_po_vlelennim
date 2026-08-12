@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Как же тебе жарко Бэн</title>
+<link rel="stylesheet" href="../site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Как же тебе жарко Бэн<span>проза · PR-0124 · исходник</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">исходник базы</div>
+    <h1>Как же тебе жарко Бэн</h1>
+    
+    <div class="facts"><span>0 версий</span><span>2026-02-21 → 2026-02-21</span></div>
+    
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="../";const DOCNAME="Как же тебе жарко Бэн";
+const LEAD="";
+const CH=[{"t": "Дословный исходник базы", "a": [], "r": [], "h": "<div class=\"rawnote\">Это не статья справочника, а дословная выписка из переписки. Текст не редактировался: сохранены опечатки, пунктуация и повторы.</div><div class=\"raw\"># Как же тебе жарко Бэн\n\n*2026-02-21 · Иссекай · Обрывок Миколая на несколько строк, тут же сопровождён пояснением «это все что я написал» и «потом не продолжил». Заголовок служебный, по первой строке.*\n\n---\n\n\n\n```chat\n[435654] 2026-02-21 14:50 Миколай: я вообще просил перса придумать\n[435655] 2026-02-21 14:50 Миколай: вот он и решил\n[435656] 2026-02-21 14:51 Миколай: Как же тебе жарко Бэн. Жалко тебя. воду холодную налил, не пьёшь, уже кипяток. Не выходишь из будки. Да и та жгёт.\nЧе за\n[435657] 2026-02-21 14:51 Миколай: это все что я написал\n[435658] 2026-02-21 14:51 Миколай: потом не продолжил\n[435659] 2026-02-21 14:51 Миколай: я просто не придумал как я опишу\n[435660] 2026-02-21 14:51 Слава: Вау как многа\n[435661] 2026-02-21 14:51 Миколай: было сложно\n[435662] 2026-02-21 14:52 Слава: Да прям видно пот и кровь\n```</div>"}];</script>
+<script src="../lib.js"></script>
+<script src="../site.js"></script>
+</body>
+</html>

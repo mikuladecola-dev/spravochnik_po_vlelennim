@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Люля и Эвир</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Люля и Эвир<span>персонаж · PS-0380</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">персонаж</div>
+    <h1>Люля и Эвир</h1>
+    
+    <div class="facts"><span>вселенная: неясно</span><span>1 версия записи</span><span>2026-06-17 → 2026-06-17</span><span>2 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="kb/VS-0016-neyasno.html">неясно</a> <span class="m">(статьи ещё нет)</span></div><div class="crumb"><span>дословный исходник:</span><a href="kb/PS-0380-lyulya-i-evir.html">PS-0380-lyulya-i-evir.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Люля и Эвир";
+const LEAD="";
+const CH=[{"t": "Происхождение", "a": ["S01", "PS-0380-S01", "PS-0380--proishozhdenie"], "h": "<p>Люля и Эвир (вариант написания в переписке — «Люля и эвир») появились одним сообщением 2026-06-17 (id 491174–491178, окно w0122). Слава назвал источник задумки прямо: «Мой бредовый сон где я влюбился в скелет». Из этого сна пара и выведена — автор описывает переход от сна к сюжетной функции так: «По итогу я просто сделал романтическую линию второстепенных персонажей, который изб встретит в своём путешествие».</p>\n<p>Кто из двоих — скелет из сна и есть ли скелет среди них вообще, в переписке не сказано.</p>", "r": []}, {"t": "Связи с другими", "a": ["S02", "PS-0380-S02", "PS-0380--svyazi-s-drugimi"], "h": "<p>Пара привязана к Изб: они — те, кого Изб встретит в своём путешествии. Это единственная названная связь.</p>\n<p>Между собой Люля и Эвир связаны романтической линией — они и есть «романтическая линия второстепенных персонажей».</p>", "r": []}, {"t": "Как менялся — состояния по датам", "a": ["S03", "PS-0380-S03", "PS-0380--kak-menyalsya"], "h": "<p><strong>2026-06-17 (id 491174–491178, окно w0122).</strong> Единственное состояние. Зафиксировано происхождение задумки (сон про влюблённость в скелет) и её функция в сюжете — романтическая линия второстепенных персонажей на пути Изб. Других версий нет.</p>", "r": []}, {"t": "Пробелы", "a": ["S04", "PS-0380-S04", "PS-0380--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Сами персонажи не описаны: в переписке есть только происхождение линии и её место в сюжете. Внешность, характер, способности не названы.</li>\n<li>Не сказано, кто из пары Люля, а кто Эвир, и кому какая роль в романтической линии.</li>\n<li>Связь со скелетом из сна не проговорена: назван только источник задумки, а не то, что кто-то из пары — скелет.</li>\n<li>Вселенная в записи помечена как неясная (проставлена по дате объявления).</li>\n<li>Что с ними стало дальше — в переписке нет, задумка осталась на одном сообщении.</li>\n</ul></div>", "r": []}, {"t": "Источники", "a": ["PS-0380--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2026-06-17</td>\n<td>491174–491178</td>\n<td>w0122</td>\n<td>неясно (по дате объявления)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/personazhi/PS-0380-lyulya-i-evir.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["PS-0380--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/PS-0380.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Телекинез для камеры</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Телекинез для камеры<span>способность · SP-0015</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">способность</div>
+    <h1>Телекинез для камеры</h1>
+    
+    <div class="facts"><span>вселенная: неясно</span><span>1 версия записи</span><span>2023-03-27 → 2023-03-27</span><span>2 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="kb/VS-0016-neyasno.html">неясно</a> <span class="m">(статьи ещё нет)</span></div><div class="crumb"><span>дословный исходник:</span><a href="kb/SP-0015-telekinez-dlya-kamery.html">SP-0015-telekinez-dlya-kamery.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Телекинез для камеры";
+const LEAD="";
+const CH=[{"t": "Механика — как работает", "a": ["S01", "SP-0015-S01", "SP-0015--mehanika"], "h": "<p>Способность, придуманная под конкретную бытовую задачу: как Демон снимает свои прямые эфиры. Не боевая, а операторская.</p>\n<p>Предложены два взаимозаменяемых решения одной задачи (2023-03-27, id 37539–37541):</p>\n<ol>\n<li><strong>Телекинез</strong> — «Телекинез, чтобы камеру для прямого эфира переносить». Камера физическая, носитель двигает её силой мысли, съёмка получается со стороны.</li>\n<li><strong>Камера на лбу</strong> — вариант на случай, если снимать от первого лица: «Ну или если хочешь от первого лица» / «То способность создавать камеру на лбу». Здесь камера не переносится, а создаётся, и создаётся именно на лбу.</li>\n</ol>\n<p>Выбор между вариантами определяется тем, какой нужен ракурс: со стороны или от первого лица. Который из двух остался — в переписке не решено.</p>", "r": []}, {"t": "Ограничения и цена", "a": ["S02", "SP-0015-S02", "SP-0015--ogranicheniya-i-cena"], "h": "<p>Не названы. Ни дальности телекинеза, ни веса камеры, ни того, сколько камер можно создать и как долго держится созданная камера, в переписке нет.</p>", "r": []}, {"t": "Носители — у кого есть", "a": ["S03", "SP-0015-S03", "SP-0015--nositeli"], "h": "<p>Демон. Способность числится частью его набора.</p>\n<p>Обсуждение шло в общем перечне способностей, которые придумывались Демону подряд: перед телекинезом — «Способность лечить других людей» (id 37538), после — «Способность контролировать радиоволны чтобы его видео транслировались на всех каналах в мире» (id 37542). Последняя закрывает вторую половину той же задачи: телекинез или камера на лбу отвечают за съёмку, радиоволны — за раздачу записанного на все каналы мира.</p>\n<p>Реплика Славы в этом же месте: «Потому что его кличка демон» (id 37543).</p>", "r": []}, {"t": "Как менялась по версиям — по датам", "a": ["S04", "SP-0015-S04", "SP-0015--kak-menyalas-po-versiyam"], "h": "<p>Версия одна.</p>\n<p><strong>2023-03-27 (id 37538–37543, окно w0011).</strong> Оба варианта — телекинез и камера на лбу — предложены в одном заходе Миколаем, с интервалом в минуту. Дальше не дорабатывались.</p>", "r": []}, {"t": "Связь с другими способностями", "a": ["S05", "SP-0015-S05", "SP-0015--svyaz-s-drugimi-sposobnostyami"], "h": "<p>Работает в паре со способностью контролировать радиоволны (трансляция видео на всех каналах мира) — вместе они образуют схему прямого эфира Демона: чем снимать и куда передавать. Прямо как связка авторами это не названо, но обе способности предложены подряд в одном перечне и обе про эфир.</p>", "r": []}, {"t": "Пробелы", "a": ["S06", "SP-0015-S06", "SP-0015--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Который из двух вариантов принят — не решено.</li>\n<li>В итоговый перечень способностей способность не попала.</li>\n<li>Откуда берётся сама камера в варианте с телекинезом (своя, чужая, одна или несколько) — не сказано.</li>\n<li>Что происходит с камерой на лбу вне съёмки, видна ли она окружающим — не сказано.</li>\n<li>Ограничения и цена не обсуждались.</li>\n</ul></div>", "r": []}, {"t": "Источники", "a": ["SP-0015--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2023-03-27</td>\n<td>37538–37543</td>\n<td>w0011</td>\n<td>неясно (не определено)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/sposobnosti/SP-0015-telekinez-dlya-kamery.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["SP-0015--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/SP-0015.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

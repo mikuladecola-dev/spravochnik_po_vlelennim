@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Высший Поротай</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Высший Поротай<span>персонаж · PS-0295</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">персонаж</div>
+    <h1>Высший Поротай</h1>
+    
+    <div class="facts"><span>вселенная: неясно</span><span>1 версия записи</span><span>2025-09-17 → 2025-09-17</span><span>3 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="kb/VS-0016-neyasno.html">неясно</a> <span class="m">(статьи ещё нет)</span></div><div class="crumb"><span>дословный исходник:</span><a href="kb/PS-0295-vysshiy-porotay.html">PS-0295-vysshiy-porotay.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Высший Поротай";
+const LEAD="";
+const CH=[{"t": "Происхождение", "a": ["S01", "PS-0295-S01", "PS-0295--proishozhdenie"], "h": "<p>Материал относится к вселенной, объявленной 2025-09-17 репликой «Разрушаем вселенную» (id 366030); собственного названия в переписке ей не дали.</p>\n<p>Высший Поротай введён Славой 2025-09-17 в 07:46–07:48 (id 366034–366036) как один из трёх исходов поедания жука. Перед этим в том же сообщении (id 366034) описаны апостолы — те, кто «сожрал насекомое ( не придумал ещё какое. Но шанс выживания после его съедения 13 процентов. Всего насекомых 21)», с бафом к физическим характеристикам и регенерацией, без индивидуальных способностей «пока что». Затем (id 366035) Слава переходит к отдельной задумке: «Придумал один вид Поротай. Короче есть жуг ты его съедаеш и у тебя 3 варианта: 1) смерть, все твои внутренности превращаются в камень и отказывают; 2) превращаются в низший Поротай (...); 3) превращается высшего Поротая сохраняешь свой человеческий образ и личность.»</p>", "r": []}, {"t": "Внешность", "a": ["S02", "PS-0295-S02", "PS-0295--vneshnost"], "h": "<p>Сохраняет человеческий облик — в отличие от низшего Поротая (id 366035): «превращается высшего Поротая сохраняешь свой человеческий образ и личность».</p>", "r": []}, {"t": "Характер", "a": ["S03", "PS-0295-S03", "PS-0295--harakter"], "h": "<p>Сохраняет исходную личность, но получает дебафф — вторую личность: «Дебафф у тебя появляется вторая личность жестокая, кровожадная, алочная и т.д. И она составляет чаще всего становится жестоким кровожадным и т.д» (id 366035).</p>", "r": []}, {"t": "Способности", "a": ["S04", "PS-0295-S04", "PS-0295--sposobnosti"], "h": "<p>«Способности реген, контроль над низшими, превращать части тела в твердый камень, сверхчеловеческая сила» (id 366035).</p>", "r": []}, {"t": "Связи с другими", "a": ["S05", "PS-0295-S05", "PS-0295--svyazi-s-drugimi"], "h": "<p>Командует низшими Поротаями (<a href=\"PS-0294.html\">Низший Поротай</a>) — «контроль над низшими». Часть общей задумки «Поротай», введённой тем же сообщением, что и апостолы.</p>", "r": [["Низший Поротай", "PS-0294.html"]]}, {"t": "Как менялся", "a": ["S06", "PS-0295-S06", "PS-0295--kak-menyalsya"], "h": "<h3>2025-09-17 (id 366034–366036)</h3>\n<p>Единственная зафиксированная версия: третий исход поедания жука, сохранение облика и личности, четыре способности, дебафф в виде второй жестокой личности. Тут же Слава задаёт вопрос без ответа: «И сейчас вопрос. Откуда взялись эти насекомые и монстры.» (id 366036).</p>", "r": []}, {"t": "Что с ним стало", "a": ["S07", "PS-0295-S07", "PS-0295--chto-s-nim-stalo"], "h": "<p>Дальнейшего развития в прочитанном материале нет.</p>", "r": []}, {"t": "Пробелы", "a": ["S08", "PS-0295-S08", "PS-0295--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Не назван вид жука, поедание которого даёт исход Поротая (отличен от насекомого апостолов).</li>\n<li>Не раскрыто, откуда взялись насекомые и монстры — вопрос задан Славой (id 366036) и остался без ответа.</li>\n<li>Не сказано, как проявляется и контролируется вторая личность за пределами общей характеристики «жестокая, кровожадная, алочная».</li>\n</ul></div>", "r": []}, {"t": "Связи — всё вместе", "a": ["PS-0295--svyazi"], "h": "<p><em>Сводный список. Под каждым разделом выше есть свой блок связей — только то, что упомянуто в нём. Связи сквозные и двусторонние.</em></p>\n<ul>\n<li><strong>Упоминает персонажей:</strong> <a href=\"PS-0294.html\">Низший Поротай</a></li>\n<li><strong>Упомянут в персонажах:</strong> <a href=\"PS-0294.html\">Низший Поротай</a>, <a href=\"PS-0296.html\">Антиапостолы / Одержимые</a></li>\n<li><strong>Упомянут в статье о вселенной:</strong> <a href=\"VS-0007.html\">Новый мир</a></li>\n</ul>", "r": []}, {"t": "Источники", "a": ["PS-0295--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2025-09-17</td>\n<td>366034–366036</td>\n<td>w0105</td>\n<td>неясно (по дате объявления)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/personazhi/PS-0295-vysshiy-porotay.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["PS-0295--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/PS-0295.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

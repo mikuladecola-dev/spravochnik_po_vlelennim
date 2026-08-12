@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ци</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Ци<span>персонаж · PS-0081</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">персонаж</div>
+    <h1>Ци</h1>
+    
+    <div class="facts"><span>вселенная: Цветной мир</span><span>1 версия записи</span><span>2024-05-25 → 2024-05-25</span><span>2 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="VS-0012.html">Цветной мир</a></div><div class="crumb"><span>дословный исходник:</span><a href="kb/PS-0081-ci.html">PS-0081-ci.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Ци";
+const LEAD="";
+const CH=[{"t": "Происхождение", "a": ["S01", "PS-0081-S01", "PS-0081--proishozhdenie"], "h": "<p>Персонаж Славы. В переписке появляется 2024-05-25 (id 173130–173136), когда Миколай перечисляет имена из списка персонажей Славы — «Тен, волк, дракон, ци, спартанец» — и спрашивает: «Кто такие». Слава по очереди расшифровывает каждого.</p>\n<p>Про Ци Слава говорит: «Ци ты наверное не помнишь» — то есть персонаж был придуман раньше, и разговор 2024-05-25 не первичная разработка, а повтор прежней мысли. Где и когда Ци придумали изначально, в переписке не сказано; это окно (w0035) содержит только расшифровку из списка.</p>\n<p>Вселенная — Цветной мир, объявлена.</p>", "r": []}, {"t": "Способности", "a": ["S02", "PS-0081-S02", "PS-0081--sposobnosti"], "h": "<p>Единственная характеристика, данная в переписке, — дословно: «владелец не контролирующий энергий использует посых для контроля» (id 173133).</p>\n<p>Из этого зафиксировано:</p>\n<ul>\n<li>Ци — владелец энергии.</li>\n<li>Своей энергией он не управляет сам.</li>\n<li>Средство контроля — посох.</li>\n</ul>\n<p>Что это за энергия, откуда она у него, что происходит без посоха и что именно посох делает с энергией — в переписке не сказано.</p>", "r": []}, {"t": "Связи с другими", "a": ["S03", "PS-0081-S03", "PS-0081--svyazi-s-drugimi"], "h": "<p>Ци перечислен в одном ряду с другими персонажами Славы (id 173130): Тен, волк, дракон, спартанец. Расшифровки соседей по списку, данные в том же разговоре:</p>\n<ul>\n<li>Тен — «10 форм».</li>\n<li>Волк — «командир команды тена с способностю как у волка»; способности волка Слава называет отдельно по вопросу Миколая: «Когти скорость инстинкты регенерация».</li>\n<li>Дракон — «женщина способна превращаться в дракона частично или полностью».</li>\n<li>Спартанец — Миколай спрашивает «А спартанец?» (id 173136), ответ в это окно не попал.</li>\n</ul>\n<p>Никакой связи Ци с Теном, волком, драконом или спартанцем, кроме соседства в списке, в переписке не названо. Входит ли Ци в команду Тена — не сказано.</p>", "r": []}, {"t": "Как менялся — состояния по датам", "a": ["S04", "PS-0081-S04", "PS-0081--kak-menyalsya"], "h": "<p><strong>2024-05-25 (id 173130–173136), окно w0035.</strong> Единственное зафиксированное состояние, оно же единственная версия: владелец, не контролирующий свою энергию, использует посох для контроля. Изменений задумки в переписке не отражено — по формулировке Славы видно, что он повторяет уже существующую идею, а не строит новую.</p>", "r": []}, {"t": "Пробелы", "a": ["S05", "PS-0081-S05", "PS-0081--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Первичная разработка персонажа была раньше и вне этого окна — самого разговора, где Ци придумали, в переписке нет.</li>\n<li>Внешность не описана.</li>\n<li>Характер не описан.</li>\n<li>Имя не объяснено: связано ли «Ци» с энергией как понятием, не сказано.</li>\n<li>Природа энергии не названа.</li>\n<li>Посох не описан: как выглядит, откуда взялся, кто его сделал — ничего.</li>\n<li>Что происходит, если посоха нет, в переписке не сказано.</li>\n<li>Пол, возраст, роль в сюжете не названы.</li>\n<li>Дальнейшая судьба персонажа не обсуждалась; чем всё кончилось — осталось нерешённым.</li>\n</ul></div>", "r": []}, {"t": "Источники", "a": ["PS-0081--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2024-05-25</td>\n<td>173130–173136</td>\n<td>w0035</td>\n<td>Цветной мир (объявлено)</td>\n<td>повтор</td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/personazhi/PS-0081-ci.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["PS-0081--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/PS-0081.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Локальное управление осязанием</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <button class="ib" id="bMenu" aria-label="Меню"><span class="burger"><i></i><i></i><i></i></span></button>
+    <div class="htitle" id="ttl">Локальное управление осязанием<span>способность · SP-0057</span></div>
+    <button class="ib" id="bToc" aria-label="Разделы">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+    <button class="ib" id="bFind" aria-label="Поиск по статье">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="ib" id="bTheme" aria-label="Тема"><span id="thIcon">☾</span></button>
+  </div>
+</header>
+
+<div id="menu">
+  <div class="gsearch"><input id="gq" placeholder="Поиск по всем статьям" autocomplete="off"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="menuList"></div>
+</div>
+
+<main>
+  <div class="hero">
+    <div class="kick">способность</div>
+    <h1>Локальное управление осязанием</h1>
+    
+    <div class="facts"><span>вселенная: игра бога</span><span>1 версия записи</span><span>2024-05-07 → 2024-05-07</span><span>3 КБ в базе</span></div>
+    <div class="crumb"><span>вселенные:</span><a href="VS-0014.html">игра бога</a></div><div class="crumb"><span>дословный исходник:</span><a href="kb/SP-0057-lokalnoe-upravlenie-osyazaniem.html">SP-0057-lokalnoe-upravlenie-osyazaniem.md</a></div>
+  </div>
+  <article id="art"></article>
+</main>
+
+<div id="rail"><div id="railLine"></div><div id="thumb"></div></div>
+<div id="pct"></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="shToc">
+  <div class="grab" data-grab="shToc"></div>
+  <div class="shead"><div class="t">Разделы статьи</div></div>
+  <div class="sbody" id="tocBody"></div>
+</div>
+
+<div class="sheet top" id="shFind">
+  <div class="shead">
+    <input id="lq" placeholder="Слово в этой статье" autocomplete="off">
+    <span id="lcnt"></span>
+    <button class="nav" id="lPrev">↑</button><button class="nav" id="lNext">↓</button>
+    <button class="nav" id="lClose">✕</button>
+  </div>
+  <div class="sbody"><div class="hint" id="lhint">Совпадения подсвечиваются прямо в тексте. Стрелками — к следующему.</div></div>
+  <div class="grab bot" data-grab="shFind"></div>
+</div>
+
+<script>const BASE="";const DOCNAME="Локальное управление осязанием";
+const LEAD="";
+const CH=[{"t": "Механика — как работает", "a": ["S01", "SP-0057-S01", "SP-0057--mehanika"], "h": "<p>Способность персонажа Призрак, предложенная Миколаем одним заходом (2024-05-07, id 166763–166772). Названа «локальное управление осязания», в карточке сущности имя приведено как «Локальное управление осязанием».</p>\n<p>Носитель «может проходить сквозь всё, и может контролировать какая часть его тела будет доступна для прикосновения» (id 166764). Управление осязанием при этом не сводится к переключению «весь осязаем / весь неосязаем»: контроль работает по участкам, «даже если это маленькие участки или участки внутри тела» (id 166764).</p>\n<p>Из объёмного контроля внутри тела прямо в переписке выводится боевой приём: «Если он может в объёме контролировать осязание внутри тела, то он например может сделать иглы из костей осязаемыми и ими зарезать других» (id 166766).</p>\n<p>Отдельно к носителю приписано «мощное боевое искусство» (id 166765) — не как часть способности, а как вторая его характеристика.</p>", "r": []}, {"t": "Ограничения и цена", "a": ["S02", "SP-0057-S02", "SP-0057--ogranicheniya-i-cena"], "h": "<p>Слабое место названо самим автором сразу за механикой: «Ну и логично как его победить, просто атаковать осязаемую часть тела» (id 166767). То есть в момент, когда какой-то участок сделан осязаемым, этот участок уязвим.</p>\n<p>Цена, расход, время удержания осязаемости, предел числа одновременно осязаемых участков — в переписке не сказано.</p>", "r": []}, {"t": "Носители — у кого есть", "a": ["S03", "SP-0057-S03", "SP-0057--nositeli"], "h": "<p>Призрак. Способность придумана сразу под этого персонажа («Есть идея о призраке. И способность его будет...», id 166764) и в справочнике числится как часть его набора.</p>", "r": []}, {"t": "Как менялась по версиям — по датам", "a": ["S04", "SP-0057-S04", "SP-0057--kak-menyalas-po-versiyam"], "h": "<p>Версия 1 — 2024-05-07 (окно w0032, id 166763–166772). Единственная версия. Механика (id 166764–166767) и слабое место (id 166767) сформулированы подряд в течение шести минут. Слава подтвердил коротким «Да» на вопрос «Норм?» (id 166770–166771). Дальнейших правок нет.</p>", "r": []}, {"t": "Пробелы", "a": ["S05", "SP-0057-S05", "SP-0057--probely"], "h": "<div class=\"gaps\"><ul>\n<li>Происхождение способности (врождённая, полученная, чем обусловлена) — в переписке не сказано.</li>\n<li>Не оговорено, распространяется ли контроль осязания на предметы в руках носителя и на одежду.</li>\n<li>Не сказано, работает ли способность в обе стороны — то есть может ли неосязаемый носитель воздействовать на мир, кроме описанного случая с костяными иглами.</li>\n<li>Не описано, как проход сквозь предметы сочетается с сохранением осязаемых участков.</li>\n<li>Границы «мощного боевого искусства» (id 166765) не раскрыты.</li>\n<li>Реплика Миколая «Оказывается ловкость имбовая штука» (id 166772) в переписке ни с чем явно не связана; относится ли она к этой способности — не сказано.</li>\n</ul></div>", "r": []}, {"t": "Связи — всё вместе", "a": ["SP-0057--svyazi"], "h": "<p><em>Сводный список. Под каждым разделом выше есть свой блок связей — только то, что упомянуто в нём. Связи сквозные и двусторонние.</em></p>\n<ul>\n<li><strong>Упомянут в группах:</strong> <a href=\"GR-0048.html\">Отряд сильнейших (команда «А»)</a></li>\n<li><strong>Упомянут в статье о вселенной:</strong> <a href=\"VS-0014.html\">игра бога</a></li>\n</ul>", "r": []}, {"t": "Источники", "a": ["SP-0057--istochniki"], "h": "<p><em>Диапазоны id ведут в архив переписки; дословные куски лежат в базе первого этапа.</em></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Дата</th>\n<th>Сообщения</th>\n<th>Окно</th>\n<th>Вселенная</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2024-05-07</td>\n<td>166763–166772</td>\n<td>w0032</td>\n<td>игра бога (по дате объявления)</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p>Исходник в базе: <code>kb/sushnosti/sposobnosti/SP-0057-lokalnoe-upravlenie-osyazaniem.md</code></p>", "r": []}, {"t": "Примечания и поправки", "a": ["SP-0057--primechaniya-i-popravki"], "h": "<p><em>Пока пусто. Правки пиши в <code>_sistema/pravki/SP-0057.md</code> — они переживают пересборку.</em></p>", "r": []}];</script>
+<script src="lib.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
